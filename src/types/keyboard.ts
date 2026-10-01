@@ -257,6 +257,11 @@ export interface Case {
   appearance?: Appearance;
   /** Strap mounts and similar parts outside the main outline (position measured on a photo; details estimated). */
   attachments?: CaseAttachment[];
+  /**
+   * Top-left corner of the key area (the key map's bounding box) in the case frame, measured on a product photo.
+   * Without it the reference key map is centred in the case, which is only a guess.
+   */
+  keyOrigin?: Point2D;
   weight?: Measurement;
   model3d?: Model3D;
   images?: string[];

@@ -5,6 +5,7 @@
  * Image → millimetre outline (PNG/JPEG). The calibration is mandatory: an image alone has no scale.
  * --depth in outline mode only *verifies* the result (rejects it if it contradicts the published depth).
  * --remove-thin=8        drops attachments thinner than 8 mm (cable tabs) before measuring.
+ * --simplify=0.15         Douglas–Peucker tolerance in mm (default 0.4; lower keeps more of the curves).
  * --trim-protrusions=2    cuts back short stretches sticking out of the body's straight edge by more than 2 mm
  *                         (strap mounts, hooks) — what a thin-feature filter cannot remove.
  */
@@ -31,6 +32,7 @@ try {
     const r = reconstructShape(await decodeImageAsync(readFileSync(str('image') as string)), {
       removeThinFeaturesMm: num('remove-thin'),
       trimProtrusionsMm: num('trim-protrusions'),
+      simplifyMm: num('simplify'),
       knownWidthMm: width,
       expectedDepthMm: num('depth'),
       perspective: str('perspective') === 'auto' ? 'auto' : 'none',

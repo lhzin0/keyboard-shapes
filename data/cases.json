@@ -2877,127 +2877,235 @@
   "model": "60HE+ case",
   "dimensions": {
    "width": 302,
-   "depth": 116,
+   "depth": 115.71,
    "height": 38
   },
   "externalShape": {
    "points": [
     {
-     "x": 298,
-     "y": 0
-    },
-    {
-     "x": 299.035,
-     "y": 0.136
-    },
-    {
-     "x": 300,
-     "y": 0.536
-    },
-    {
-     "x": 300.828,
-     "y": 1.172
-    },
-    {
-     "x": 301.464,
-     "y": 2
-    },
-    {
-     "x": 301.864,
-     "y": 2.965
+     "x": 302,
+     "y": 66.7
     },
     {
      "x": 302,
-     "y": 4
+     "y": 106.19
     },
     {
-     "x": 302,
+     "x": 301.55,
+     "y": 106.64
+    },
+    {
+     "x": 301.55,
+     "y": 107.53
+    },
+    {
+     "x": 301.11,
+     "y": 107.98
+    },
+    {
+     "x": 301.11,
+     "y": 108.88
+    },
+    {
+     "x": 300.66,
+     "y": 109.32
+    },
+    {
+     "x": 300.66,
+     "y": 110.66
+    },
+    {
+     "x": 300.21,
+     "y": 111.11
+    },
+    {
+     "x": 300.21,
+     "y": 112.45
+    },
+    {
+     "x": 298.3,
+     "y": 114.37
+    },
+    {
+     "x": 297.85,
+     "y": 114.37
+    },
+    {
+     "x": 296.95,
+     "y": 115.26
+    },
+    {
+     "x": 295.17,
+     "y": 115.26
+    },
+    {
+     "x": 294.72,
+     "y": 115.71
+    },
+    {
+     "x": 11.3,
+     "y": 115.71
+    },
+    {
+     "x": 10.85,
+     "y": 115.26
+    },
+    {
+     "x": 9.96,
+     "y": 115.26
+    },
+    {
+     "x": 9.07,
+     "y": 114.37
+    },
+    {
+     "x": 8.62,
+     "y": 114.37
+    },
+    {
+     "x": 7.15,
+     "y": 112.9
+    },
+    {
+     "x": 7.15,
+     "y": 112.45
+    },
+    {
+     "x": 6.7,
      "y": 112
     },
     {
-     "x": 301.864,
-     "y": 113.035
+     "x": 6.7,
+     "y": 110.22
     },
     {
-     "x": 301.464,
-     "y": 114
+     "x": 6.25,
+     "y": 109.77
     },
     {
-     "x": 300.828,
-     "y": 114.828
+     "x": 6.25,
+     "y": 108.43
     },
     {
-     "x": 300,
-     "y": 115.464
+     "x": 5.81,
+     "y": 107.98
     },
     {
-     "x": 299.035,
-     "y": 115.864
+     "x": 5.81,
+     "y": 107.53
     },
     {
-     "x": 298,
-     "y": 116
+     "x": 5.36,
+     "y": 107.09
     },
     {
-     "x": 4,
-     "y": 116
+     "x": 5.36,
+     "y": 104.41
     },
     {
-     "x": 2.965,
-     "y": 115.864
+     "x": 4.91,
+     "y": 103.96
     },
     {
-     "x": 2,
-     "y": 115.464
+     "x": 4.91,
+     "y": 101.99
     },
     {
-     "x": 1.172,
-     "y": 114.828
+     "x": 5.36,
+     "y": 101.54
     },
     {
-     "x": 0.536,
-     "y": 114
+     "x": 5.36,
+     "y": 38.29
     },
     {
-     "x": 0.136,
-     "y": 113.035
+     "x": 3.26,
+     "y": 36.19
+    },
+    {
+     "x": 2.81,
+     "y": 36.19
+    },
+    {
+     "x": 2.36,
+     "y": 35.74
+    },
+    {
+     "x": 1.92,
+     "y": 35.74
+    },
+    {
+     "x": 0.45,
+     "y": 34.27
+    },
+    {
+     "x": 0.45,
+     "y": 33.82
     },
     {
      "x": 0,
-     "y": 112
+     "y": 33.38
     },
     {
      "x": 0,
-     "y": 4
+     "y": 14.43
     },
     {
-     "x": 0.136,
-     "y": 2.965
+     "x": 0.45,
+     "y": 13.98
     },
     {
-     "x": 0.536,
-     "y": 2
+     "x": 0.45,
+     "y": 2.36
     },
     {
-     "x": 1.172,
-     "y": 1.172
+     "x": 0.89,
+     "y": 1.92
     },
     {
-     "x": 2,
-     "y": 0.536
+     "x": 0.89,
+     "y": 1.47
     },
     {
-     "x": 2.965,
-     "y": 0.136
-    },
-    {
-     "x": 4,
+     "x": 2.36,
      "y": 0
+    },
+    {
+     "x": 299.19,
+     "y": 0
+    },
+    {
+     "x": 300.66,
+     "y": 1.47
+    },
+    {
+     "x": 300.66,
+     "y": 1.92
+    },
+    {
+     "x": 301.11,
+     "y": 2.36
+    },
+    {
+     "x": 301.11,
+     "y": 22.91
+    },
+    {
+     "x": 301.55,
+     "y": 23.36
+    },
+    {
+     "x": 301.55,
+     "y": 66.25
     }
    ],
    "width": 302,
-   "depth": 116,
+   "depth": 115.71,
    "closed": true
+  },
+  "keyOrigin": {
+   "x": 10.9,
+   "y": 5.1
   },
   "mountingPoints": [],
   "cutouts": [],
@@ -3024,12 +3132,25 @@
     "retrievedAt": "2026-10-01T18:21:39.057Z",
     "method": "page-text",
     "confidence": 0.95
+   },
+   {
+    "sourceName": "KeyboardShapes shape reconstructor",
+    "sourceUrl": "https://wooting-website.ams3.cdn.digitaloceanspaces.com/products/keyboards/60HE/configurator-images/w60he-ansi-us-double-shot-pbt-black.jpg",
+    "sourceType": "photo-reconstruction",
+    "retrievedAt": "2026-10-01T23:08:37.783Z",
+    "method": "downscaled 1680×1890 → 910×1024 → background removed (border-colour-distance, threshold 126) → object detected (19% of the image) → contour traced (1824 points, strap-mount slot and front palm-rest kept) → calibrated with width 302 mm → simplified to 54 points (tolerance 0.1 mm) → depth 115.7 mm agrees with the published 116 mm → case colour measured on the rim: #3b3b3c",
+    "confidence": 0.7
    }
   ],
   "confidence": {
-   "level": "estimated",
-   "score": 0.3,
-   "notes": "Outline assumed to be a rounded rectangle from the overall width × depth. The real shape may differ. Key positions are the generic ANSI 60% reference map, not this product's actual key map (ISO/JIS and special keys differ). Overall dimensions cross-checked across 2 source(s) (width 57% confidence, official)."
+   "level": "reconstructed",
+   "score": 0.7,
+   "notes": "Outline reconstructed from the official top-view photo and calibrated with the published width (depth 115.7 mm agrees with the published 116 mm); every curve and protrusion of the silhouette is kept (strap-mount slot at the back-left, chamfered front corners of the palm rest). Interior (cavity, posts, cutouts) unknown. Key positions follow the photo: ANSI 60% with a 6.25u space bar, Esc in the first position and the Wooting key / Menu / Ctrl / Fn in the bottom row; the legends of the keys are read from the photo. The key area (15u × 5u) is placed where it sits in the photo (top-left corner at 10.9 mm, 5.1 mm from the case corner, ±0.5 mm)."
+  },
+  "appearance": {
+   "color": "#3b3b3c",
+   "source": "photo",
+   "note": "Case colour measured on the official product photo (rim); the photo shows one colourway only."
   }
  },
  {

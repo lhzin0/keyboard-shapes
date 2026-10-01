@@ -38,9 +38,9 @@ export function resolvePlacements(sel: BuildSelection & { layout?: KeyboardLayou
 
   let estimatedKeys = false;
   if (centers.length === 0 && sel.layout && sel.layout.keys.length > 0 && sel.case) {
-    // no PCB/plate: centre the reference key map in the case (an estimate, flagged to the UI)
-    const ox = (sel.case.dimensions.width - sel.layout.widthU * KEY_PITCH_MM) / 2;
-    const oy = (sel.case.dimensions.depth - sel.layout.heightU * KEY_PITCH_MM) / 2;
+    // no PCB/plate: use the key area measured on a photo, else centre the reference key map in the case (an estimate, flagged to the UI)
+    const ox = sel.case.keyOrigin?.x ?? (sel.case.dimensions.width - sel.layout.widthU * KEY_PITCH_MM) / 2;
+    const oy = sel.case.keyOrigin?.y ?? (sel.case.dimensions.depth - sel.layout.heightU * KEY_PITCH_MM) / 2;
     centers = sel.layout.keys.map((k) => ({ x: ox + (k.x + k.width / 2) * KEY_PITCH_MM, y: oy + (k.y + k.height / 2) * KEY_PITCH_MM }));
     estimatedKeys = true;
   }

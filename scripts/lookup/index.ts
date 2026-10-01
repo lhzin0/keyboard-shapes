@@ -16,7 +16,8 @@
  *   --keycaps-photo=img|url  with --add: measure the keycap colour on a photo that shows the keycaps
  *   --top=img|url      with --add: reconstruct the REAL outline from a top-view photo (png/jpg/webp), calibrated by the
  *                      reconciled width and checked against the depth; --calibrate-both uses width AND depth,
- *                      --trim-protrusions=2 drops strap mounts/hooks, --remove-thin=8 drops thin tabs
+ *                      --trim-protrusions=2 drops strap mounts/hooks, --remove-thin=8 drops thin tabs,
+ *                      --simplify=0.15 keeps more of the curves (Douglas–Peucker tolerance in mm, default 0.4)
  *
  * Politeness: honest User-Agent, robots.txt checked before every URL, ~1 request/second per site,
  * no retries on blocks. Blocked pages are reported, never worked around.
@@ -198,6 +199,7 @@ if (args['add']) {
         expectedDepthMm: both ? undefined : r.depth.value,
         removeThinFeaturesMm: str('remove-thin') ? Number(str('remove-thin')) : undefined,
         trimProtrusionsMm: str('trim-protrusions') ? Number(str('trim-protrusions')) : undefined,
+        simplifyMm: str('simplify') ? Number(str('simplify')) : undefined,
       });
       console.log('\n' + c.bold('Outline from photo') + c.dim(` (${src.slice(0, 80)})`));
       shape.steps.forEach((s) => console.log(c.ok(s)));
