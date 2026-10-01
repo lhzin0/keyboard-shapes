@@ -1,4 +1,5 @@
 import { describe, expect, it } from 'vitest';
+import { detectLayoutFromText } from '../../src/import/LayoutDetector';
 import { editionKey, mentionsVariants, reconcile, reconcileEditions, toleranceMm, type Evidence } from '../../src/import/CrossReference';
 import { lookup, type LookupDeps } from '../../src/import/lookup';
 import { ProductImporter } from '../../src/import/ProductImporter';
@@ -403,5 +404,21 @@ describe('regressions from the live Wooting 60HE test', () => {
     const html = '<script type="application/ld+json">{"@type":"Product","name":"X","weight":{"value":"1000","unitCode":"GRM"}}</script>';
     const p = new ProductImporter({ fetcher: async () => html }).importHtml(html, 'https://shop.example.com/p/x').product;
     expect(p.weight?.confidence).toBeLessThanOrEqual(0.35);
+  });
+});
+
+describe('regressions from the second Wooting run', () => {
+  it('"Keyboard Case" is a carrying case, not the keyboard (unless the query asks for a case)', () => {
+    expect(relevance('wooting 60he', 'Wooting 60HE V2 Keyboard Case')).toBeLessThan(0.6);
+    expect(relevance('wooting 60he', 'Case for Wooting 60HE')).toBeLessThan(0.6);
+    expect(relevance('wooting 60he case', 'Wooting 60HE V2 Keyboard Case')).toBeGreaterThanOrEqual(0.6);
+    // a normal keyboard whose name has "case" elsewhere is untouched
+    expect(relevance('keychron q1', 'Keychron Q1 QMK Custom Mechanical Keyboard')).toBe(1);
+  });
+  it('"split spacebar" is a key option, not a split keyboard layout', () => {
+    expect(detectLayoutFromText('Available with a split spacebar or a standard spacebar').layout).toBe('Custom');
+    expect(detectLayoutFromText('split backspace and split right shift').layout).toBe('Custom');
+    expect(detectLayoutFromText('An ergonomic split keyboard').layout).toBe('Split');
+    expect(detectLayoutFromText('60% layout with a split spacebar').layout).toBe('60%');
   });
 });

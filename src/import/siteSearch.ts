@@ -114,6 +114,8 @@ export function relevance(query: string, title: string): number {
   if (titleTokens.some((t) => REGION_MARKERS.has(t) && !asked.has(t))) score *= 0.7;
   // a part or accessory unless the query itself asks for one ("keychron q1 plate")
   if (titleTokens.some((t) => ACCESSORY_MARKERS.has(t) && !asked.has(t))) score *= 0.5;
+  // "<keyboard> Keyboard Case" / "case for <keyboard>" is a carrying case, not a case kit
+  if (/\bkeyboard\s+(?:case|cover|sleeve)\b|\b(?:case|cover|sleeve)\s+for\b/i.test(title) && !/\bcase\b/i.test(query)) score *= 0.5;
   return score;
 }
 

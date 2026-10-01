@@ -163,7 +163,8 @@ const TEXT_PATTERNS: Array<[RegExp, LayoutName]> = [
   [pat(String.raw`50\s?%|${keys('5[23]')}`), '50%'],
   [pat(String.raw`40\s?%|${keys('4[78]')}`), '40%'],
   [/\balice\b/i, 'Alice'],
-  [/\bsplit\b|\bdividido\b/i, 'Split'],
+  // "split spacebar / backspace / shift / right shift" are key options of an ordinary board, not a split keyboard
+  [/\bsplit\b(?![\s-]*(?:space\s?bar|space|back\s?space|shift|right|left|enter|keys?\b|alt|ctrl))|\bdividido\b/i, 'Split'],
   [/\b(ergo|ergonomic[oa]?|ergon[oô]mic[oa]?)\b/i, 'Ergo'],
 ];
 
