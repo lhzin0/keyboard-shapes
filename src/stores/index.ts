@@ -55,7 +55,7 @@ export interface CompareItem {
   kind: CompareKind;
   id: string;
 }
-export const MAX_COMPARE = 4;
+export const MAX_COMPARE = 6;
 
 interface CompareState {
   items: CompareItem[];

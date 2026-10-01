@@ -226,3 +226,8 @@
     display: none;
   }
 }
+
+/* the comparison canvas fills the screen: no footer */
+.immersive .footer {
+  display: none;
+}

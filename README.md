@@ -35,7 +35,7 @@ Node 20+ (developed on Node 24). No Python required.
 | **Compatibility engine** | dimensions, mounting-point registration (configurable tolerance), lateral + vertical clearance, USB alignment, plate cutouts/stabilizers, daughterboard connector/bay — each `ok · tight · incompatible · unknown`, deterministic |
 | **Build your keyboard** | pick case / PCB / plate / switches / keycaps / daughterboard / foam; dropdowns show the verdict of each option against what you already chose |
 | **Find compatible / Find similar** | reverse queries over the compatibility graph; similarity (outline IoU, size, aspect, corner radius, layout, angle, key positions) is a separate score |
-| **Compare** | up to 4 items: shape overlay (opacity, align by center / front / back / USB / custom, difference raster + IoU), side-by-side 2D, 3D, table |
+| **Compare** | up to 6 items: top, front and side outlines on black, one scale in millimetres, each item in its own colour; front/side are real silhouettes only where heights are recorded, otherwise a dashed bounding box (overall height) or nothing |
 | **Import** | from URL, pasted HTML, images or manually; **cross-check sites** (below); image → millimetre outline (calibrated), side image → height profile; preview, correct, confirm |
 | **Search / filters** | brand, layout, width/depth/height/angle/keys, wireless, knob, mounting, material, component type, "compatible with…"; `327mm` matches dimensions |
 

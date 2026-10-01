@@ -40,7 +40,7 @@ export function AppShell() {
   }, [pathname]);
 
   return (
-    <div className={styles['shell']}>
+    <div className={cx(styles['shell'], pathname === '/compare' && styles['immersive'])}>
       <header className={styles['nav']}>
         <Logo />
         <nav className={styles['links']} aria-label="Main">
