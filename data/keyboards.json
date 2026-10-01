@@ -6788,7 +6788,7 @@
   "slug": "wooting-60he-v2",
   "layout": {
    "name": "60%",
-   "description": "ANSI 60%",
+   "description": "ANSI 60%, 6.25u space bar (key map read from the official photo)",
    "keys": [
     {
      "x": 0,
@@ -6796,7 +6796,7 @@
      "width": 1,
      "height": 1,
      "rotation": 0,
-     "label": "`",
+     "label": "Esc",
      "row": 0,
      "keycapSize": "1u"
     },
@@ -7336,7 +7336,7 @@
      "width": 1.25,
      "height": 1,
      "rotation": 0,
-     "label": "Win",
+     "label": "Wooting",
      "row": 4,
      "keycapSize": "1.25u"
     },
@@ -7376,7 +7376,7 @@
      "width": 1.25,
      "height": 1,
      "rotation": 0,
-     "label": "Win",
+     "label": "Menu",
      "row": 4,
      "keycapSize": "1.25u"
     },
@@ -7386,7 +7386,7 @@
      "width": 1.25,
      "height": 1,
      "rotation": 0,
-     "label": "Fn",
+     "label": "Ctrl",
      "row": 4,
      "keycapSize": "1.25u"
     },
@@ -7396,7 +7396,7 @@
      "width": 1.25,
      "height": 1,
      "rotation": 0,
-     "label": "Ctrl",
+     "label": "Fn",
      "row": 4,
      "keycapSize": "1.25u"
     }
@@ -7407,7 +7407,7 @@
   },
   "dimensions": {
    "width": 305.33,
-   "depth": 115
+   "depth": 114.38
   },
   "components": {
    "caseId": "imp-wooting-60he-v2-case"
@@ -7435,17 +7435,17 @@
    },
    {
     "sourceName": "KeyboardShapes shape reconstructor",
-    "sourceUrl": "https://wooting-website.ams3.cdn.digitaloceanspaces.com/products/keyboards/60HEv2/configurator-images/w60he-v2-alu-black-iso-no-keycaps.webp",
+    "sourceUrl": "https://wooting-website.ams3.cdn.digitaloceanspaces.com/products/keyboards/60HEv2/configurator-images/w60he-v2-alu-black-ansi-us-double-shot-pbt-black.webp",
     "sourceType": "photo-reconstruction",
-    "retrievedAt": "2026-10-01T18:41:42.027Z",
-    "method": "downscaled 1680×1890 → 910×1024 → background removed (border-colour-distance, threshold 109) → object detected (18% of the image) → protrusions trimmed to the body edge: left 5.9 mm (strap mount, hook or tab attached to the case) → contour traced (1792 points) → calibrated with width 305 mm and depth 115 mm → simplified to 18 points (tolerance 0.4 mm) → case colour measured on the rim: #303030",
-    "confidence": 0.72
+    "retrievedAt": "2026-10-01T23:32:21.610Z",
+    "method": "downscaled 1680×1890 → 910×1024 → background removed (border-colour-distance, threshold 119) → object detected (18% of the image) → contour traced (1801 points, strap-mount loop kept) → calibrated with width 305.33 mm → simplified to 44 points (tolerance 0.1 mm) → depth 114.4 mm agrees with the published 115 mm",
+    "confidence": 0.7
    }
   ],
   "confidence": {
    "level": "reconstructed",
-   "score": 0.72,
-   "notes": "Outline reconstructed from an image and calibrated with a known dimension. Interior (cavity, posts, cutouts) unknown. Key positions are the generic ANSI 60% reference map, not this product's actual key map (ISO/JIS and special keys differ). Overall dimensions cross-checked across 2 source(s) (width 57% confidence, official)."
+   "score": 0.7,
+   "notes": "Outline reconstructed from the official top-view photo and calibrated with the published width, taken to include the strap-mount loop on the back-left (depth 114.4 mm agrees with the published 115 mm; taking the width without the loop gives 116.5 mm, which agrees worse); every curve and protrusion of the silhouette is kept. Interior (cavity, posts, cutouts) unknown. Key positions follow the photo: ANSI 60% with a 6.25u space bar, Esc in the first position and the Wooting key / Menu / Ctrl / Fn in the bottom row. The key area (15u × 5u) is placed where it sits in the photo (top-left corner at 12.6 mm, 4.7 mm from the case corner, ±0.5 mm)."
   },
   "images": [
    "https://wooting-website.ams3.cdn.digitaloceanspaces.com/products/keyboards/60HEv2/60he-v2-og.webp",

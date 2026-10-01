@@ -3160,86 +3160,194 @@
   "model": "60HE v2 case",
   "dimensions": {
    "width": 305.33,
-   "depth": 115
+   "depth": 114.38
   },
   "externalShape": {
    "points": [
     {
      "x": 305.33,
-     "y": 2.88
+     "y": 3.32
     },
     {
      "x": 305.33,
-     "y": 111.66
+     "y": 111.06
     },
     {
-     "x": 304.27,
-     "y": 113.63
+     "x": 304.87,
+     "y": 111.52
     },
     {
-     "x": 301.02,
-     "y": 115
+     "x": 304.87,
+     "y": 111.97
     },
     {
-     "x": 5.1,
-     "y": 115
+     "x": 303.37,
+     "y": 113.47
     },
     {
-     "x": 2.7800000000000002,
-     "y": 114.09
+     "x": 302.92,
+     "y": 113.47
     },
     {
-     "x": 0.79,
-     "y": 112.12
+     "x": 302.46,
+     "y": 113.93
     },
     {
-     "x": 0.79,
-     "y": 40.64
+     "x": 301.55,
+     "y": 113.93
+    },
+    {
+     "x": 301.1,
+     "y": 114.38
+    },
+    {
+     "x": 10.16,
+     "y": 114.38
+    },
+    {
+     "x": 9.7,
+     "y": 113.93
+    },
+    {
+     "x": 8.79,
+     "y": 113.93
+    },
+    {
+     "x": 8.34,
+     "y": 113.47
+    },
+    {
+     "x": 7.88,
+     "y": 113.47
+    },
+    {
+     "x": 5.92,
+     "y": 111.52
+    },
+    {
+     "x": 5.92,
+     "y": 40.43
+    },
+    {
+     "x": 5.15,
+     "y": 39.65
+    },
+    {
+     "x": 2.87,
+     "y": 39.65
+    },
+    {
+     "x": 2.41,
+     "y": 39.19
+    },
+    {
+     "x": 1.96,
+     "y": 39.19
+    },
+    {
+     "x": 0.46,
+     "y": 37.69
+    },
+    {
+     "x": 0.46,
+     "y": 36.78
     },
     {
      "x": 0,
-     "y": 39.86
-    },
-    {
-     "x": 1.26,
-     "y": 39.54
-    },
-    {
-     "x": 1.26,
-     "y": 6.74
+     "y": 36.32
     },
     {
      "x": 0,
-     "y": 6.42
+     "y": 9.7
     },
     {
-     "x": 0.79,
-     "y": 5.63
+     "x": 0.46,
+     "y": 9.25
     },
     {
-     "x": 0.79,
-     "y": 2.88
+     "x": 0.46,
+     "y": 8.34
     },
     {
-     "x": 3.25,
+     "x": 1.96,
+     "y": 6.84
+    },
+    {
+     "x": 2.41,
+     "y": 6.84
+    },
+    {
+     "x": 2.87,
+     "y": 6.38
+    },
+    {
+     "x": 5.15,
+     "y": 6.38
+    },
+    {
+     "x": 5.92,
+     "y": 5.6
+    },
+    {
+     "x": 5.92,
+     "y": 2.87
+    },
+    {
+     "x": 8.34,
      "y": 0.46
     },
     {
-     "x": 4.64,
+     "x": 9.25,
+     "y": 0.46
+    },
+    {
+     "x": 9.7,
      "y": 0
     },
     {
-     "x": 301.47999999999996,
+     "x": 301.55,
      "y": 0
     },
     {
-     "x": 303.8,
+     "x": 302.01,
+     "y": 0.46
+    },
+    {
+     "x": 302.92,
+     "y": 0.46
+    },
+    {
+     "x": 303.37,
      "y": 0.91
+    },
+    {
+     "x": 303.83,
+     "y": 0.91
+    },
+    {
+     "x": 304.42,
+     "y": 1.5
+    },
+    {
+     "x": 304.42,
+     "y": 1.96
+    },
+    {
+     "x": 304.87,
+     "y": 2.41
+    },
+    {
+     "x": 304.87,
+     "y": 2.87
     }
    ],
    "width": 305.33,
-   "depth": 115,
+   "depth": 114.38,
    "closed": true
+  },
+  "keyOrigin": {
+   "x": 12.6,
+   "y": 4.7
   },
   "appearance": {
    "color": "#303030",
@@ -3247,17 +3355,6 @@
    "source": "photo",
    "note": "Colours measured on product photos (case rim / keycap area); the photo shows one colourway only."
   },
-  "attachments": [
-   {
-    "kind": "strap-mount",
-    "side": "left",
-    "from": 6.4,
-    "to": 39.9,
-    "depth": 5.9,
-    "source": "photo",
-    "note": "A short stretch sticking out of the straight edge of the case in the product photo (taken to be a strap mount / hook). Its position and size are measured; its detailed shape is estimated."
-   }
-  ],
   "mountingPoints": [],
   "cutouts": [],
   "model3d": {
@@ -3286,17 +3383,17 @@
    },
    {
     "sourceName": "KeyboardShapes shape reconstructor",
-    "sourceUrl": "https://wooting-website.ams3.cdn.digitaloceanspaces.com/products/keyboards/60HEv2/configurator-images/w60he-v2-alu-black-iso-no-keycaps.webp",
+    "sourceUrl": "https://wooting-website.ams3.cdn.digitaloceanspaces.com/products/keyboards/60HEv2/configurator-images/w60he-v2-alu-black-ansi-us-double-shot-pbt-black.webp",
     "sourceType": "photo-reconstruction",
-    "retrievedAt": "2026-10-01T18:41:42.027Z",
-    "method": "downscaled 1680×1890 → 910×1024 → background removed (border-colour-distance, threshold 109) → object detected (18% of the image) → protrusions trimmed to the body edge: left 5.9 mm (strap mount, hook or tab attached to the case) → contour traced (1792 points) → calibrated with width 305 mm and depth 115 mm → simplified to 18 points (tolerance 0.4 mm) → case colour measured on the rim: #303030",
-    "confidence": 0.72
+    "retrievedAt": "2026-10-01T23:32:21.610Z",
+    "method": "downscaled 1680×1890 → 910×1024 → background removed (border-colour-distance, threshold 119) → object detected (18% of the image) → contour traced (1801 points, strap-mount loop kept) → calibrated with width 305.33 mm → simplified to 44 points (tolerance 0.1 mm) → depth 114.4 mm agrees with the published 115 mm",
+    "confidence": 0.7
    }
   ],
   "confidence": {
    "level": "reconstructed",
-   "score": 0.72,
-   "notes": "Outline reconstructed from an image and calibrated with a known dimension. Interior (cavity, posts, cutouts) unknown. Key positions are the generic ANSI 60% reference map, not this product's actual key map (ISO/JIS and special keys differ). Overall dimensions cross-checked across 2 source(s) (width 57% confidence, official)."
+   "score": 0.7,
+   "notes": "Outline reconstructed from the official top-view photo and calibrated with the published width, taken to include the strap-mount loop on the back-left (depth 114.4 mm agrees with the published 115 mm; taking the width without the loop gives 116.5 mm, which agrees worse); every curve and protrusion of the silhouette is kept. Interior (cavity, posts, cutouts) unknown. Key positions follow the photo: ANSI 60% with a 6.25u space bar, Esc in the first position and the Wooting key / Menu / Ctrl / Fn in the bottom row. The key area (15u × 5u) is placed where it sits in the photo (top-left corner at 12.6 mm, 4.7 mm from the case corner, ±0.5 mm)."
   }
  }
 ]
