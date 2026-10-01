@@ -20,7 +20,7 @@
 import type { ConfidenceInfo, MountingPoint, Point2D, Profile, Shape } from '../types/keyboard';
 import { makeShape, offsetPolygon, round, simplifyPolygon, simplifyPolyline } from '../geometry/shape';
 import { traceContour, quadFromContour, rectifyPoints, type Quad } from './vision/geometry';
-import { downscale, fillHoles, findHoles, largestComponent, openMask, rimColor, segment, smooth, trimProtrusions, type ImageLike, type Mask } from './vision/mask';
+import { downscale, fillHoles, findHoles, interiorColor, largestComponent, openMask, rimColor, segment, smooth, trimProtrusions, type ImageLike, type Mask } from './vision/mask';
 
 export interface ReconstructOptions {
   /** Real width (left-right extent) of the object in mm. */
@@ -70,6 +70,8 @@ export interface ReconstructResult {
   mask: Mask;
   /** Colour of the object's rim (the case), `#rrggbb`; null when it could not be measured. */
   rimColor: string | null;
+  /** Median colour of the inside of the object — the keycaps, on a photo that has them. */
+  interiorColor: string | null;
 }
 
 /** The image produced a result that contradicts what is already known — better no outline than a wrong one. */
@@ -207,6 +209,7 @@ export function reconstructShape(source: ImageLike, opts: ReconstructOptions = {
 
   const rim = rimColor(image, silhouette, Math.max(3, Math.round(Math.min(silhouette.width, silhouette.height) * 0.012)));
   if (rim) steps.push(`case colour measured on the rim: ${toHex(rim)}`);
+  const inside = interiorColor(image, silhouette);
 
   // confidence: calibrated twice > once; clean coverage > tiny; warnings subtract
   let score = opts.knownWidthMm && opts.knownDepthMm ? 0.8 : 0.7;
@@ -227,6 +230,7 @@ export function reconstructShape(source: ImageLike, opts: ReconstructOptions = {
     warnings,
     mask: silhouette,
     rimColor: rim ? toHex(rim) : null,
+    interiorColor: inside ? toHex(inside) : null,
   };
 }
 

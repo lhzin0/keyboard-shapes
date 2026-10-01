@@ -137,7 +137,9 @@ export function generateCase(c: Case, stack: StackLevels): CaseGeometry {
       warnings.push('USB cutout could not be cut into the wall (not on a straight segment); it is not drawn.');
     }
   }
-  const cuts = new Set<number>([0, split, rim]);
+  // a small 45°-ish step on the outer top edge (two bands) takes the sharp look off the rim
+  const chamfer = Math.min(1.1, (rim - split) * 0.4);
+  const cuts = new Set<number>([0, split, rim - chamfer, rim]);
   if (notchPoly) {
     cuts.add(nz0);
     cuts.add(nz1);
@@ -153,7 +155,10 @@ export function generateCase(c: Case, stack: StackLevels): CaseGeometry {
   const bottomParts: THREE.BufferGeometry[] = [slab];
   const topParts: THREE.BufferGeometry[] = [];
   for (const band of bands) {
-    const g = band.notch && notchPoly ? extrude(notchPoly, band.z1 - band.z0, band.z0) : extrude(outer, band.z1 - band.z0, band.z0, [cavity]);
+    const isRimBand = chamfer > 0.2 && Math.abs(band.z1 - rim) < 1e-6 && !band.notch;
+    const g = band.notch && notchPoly
+      ? extrude(notchPoly, band.z1 - band.z0, band.z0)
+      : extrude(isRimBand ? offsetPolygon(outer, -chamfer * 0.55) : outer, band.z1 - band.z0, band.z0, [cavity]);
     ((band.z0 + band.z1) / 2 < split ? bottomParts : topParts).push(g);
   }
 

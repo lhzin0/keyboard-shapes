@@ -8,8 +8,8 @@
 import * as THREE from 'three';
 import type { BuildEvaluation, BuildSelection } from '../../compatibility/CompatibilityEngine';
 import { resolvePlacements } from '../placement';
-import type { Foam, KeyboardLayout, Keycap, Profile, Stabilizer } from '../../types/keyboard';
-import { offsetPolygon } from '../shape';
+import type { Foam, KeyboardLayout, Keycap, Plate, Profile, Stabilizer } from '../../types/keyboard';
+import { offsetPolygon, roundedRectPoints } from '../shape';
 import { generateCase } from './CaseGenerator';
 import { box, cylinder, extrude, holeCircle, merge } from './common';
 import { generateKeycaps } from './KeycapGenerator';
@@ -43,6 +43,8 @@ export interface AssemblyPart {
   /** Which component the part belongs to (for compatibility colouring). */
   component?: 'case' | 'pcb' | 'plate' | 'daughterboard';
   geometry: THREE.BufferGeometry;
+  /** Generic stand-in for something the data does not contain (shown as a ghost, never part of a compatibility check). */
+  placeholder?: boolean;
   /** Flattened 4×4 matrices when the part is instanced. */
   instances?: Float32Array;
   /** Mean height of the part in the typing-plane frame, for the exploded view. */
@@ -65,6 +67,10 @@ export interface Assembly {
   width: number;
   depth: number;
   evaluation: BuildEvaluation;
+  /** Case colour measured on a product photo (`#rrggbb`), if the record has one. */
+  caseColor?: string;
+  /** Keycap colour measured on a product photo, if the record has one. */
+  keycapColor?: string;
   /** Layers that have at least one part. */
   layers: LayerId[];
   centerZ: number;
@@ -140,6 +146,35 @@ export function buildAssembly(sel: AssemblySelection): Assembly {
     }
   }
 
+  /* ------------------------------------------------ interior placeholder */
+  // A record that has a case and a key map but no PCB / plate (typically an import from a product page) would show
+  // keycaps floating over an empty cavity. Draw a generic plate + switches as a *ghost*, flagged as placeholder.
+  const interiorUnknown = !sel.pcb && !sel.plate && !!sel.case && centers.length > 0;
+  if (interiorUnknown && sel.layout) {
+    const xs = centers.map((c) => c.x);
+    const ys = centers.map((c) => c.y);
+    const half = 9.525 + 3.5;
+    const outline = roundedRectPoints(Math.min(...xs) - half, Math.min(...ys) - half, Math.max(...xs) - Math.min(...xs) + 2 * half, Math.max(...ys) - Math.min(...ys) + 2 * half, 1.5, 4);
+    const ghostPlate = {
+      id: 'placeholder-plate',
+      slug: 'placeholder-plate',
+      dimensions: { width: 0, depth: 0 },
+      outline: { points: outline, width: 0, depth: 0, closed: true },
+      thickness: 1.5,
+      switchCutouts: centers.map((c, i) => ({ keyIndex: i, x: c.x, y: c.y, rotation: 0 })),
+      mountingPoints: [],
+    } as unknown as Plate;
+    parts.push({
+      id: 'plate-placeholder',
+      layer: 'plate',
+      role: 'plate',
+      placeholder: true,
+      geometry: generatePlate(ghostPlate, stack.plateBottom, sel.switch?.cutout),
+      centerZ: (stack.plateBottom + stack.plateTop) / 2,
+    });
+    warnings.push('The record has no PCB or plate: the plate and switches shown are translucent generic placeholders, not data.');
+  }
+
   /* ----------------------------------------------------------------- plate */
   if (sel.plate) {
     const g = generatePlate(sel.plate, stack.plateBottom, sel.switch?.cutout);
@@ -164,13 +199,14 @@ export function buildAssembly(sel: AssemblySelection): Assembly {
   }
 
   /* ----------------------------------------------- switches and keycaps */
-  if (centers.length > 0 && (sel.pcb || sel.plate)) {
+  if (centers.length > 0 && (sel.pcb || sel.plate || interiorUnknown)) {
     const sw = generateSwitch(sel.switch, stack.pcbTop, stack.plateBottom, stack.plateTop);
     const topExtra = Math.max((sel.switch?.topHeight ?? 6.6) - 3.6, 1.5);
     parts.push({
       id: 'switches',
       layer: 'switches',
       role: 'switch',
+      placeholder: interiorUnknown,
       geometry: sw.geometry,
       instances: matrices(centers),
       centerZ: (stack.pcbTop + stack.plateTop + topExtra + 3.6) / 2,
@@ -211,7 +247,7 @@ export function buildAssembly(sel: AssemblySelection): Assembly {
   const layers = LAYER_ORDER.filter((l) => parts.some((p) => p.layer === l));
   const allZ = parts.map((p) => p.centerZ);
   const centerZ = allZ.length ? allZ.reduce((a, b) => a + b, 0) / allZ.length : 0;
-  return { parts, stack, width, depth, evaluation, layers, centerZ, warnings };
+  return { parts, stack, width, depth, evaluation, caseColor: sel.case?.appearance?.color, keycapColor: sel.case?.appearance?.keycapColor, layers, centerZ, warnings };
 }
 
 /** Frees GPU-bound geometry when an assembly is replaced. */

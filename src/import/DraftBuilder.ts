@@ -36,6 +36,8 @@ export interface DraftInput {
   shapeConfidence?: ConfidenceInfo;
   /** Case colour measured on a photo (`#rrggbb`). */
   caseColor?: string;
+  /** Keycap colour measured on a photo that shows the keycaps (`#rrggbb`). */
+  keycapColor?: string;
   holes?: MountingPoint[];
   profile?: Profile;
   sources: SourceInfo[];
@@ -119,7 +121,9 @@ export function buildDraft(input: DraftInput): Draft {
     angle,
     frontHeight: fh,
     rearHeight: rh,
-    appearance: input.caseColor ? { color: input.caseColor, source: 'photo', note: 'Median colour of the case rim in the product photo.' } : undefined,
+    appearance: input.caseColor
+      ? { color: input.caseColor, keycapColor: input.keycapColor, source: 'photo', note: 'Colours measured on product photos (case rim / keycap area); the photo shows one colourway only.' }
+      : undefined,
     mountingPoints: input.holes ?? [],
     cutouts: [],
     model3d: { kind: 'parametric' },

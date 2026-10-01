@@ -476,3 +476,42 @@ export function trimProtrusions(mask: Mask, minDepthPx: number, maxShare = 0.4):
   (['left', 'right', 'top', 'bottom'] as const).forEach(clip);
   return { mask: { width: w, height: h, data }, trimmed: report };
 }
+
+/**
+ * Median colour of the object's interior: everything inside the bounding box shrunk by `insetFraction` of its height
+ * on every side (cheap, and exact enough for the near-rectangular bodies of keyboards). On a photo *with* keycaps this
+ * is the colour of the keycaps; on a photo without them it is the plate / switches.
+ */
+export function interiorColor(img: ImageLike, silhouette: Mask, insetFraction = 0.14): { r: number; g: number; b: number } | null {
+  const { width: w, height: h, data } = silhouette;
+  let minX = w;
+  let minY = h;
+  let maxX = 0;
+  let maxY = 0;
+  for (let y = 0; y < h; y++) {
+    for (let x = 0; x < w; x++) {
+      if (!data[y * w + x]) continue;
+      if (x < minX) minX = x;
+      if (x > maxX) maxX = x;
+      if (y < minY) minY = y;
+      if (y > maxY) maxY = y;
+    }
+  }
+  if (maxX <= minX || maxY <= minY) return null;
+  const inset = Math.round((maxY - minY) * insetFraction);
+  const rs: number[] = [];
+  const gs: number[] = [];
+  const bs: number[] = [];
+  for (let y = minY + inset; y <= maxY - inset; y += 2) {
+    for (let x = minX + inset; x <= maxX - inset; x += 2) {
+      const i = y * w + x;
+      if (data[i]) {
+        rs.push(img.data[i * 4] as number);
+        gs.push(img.data[i * 4 + 1] as number);
+        bs.push(img.data[i * 4 + 2] as number);
+      }
+    }
+  }
+  if (rs.length < 50) return null;
+  return { r: median(rs), g: median(gs), b: median(bs) };
+}

@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 import { KEY_PITCH_MM } from '../layouts';
 import type { Keycap, KeyboardLayout, Point2D } from '../../types/keyboard';
-import { frustum } from './common';
+import { sculptedKeycap } from './common';
 import { keycapHeight } from './stack';
 
 /** Gap between neighbouring keycap skirts at the base. */
@@ -39,8 +39,8 @@ export function generateKeycaps(layout: KeyboardLayout, keycap: Keycap | undefin
     const key = `${w.toFixed(2)}x${d.toFixed(2)}@${h.toFixed(2)}`;
     let g = groups.get(key);
     if (!g) {
-      // slightly shifted top towards the back gives the sculpted look without changing the footprint
-      g = { key, geometry: frustum(w, d, w - taper * 2, d - taper * 2, h, baseZ, -0.4), instances: [] };
+      // rounded, tapered, dished: the footprint and height stay exactly those of the data
+      g = { key, geometry: sculptedKeycap(w, d, taper, h, baseZ), instances: [] };
       groups.set(key, g);
     }
     g.instances.push({

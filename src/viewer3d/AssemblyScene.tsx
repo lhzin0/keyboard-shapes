@@ -1,4 +1,4 @@
-import { Html, OrbitControls, OrthographicCamera, PerspectiveCamera, Grid } from '@react-three/drei';
+import { ContactShadows, Environment, Grid, Html, Lightformer, OrbitControls, OrthographicCamera, PerspectiveCamera } from '@react-three/drei';
 import { useThree, type ThreeEvent } from '@react-three/fiber';
 import { memo, useEffect, useMemo, useState } from 'react';
 import * as THREE from 'three';
@@ -48,19 +48,21 @@ const PartMesh = memo(function PartMesh({ part, assembly, clip, onPick }: PartPr
   const status = part.component ? assembly.evaluation.componentStatus[part.component] : undefined;
 
   const visible = layer.visible && (isolated === null || isolated === part.layer);
-  const opacity = layer.opacity * (renderMode === 'transparent' ? 0.38 : 1);
+  // placeholders (data the record does not have) are always drawn as ghosts
+  const opacity = layer.opacity * (renderMode === 'transparent' ? 0.38 : 1) * (part.placeholder ? 0.32 : 1);
   const tint = status ? STATUS_TINT[status] : undefined;
 
   const material = useMemo(() => {
     const finish = ROLE_FINISH[part.role];
     const m = new THREE.MeshStandardMaterial({
-      color: ROLE_COLOR[part.role],
+      // the case wears the colour measured on its product photo when there is one; everything else uses the palette
+      color: part.role === 'case' && assembly.caseColor ? assembly.caseColor : part.role === 'keycap' && assembly.keycapColor ? assembly.keycapColor : ROLE_COLOR[part.role],
       metalness: finish.metalness,
       roughness: finish.roughness,
-      flatShading: part.role === 'keycap',
+      envMapIntensity: part.role === 'case' ? 1.1 : 0.9,
     });
     return m;
-  }, [part.role]);
+  }, [part.role, assembly.caseColor, assembly.keycapColor]);
 
   useEffect(() => {
     material.wireframe = renderMode === 'wireframe';
@@ -274,9 +276,27 @@ export function AssemblyScene({ assembly }: { assembly: Assembly }) {
       />
       <CameraRig box={box} />
 
-      <hemisphereLight args={['#ffffff', '#33405a', 0.9]} />
-      <directionalLight position={[220, 400, 260]} intensity={1.6} />
-      <directionalLight position={[-300, 200, -160]} intensity={0.55} />
+      {/* Procedural studio environment: soft boxes only, no HDR download (works offline, on GitHub Pages and phones). */}
+      <Environment resolution={256} frames={1} environmentIntensity={0.85}>
+        <Lightformer form="rect" intensity={2.4} rotation-x={Math.PI / 2} position={[0, 6, -2]} scale={[14, 10, 1]} />
+        <Lightformer form="rect" intensity={1.6} rotation-y={Math.PI / 2} position={[-6, 2, 0]} scale={[10, 3, 1]} />
+        <Lightformer form="rect" intensity={1.2} rotation-y={-Math.PI / 2} position={[6, 2, 0]} scale={[10, 3, 1]} />
+        <Lightformer form="ring" intensity={1.5} position={[0, 3, 8]} scale={4} />
+        <color attach="background" args={['#101418']} />
+      </Environment>
+      <hemisphereLight args={['#ffffff', '#33405a', 0.35]} />
+      <directionalLight position={[220, 400, 260]} intensity={1.1} />
+      <directionalLight position={[-300, 200, -160]} intensity={0.35} />
+      <ContactShadows
+        key={assembly.parts.length + (assembly.caseColor ?? '')}
+        position={[center.x, 0.04, center.z]}
+        scale={Math.max(size.x, size.z) * 1.9}
+        far={Math.max(size.y, 40) * 1.4}
+        blur={2.8}
+        opacity={0.55}
+        resolution={512}
+        frames={1}
+      />
 
       <Grid
         position={[center.x, -0.05, center.z]}

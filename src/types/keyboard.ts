@@ -266,6 +266,8 @@ export interface Case {
 export interface Appearance {
   /** `#rrggbb` of the case surface. */
   color: string;
+  /** `#rrggbb` of the keycaps (measured on a photo that shows them). */
+  keycapColor?: string;
   source: 'photo' | 'user';
   note?: string;
 }

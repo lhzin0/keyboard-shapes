@@ -13,6 +13,7 @@
  *   --json=file.json   write the full result (consumed by the web app: Import → Cross-check)
  *   --add              create a keyboard record from the reconciled values (needs width and depth)
  *   --layout="65%"     override the layout when adding
+ *   --keycaps-photo=img|url  with --add: measure the keycap colour on a photo that shows the keycaps
  *   --top=img|url      with --add: reconstruct the REAL outline from a top-view photo (png/jpg/webp), calibrated by the
  *                      reconciled width and checked against the depth; --calibrate-both uses width AND depth,
  *                      --trim-protrusions=2 drops strap mounts/hooks, --remove-thin=8 drops thin tabs
@@ -205,10 +206,24 @@ if (args['add']) {
       console.log('\n' + (e instanceof ReconstructionRejected ? c.fail(e.message) : c.warn(`outline not reconstructed: ${e instanceof Error ? e.message : String(e)}`)));
     }
   }
+  // optional: keycap colour from a photo that shows the keycaps (same calibration; only the colour is used)
+  let keycapColor: string | undefined;
+  if (str('keycaps-photo')) {
+    const src = str('keycaps-photo') as string;
+    try {
+      const data = await decodeImageAsync(/^https?:/i.test(src) ? (await downloadImage(src)).buf : readFileSync(src));
+      const k = reconstructShape(data, { knownWidthMm: r.width.value, trimProtrusionsMm: str('trim-protrusions') ? Number(str('trim-protrusions')) : undefined });
+      keycapColor = k.interiorColor ?? undefined;
+      console.log('\n' + c.ok(`keycap colour measured on ${src.slice(0, 70)}…: ${keycapColor ?? 'not measurable'}`));
+    } catch (e) {
+      console.log('\n' + c.warn(`keycap colour not measured: ${e instanceof Error ? e.message : String(e)}`));
+    }
+  }
   const draft = buildDraft({
     brand,
     model,
     layout,
+    keycapColor,
     shape: shape?.shape,
     shapeConfidence: shape?.confidence,
     caseColor: shape?.rimColor ?? undefined,

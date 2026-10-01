@@ -2871,167 +2871,6 @@
   }
  },
  {
-  "id": "imp-wooting-60he-v2-case",
-  "slug": "imp-wooting-60he-v2-case",
-  "brand": "Wooting",
-  "model": "60HE v2 case",
-  "dimensions": {
-   "width": 305,
-   "depth": 115
-  },
-  "externalShape": {
-   "points": [
-    {
-     "x": 301,
-     "y": 0
-    },
-    {
-     "x": 302.035,
-     "y": 0.136
-    },
-    {
-     "x": 303,
-     "y": 0.536
-    },
-    {
-     "x": 303.828,
-     "y": 1.172
-    },
-    {
-     "x": 304.464,
-     "y": 2
-    },
-    {
-     "x": 304.864,
-     "y": 2.965
-    },
-    {
-     "x": 305,
-     "y": 4
-    },
-    {
-     "x": 305,
-     "y": 111
-    },
-    {
-     "x": 304.864,
-     "y": 112.035
-    },
-    {
-     "x": 304.464,
-     "y": 113
-    },
-    {
-     "x": 303.828,
-     "y": 113.828
-    },
-    {
-     "x": 303,
-     "y": 114.464
-    },
-    {
-     "x": 302.035,
-     "y": 114.864
-    },
-    {
-     "x": 301,
-     "y": 115
-    },
-    {
-     "x": 4,
-     "y": 115
-    },
-    {
-     "x": 2.965,
-     "y": 114.864
-    },
-    {
-     "x": 2,
-     "y": 114.464
-    },
-    {
-     "x": 1.172,
-     "y": 113.828
-    },
-    {
-     "x": 0.536,
-     "y": 113
-    },
-    {
-     "x": 0.136,
-     "y": 112.035
-    },
-    {
-     "x": 0,
-     "y": 111
-    },
-    {
-     "x": 0,
-     "y": 4
-    },
-    {
-     "x": 0.136,
-     "y": 2.965
-    },
-    {
-     "x": 0.536,
-     "y": 2
-    },
-    {
-     "x": 1.172,
-     "y": 1.172
-    },
-    {
-     "x": 2,
-     "y": 0.536
-    },
-    {
-     "x": 2.965,
-     "y": 0.136
-    },
-    {
-     "x": 4,
-     "y": 0
-    }
-   ],
-   "width": 305,
-   "depth": 115,
-   "closed": true
-  },
-  "mountingPoints": [],
-  "cutouts": [],
-  "model3d": {
-   "kind": "parametric"
-  },
-  "tags": [
-   "imported",
-   "60%"
-  ],
-  "sources": [
-   {
-    "sourceUrl": "https://mechanicalkeyboards.com/products/wooting-60he-v2-magnetic-8k-keyboard",
-    "sourceName": "MechanicalKeyboards.com",
-    "sourceType": "vendor",
-    "retrievedAt": "2026-10-01T18:21:24.543Z",
-    "method": "page-text",
-    "confidence": 0.75
-   },
-   {
-    "sourceUrl": "https://wooting.io/wooting-60he-v2",
-    "sourceName": "Wooting",
-    "sourceType": "manufacturer",
-    "retrievedAt": "2026-10-01T18:21:29.220Z",
-    "method": "page-text",
-    "confidence": 0.95
-   }
-  ],
-  "confidence": {
-   "level": "estimated",
-   "score": 0.3,
-   "notes": "Outline assumed to be a rounded rectangle from the overall width × depth. The real shape may differ. Key positions are the generic ANSI 60% reference map, not this product's actual key map (ISO/JIS and special keys differ). Overall dimensions cross-checked across 2 source(s) (width 57% confidence, official)."
-  }
- },
- {
   "id": "imp-wooting-60he-case",
   "slug": "imp-wooting-60he-case",
   "brand": "Wooting",
@@ -3191,6 +3030,141 @@
    "level": "estimated",
    "score": 0.3,
    "notes": "Outline assumed to be a rounded rectangle from the overall width × depth. The real shape may differ. Key positions are the generic ANSI 60% reference map, not this product's actual key map (ISO/JIS and special keys differ). Overall dimensions cross-checked across 2 source(s) (width 57% confidence, official)."
+  }
+ },
+ {
+  "id": "imp-wooting-60he-v2-case",
+  "slug": "imp-wooting-60he-v2-case",
+  "brand": "Wooting",
+  "model": "60HE v2 case",
+  "dimensions": {
+   "width": 305.33,
+   "depth": 115
+  },
+  "externalShape": {
+   "points": [
+    {
+     "x": 305.33,
+     "y": 2.88
+    },
+    {
+     "x": 305.33,
+     "y": 111.66
+    },
+    {
+     "x": 304.27,
+     "y": 113.63
+    },
+    {
+     "x": 301.02,
+     "y": 115
+    },
+    {
+     "x": 5.1,
+     "y": 115
+    },
+    {
+     "x": 2.7800000000000002,
+     "y": 114.09
+    },
+    {
+     "x": 0.79,
+     "y": 112.12
+    },
+    {
+     "x": 0.79,
+     "y": 40.64
+    },
+    {
+     "x": 0,
+     "y": 39.86
+    },
+    {
+     "x": 1.26,
+     "y": 39.54
+    },
+    {
+     "x": 1.26,
+     "y": 6.74
+    },
+    {
+     "x": 0,
+     "y": 6.42
+    },
+    {
+     "x": 0.79,
+     "y": 5.63
+    },
+    {
+     "x": 0.79,
+     "y": 2.88
+    },
+    {
+     "x": 3.25,
+     "y": 0.46
+    },
+    {
+     "x": 4.64,
+     "y": 0
+    },
+    {
+     "x": 301.47999999999996,
+     "y": 0
+    },
+    {
+     "x": 303.8,
+     "y": 0.91
+    }
+   ],
+   "width": 305.33,
+   "depth": 115,
+   "closed": true
+  },
+  "appearance": {
+   "color": "#303030",
+   "keycapColor": "#383838",
+   "source": "photo",
+   "note": "Colours measured on product photos (case rim / keycap area); the photo shows one colourway only."
+  },
+  "mountingPoints": [],
+  "cutouts": [],
+  "model3d": {
+   "kind": "parametric"
+  },
+  "tags": [
+   "imported",
+   "60%"
+  ],
+  "sources": [
+   {
+    "sourceUrl": "https://mechanicalkeyboards.com/products/wooting-60he-v2-magnetic-8k-keyboard",
+    "sourceName": "MechanicalKeyboards.com",
+    "sourceType": "vendor",
+    "retrievedAt": "2026-10-01T18:33:58.130Z",
+    "method": "page-text",
+    "confidence": 0.75
+   },
+   {
+    "sourceUrl": "https://wooting.io/wooting-60he-v2",
+    "sourceName": "Wooting",
+    "sourceType": "manufacturer",
+    "retrievedAt": "2026-10-01T18:34:03.224Z",
+    "method": "page-text",
+    "confidence": 0.95
+   },
+   {
+    "sourceName": "KeyboardShapes shape reconstructor",
+    "sourceUrl": "https://wooting-website.ams3.cdn.digitaloceanspaces.com/products/keyboards/60HEv2/configurator-images/w60he-v2-alu-black-iso-no-keycaps.webp",
+    "sourceType": "photo-reconstruction",
+    "retrievedAt": "2026-10-01T18:34:06.593Z",
+    "method": "downscaled 1680×1890 → 910×1024 → background removed (border-colour-distance, threshold 109) → object detected (18% of the image) → protrusions trimmed to the body edge: left 5.9 mm (strap mount, hook or tab attached to the case) → contour traced (1792 points) → calibrated with width 305 mm and depth 115 mm → simplified to 18 points (tolerance 0.4 mm) → case colour measured on the rim: #303030",
+    "confidence": 0.72
+   }
+  ],
+  "confidence": {
+   "level": "reconstructed",
+   "score": 0.72,
+   "notes": "Outline reconstructed from an image and calibrated with a known dimension. Interior (cavity, posts, cutouts) unknown. Key positions are the generic ANSI 60% reference map, not this product's actual key map (ISO/JIS and special keys differ). Overall dimensions cross-checked across 2 source(s) (width 57% confidence, official)."
   }
  }
 ]
