@@ -168,7 +168,14 @@ function CameraRig({ box }: { box: THREE.Box3 }) {
     const center = box.getCenter(new THREE.Vector3());
     const dim = box.getSize(new THREE.Vector3());
     const maxDim = Math.max(dim.x, dim.y, dim.z, 1);
-    const dist = maxDim * 1.9;
+    // fit the bounding sphere into the *narrower* field of view, so portrait phones do not crop the model
+    let dist = maxDim * 1.9;
+    if (camera instanceof THREE.PerspectiveCamera && size.width > 0 && size.height > 0) {
+      const sphere = box.getBoundingSphere(new THREE.Sphere());
+      const vfov = (camera.fov * Math.PI) / 180;
+      const hfov = 2 * Math.atan(Math.tan(vfov / 2) * (size.width / size.height));
+      dist = (sphere.radius / Math.sin(Math.min(vfov, hfov) / 2)) * 1.08;
+    }
     const dirs: Record<string, THREE.Vector3> = {
       iso: new THREE.Vector3(0.55, 0.65, 0.9),
       reset: new THREE.Vector3(0.55, 0.65, 0.9),
@@ -199,6 +206,11 @@ export function AssemblyScene({ assembly }: { assembly: Assembly }) {
   const measure = useViewer3D((s) => s.measure);
   const projection = useViewer3D((s) => s.projection);
   const gl = useThree((s) => s.gl);
+  const threeState = useThree();
+  useEffect(() => {
+    // dev-only inspection hook (stripped from production builds)
+    if (import.meta.env.DEV) (window as unknown as { __ks?: unknown }).__ks = threeState;
+  });
   const [pts, setPts] = useState<MeasureState>({});
 
   useEffect(() => {
