@@ -11,6 +11,7 @@ import { buildLayout } from '../geometry/layouts';
 import { makeShape, normalizeShape, round, roundedRectPoints } from '../geometry/shape';
 import type {
   Case,
+  CaseAttachment,
   ConfidenceInfo,
   Keyboard,
   LayoutName,
@@ -34,6 +35,8 @@ export interface DraftInput {
   /** Outline from the shape reconstructor, already in mm. */
   shape?: Shape;
   shapeConfidence?: ConfidenceInfo;
+  /** Strap mounts etc. cut off the outline by the reconstructor. */
+  attachments?: CaseAttachment[];
   /** Case colour measured on a photo (`#rrggbb`). */
   caseColor?: string;
   /** Keycap colour measured on a photo that shows the keycaps (`#rrggbb`). */
@@ -124,6 +127,7 @@ export function buildDraft(input: DraftInput): Draft {
     appearance: input.caseColor
       ? { color: input.caseColor, keycapColor: input.keycapColor, source: 'photo', note: 'Colours measured on product photos (case rim / keycap area); the photo shows one colourway only.' }
       : undefined,
+    attachments: input.attachments?.length ? input.attachments : undefined,
     mountingPoints: input.holes ?? [],
     cutouts: [],
     model3d: { kind: 'parametric' },

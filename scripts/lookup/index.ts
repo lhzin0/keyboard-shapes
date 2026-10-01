@@ -225,6 +225,7 @@ if (args['add']) {
     layout,
     keycapColor,
     shape: shape?.shape,
+    attachments: shape?.attachments,
     shapeConfidence: shape?.confidence,
     caseColor: shape?.rimColor ?? undefined,
     widthMm: r.width.value,

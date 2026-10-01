@@ -32,6 +32,8 @@ export function assemblyToScene(a: Assembly, name = 'keyboard'): THREE.Group {
   const tilt = tiltMatrix(a);
   tilt.decompose(root.position, root.quaternion, root.scale);
   for (const part of a.parts) {
+    // legends are a texture atlas drawn in the browser; a GLB without textures would show blank quads
+    if (part.legend) continue;
     const finish = ROLE_FINISH[part.role];
     const mat = new THREE.MeshStandardMaterial({ color: ROLE_COLOR[part.role], metalness: finish.metalness, roughness: finish.roughness });
     mat.name = part.role;

@@ -5,6 +5,7 @@ import { boundsOf, pointInPolygon, translatePoints } from '../geometry/shape';
 import type { CheckStatus, ComponentType, Cutout, Point2D, PortPosition } from '../types/keyboard';
 import { cx } from '../utils/format';
 import ui from '../components/ui.module.css';
+import { strapMountOutline } from '../geometry/3d/CaseGenerator';
 import { DimLine, MeasureLayer, MeasurePanel, useMeasure } from './DimensionOverlay';
 import { KeyboardLayoutRenderer } from './KeyboardLayoutRenderer';
 import { SvgStage } from './SvgStage';
@@ -131,6 +132,16 @@ export function KeyboardTopView({ selection, selected, onSelect, showMeasurePane
             {casePts && (
               <path d={polyPath(casePts)} className={cx(styles['caseOutline'], selected === 'case' && styles['selected'], stateClass(evaluation.componentStatus.case))} />
             )}
+            {c?.attachments?.map((at, i) => {
+              const { outline, slot } = strapMountOutline(at, c.dimensions.width, c.dimensions.depth);
+              return (
+                <g key={`at${i}`}>
+                  <path d={polyPath(outline)} className={styles['caseOutline']} />
+                  <path d={polyPath(slot)} className={styles['cavity']} />
+                  <title>{`Strap mount, ${at.depth} mm deep, ${at.from}–${at.to} mm along the ${at.side} side (measured on a product photo)`}</title>
+                </g>
+              );
+            })}
             {c?.internalCavity && <path d={polyPath(c.internalCavity.points)} className={styles['cavity']} />}
             {c?.daughterboardArea && (
               <rect x={c.daughterboardArea.x} y={c.daughterboardArea.y} width={c.daughterboardArea.width} height={c.daughterboardArea.depth} className={styles['cavity']} />

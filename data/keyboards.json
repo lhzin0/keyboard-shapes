@@ -7413,7 +7413,7 @@
     "sourceUrl": "https://mechanicalkeyboards.com/products/wooting-60he-v2-magnetic-8k-keyboard",
     "sourceName": "MechanicalKeyboards.com",
     "sourceType": "vendor",
-    "retrievedAt": "2026-10-01T18:33:58.130Z",
+    "retrievedAt": "2026-10-01T18:41:34.176Z",
     "method": "page-text",
     "confidence": 0.75
    },
@@ -7421,7 +7421,7 @@
     "sourceUrl": "https://wooting.io/wooting-60he-v2",
     "sourceName": "Wooting",
     "sourceType": "manufacturer",
-    "retrievedAt": "2026-10-01T18:34:03.224Z",
+    "retrievedAt": "2026-10-01T18:41:38.847Z",
     "method": "page-text",
     "confidence": 0.95
    },
@@ -7429,7 +7429,7 @@
     "sourceName": "KeyboardShapes shape reconstructor",
     "sourceUrl": "https://wooting-website.ams3.cdn.digitaloceanspaces.com/products/keyboards/60HEv2/configurator-images/w60he-v2-alu-black-iso-no-keycaps.webp",
     "sourceType": "photo-reconstruction",
-    "retrievedAt": "2026-10-01T18:34:06.593Z",
+    "retrievedAt": "2026-10-01T18:41:42.027Z",
     "method": "downscaled 1680×1890 → 910×1024 → background removed (border-colour-distance, threshold 109) → object detected (18% of the image) → protrusions trimmed to the body edge: left 5.9 mm (strap mount, hook or tab attached to the case) → contour traced (1792 points) → calibrated with width 305 mm and depth 115 mm → simplified to 18 points (tolerance 0.4 mm) → case colour measured on the rim: #303030",
     "confidence": 0.72
    }
@@ -7452,6 +7452,6 @@
   "model3d": {
    "kind": "parametric"
   },
-  "addedAt": "2026-10-01T18:34:06.593Z"
+  "addedAt": "2026-10-01T18:41:42.028Z"
  }
 ]

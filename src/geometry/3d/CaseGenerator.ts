@@ -11,12 +11,14 @@
  * Output is in the typing-plane frame (see stack.ts); the viewer tilts it.
  */
 import * as THREE from 'three';
-import { makeShape, offsetPolygon, signedArea } from '../shape';
-import type { Case, Cutout, Point2D } from '../../types/keyboard';
+import { makeShape, offsetPolygon, roundedRectPoints, signedArea } from '../shape';
+import type { Case, CaseAttachment, Cutout, Point2D } from '../../types/keyboard';
 import { cylinder, extrude, merge } from './common';
 import type { StackLevels } from './stack';
 
 export interface CaseGeometry {
+  /** Strap mounts etc. (position/size measured, shape estimated); null when the record has none. */
+  attachments: THREE.BufferGeometry | null;
   bottom: THREE.BufferGeometry;
   top: THREE.BufferGeometry;
   /** Cavity actually used (fallback = outline inset by the wall thickness). */
@@ -96,6 +98,33 @@ export function notchedRing(outer: Point2D[], cavity: Point2D[], x1: number, x2:
   return out;
 }
 
+/**
+ * Flat lug with a slot for a strap. In its own (u, v) frame u points away from the case edge and v runs along it;
+ * the plate reaches 1.5 mm into the wall so it is joined to the case.
+ */
+export function strapMountOutline(at: CaseAttachment, W: number, D: number): { outline: Point2D[]; slot: Point2D[] } {
+  const map = (u: number, v: number): Point2D => {
+    switch (at.side) {
+      case 'left':
+        return { x: -u, y: v };
+      case 'right':
+        return { x: W + u, y: v };
+      case 'back':
+        return { x: v, y: -u };
+      case 'front':
+        return { x: v, y: D + u };
+    }
+  };
+  const len = at.to - at.from;
+  const rect = (u0: number, u1: number, v0: number, v1: number, r: number) => roundedRectPoints(u0, v0, u1 - u0, v1 - v0, r, 3).map((p) => map(p.x, p.y));
+  const outline = rect(-1.5, at.depth, at.from, at.to, Math.min(2, at.depth / 2));
+  const slotLen = Math.max(4, len * 0.55);
+  const slotW = Math.max(1.4, at.depth * 0.42);
+  const mid = (at.from + at.to) / 2;
+  const slot = rect(at.depth * 0.5 - slotW / 2, at.depth * 0.5 + slotW / 2, mid - slotLen / 2, mid + slotLen / 2, Math.min(0.7, slotW / 2));
+  return { outline, slot };
+}
+
 export function generateCase(c: Case, stack: StackLevels): CaseGeometry {
   const warnings: string[] = [];
   const outer = c.externalShape.points;
@@ -167,7 +196,20 @@ export function generateCase(c: Case, stack: StackLevels): CaseGeometry {
     bottomParts.push(cylinder(p.x, p.y, (p.diameter ?? 4.5) / 2, stack.pcbBottom, 0, 14));
   }
 
-  return { bottom: merge(bottomParts), top: topParts.length ? merge(topParts) : new THREE.BufferGeometry(), cavity, warnings };
+  // strap mounts: flat lugs near the top edge
+  const lugs = (c.attachments ?? []).map((at) => {
+    const { outline, slot } = strapMountOutline(at, W, D);
+    return extrude(outline, 4.5, Math.max(1, rim - 8), [slot]);
+  });
+  if (lugs.length) warnings.push('Strap mount: position and size measured on a product photo; its shape and height are estimated.');
+
+  return {
+    attachments: lugs.length ? merge(lugs) : null,
+    bottom: merge(bottomParts),
+    top: topParts.length ? merge(topParts) : new THREE.BufferGeometry(),
+    cavity,
+    warnings,
+  };
 }
 
 export { makeShape };

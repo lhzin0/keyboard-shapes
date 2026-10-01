@@ -229,3 +229,32 @@ describe('strap mounts, thin tabs and case colour (found on the official Wooting
     expect(r.warnings.join(' ')).not.toMatch(/very small/);
   });
 });
+
+describe('attachments measured from the trimmed protrusion', () => {
+  it('reports where the strap mount was: side, extent along the edge and depth', () => {
+    const w = 800;
+    const h = 300;
+    const data = new Uint8ClampedArray(w * h * 4).fill(255);
+    for (let y = 40; y < 260; y++) for (let x = 50; x < 750; x++) data.fill(40, (y * w + x) * 4, (y * w + x) * 4 + 3);
+    for (let y = 80; y < 160; y++) for (let x = 36; x < 50; x++) data.fill(40, (y * w + x) * 4, (y * w + x) * 4 + 3);
+    const r = reconstructShape({ width: w, height: h, data }, { knownWidthMm: 325, trimProtrusionsMm: 2 });
+    expect(r.attachments).toHaveLength(1);
+    const a = r.attachments[0]!;
+    const mmPerPx = 325 / 700;
+    expect(a.side).toBe('left');
+    expect(a.kind).toBe('strap-mount');
+    expect(a.depth).toBeCloseTo(14 * mmPerPx, 0); // 14 px block
+    // the block spanned rows 80..159 of a body that starts at row 40
+    expect(a.from).toBeCloseTo((80 - 40) * mmPerPx, 0);
+    expect(a.to).toBeCloseTo((160 - 40) * mmPerPx, 0);
+    expect(a.source).toBe('photo');
+  });
+
+  it('a clean body has no attachments', () => {
+    const w = 400;
+    const h = 200;
+    const data = new Uint8ClampedArray(w * h * 4).fill(255);
+    for (let y = 30; y < 170; y++) for (let x = 30; x < 370; x++) data.fill(40, (y * w + x) * 4, (y * w + x) * 4 + 3);
+    expect(reconstructShape({ width: w, height: h, data }, { knownWidthMm: 300, trimProtrusionsMm: 2 }).attachments).toEqual([]);
+  });
+});

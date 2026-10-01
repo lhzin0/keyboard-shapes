@@ -41,6 +41,7 @@ export default function KeyboardViewer3D({ selection, extra, modelKey }: Props) 
   const mobile = useIsMobile();
   const [sheet, setSheet] = useState<Sheet>(null);
   const [gl] = useState(webglAvailable);
+  const [notesOpen, setNotesOpen] = useState(false);
 
   const assembly = useMemo(() => buildAssembly(selection), [modelKey]); // eslint-disable-line react-hooks/exhaustive-deps
   useEffect(() => () => disposeAssembly(assembly), [assembly]);
@@ -139,10 +140,18 @@ export default function KeyboardViewer3D({ selection, extra, modelKey }: Props) 
         )}
 
         {assembly.warnings.length > 0 && (
-          <div className={styles['warnings']}>
-            {assembly.warnings.map((w) => (
-              <span key={w}>⚠ {w}</span>
-            ))}
+          <div className={styles['warnings']} style={mobile ? { bottom: 84 } : undefined}>
+            {mobile && (
+              <button className={cx(ui['chip'])} style={{ pointerEvents: 'auto', width: 'fit-content' }} aria-expanded={notesOpen} onClick={() => setNotesOpen(!notesOpen)}>
+                ⚠ {assembly.warnings.length} note{assembly.warnings.length > 1 ? 's' : ''} {notesOpen ? '▴' : '▾'}
+              </button>
+            )}
+            {(!mobile || notesOpen) &&
+              assembly.warnings.map((w) => (
+                <span key={w} style={mobile ? { background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 8, padding: '6px 8px', pointerEvents: 'auto' } : undefined}>
+                  ⚠ {w}
+                </span>
+              ))}
           </div>
         )}
 

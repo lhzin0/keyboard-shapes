@@ -102,6 +102,11 @@ export function validateDatabase(db: DatabaseLike): Problem[] {
     if (c.dimensions.width !== c.externalShape.width || c.dimensions.depth !== c.externalShape.depth) err(c.id, 'dimensions differ from externalShape');
     points(c.id, 'mounting post', c.mountingPoints, c.externalShape);
     if (c.appearance && !/^#[0-9a-f]{6}$/i.test(c.appearance.color)) err(c.id, `appearance.color "${c.appearance.color}" is not #rrggbb`);
+    for (const at of c.attachments ?? []) {
+      const along = at.side === 'front' || at.side === 'back' ? c.dimensions.width : c.dimensions.depth;
+      if (!(at.to > at.from) || at.from < -0.01 || at.to > along + 0.01) err(c.id, `attachment on the ${at.side} side spans ${at.from}–${at.to} mm, outside the ${along} mm edge`);
+      if (!(at.depth > 0 && at.depth < 40)) err(c.id, `attachment depth ${at.depth} mm is not plausible`);
+    }
     if (c.appearance?.keycapColor && !/^#[0-9a-f]{6}$/i.test(c.appearance.keycapColor)) err(c.id, `appearance.keycapColor "${c.appearance.keycapColor}" is not #rrggbb`);
     for (const cu of c.cutouts) {
       const along = cu.wall === 'front' || cu.wall === 'back' ? c.dimensions.width : c.dimensions.depth;

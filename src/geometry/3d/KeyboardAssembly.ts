@@ -13,6 +13,7 @@ import { offsetPolygon, roundedRectPoints } from '../shape';
 import { generateCase } from './CaseGenerator';
 import { box, cylinder, extrude, holeCircle, merge } from './common';
 import { generateKeycaps } from './KeycapGenerator';
+import { generateLegends } from './LegendGenerator';
 import { generateDaughterboard, generatePcb } from './PCBGenerator';
 import { generatePlate } from './PlateGenerator';
 import { computeStack, type StackLevels } from './stack';
@@ -34,7 +35,7 @@ export const LAYER_LABEL: Record<LayerId, string> = {
   hardware: 'Hardware',
 };
 
-export type ColorRole = 'case' | 'pcb' | 'plate' | 'switch' | 'keycap' | 'connector' | 'foam' | 'hardware' | 'board';
+export type ColorRole = 'legend' | 'case' | 'pcb' | 'plate' | 'switch' | 'keycap' | 'connector' | 'foam' | 'hardware' | 'board';
 
 export interface AssemblyPart {
   id: string;
@@ -45,6 +46,8 @@ export interface AssemblyPart {
   geometry: THREE.BufferGeometry;
   /** Generic stand-in for something the data does not contain (shown as a ghost, never part of a compatibility check). */
   placeholder?: boolean;
+  /** Keycap legends: the geometry carries UVs into an atlas of these texts (drawn in the browser). */
+  legend?: { atlas: string[] };
   /** Flattened 4×4 matrices when the part is instanced. */
   instances?: Float32Array;
   /** Mean height of the part in the typing-plane frame, for the exploded view. */
@@ -115,6 +118,9 @@ export function buildAssembly(sel: AssemblySelection): Assembly {
     parts.push({ id: 'case-bottom', layer: 'bottomCase', role: 'case', component: 'case', geometry: cg.bottom, centerZ: (-stack.floorThickness + stack.split) / 2 });
     if (cg.top.getAttribute('position')) {
       parts.push({ id: 'case-top', layer: 'topCase', role: 'case', component: 'case', geometry: cg.top, centerZ: (stack.split + stack.rim) / 2 });
+    }
+    if (cg.attachments) {
+      parts.push({ id: 'case-strap', layer: 'topCase', role: 'case', component: 'case', geometry: cg.attachments, centerZ: stack.rim - 5.5 });
     }
     // foam
     if (sel.foam && sel.foam.location === 'case') {
@@ -225,6 +231,17 @@ export function buildAssembly(sel: AssemblySelection): Assembly {
         centerZ: stack.keycapBase + avg / 2,
       }),
     );
+    const legends = generateLegends(sel.layout, sel.keycap, centers, stack.keycapBase);
+    if (legends) {
+      parts.push({
+        id: 'legends',
+        layer: 'keycaps',
+        role: 'legend',
+        legend: { atlas: legends.atlas },
+        geometry: legends.geometry,
+        centerZ: stack.keycapBase + avg / 2,
+      });
+    }
   } else if (centers.length > 0 && !sel.layout) {
     warnings.push('Layout unknown for this selection: keycaps are not drawn.');
   } else if (sel.layout && centers.length > 0) {

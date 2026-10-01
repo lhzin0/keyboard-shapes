@@ -75,7 +75,7 @@ describe('parametric 3D assembly', () => {
   it('instances one switch per PCB position and one keycap per key', () => {
     const sw = a.parts.find((p) => p.layer === 'switches')!;
     expect((sw.instances as Float32Array).length / 16).toBe(sel.pcb.switchPositions.length);
-    const caps = a.parts.filter((p) => p.layer === 'keycaps').reduce((n, p) => n + (p.instances as Float32Array).length / 16, 0);
+    const caps = a.parts.filter((p) => p.role === 'keycap').reduce((n, p) => n + (p.instances as Float32Array).length / 16, 0);
     expect(caps).toBe(kb.layout.keyCount);
   });
 
@@ -189,5 +189,94 @@ describe('sculpted keycap', () => {
     const g = sculptedKeycap(6.25 * 19.05 - 1, 18, 3, 8.6, 4.5);
     g.computeBoundingBox();
     expect((g.boundingBox as THREE.Box3).max.x * 2).toBeCloseTo(6.25 * 19.05 - 1, 0);
+  });
+});
+
+import { generateLegends, legendColorFor, legendText } from '../../src/geometry/3d/LegendGenerator';
+import { layout60 } from '../../src/geometry/layouts';
+
+describe('keycap legends', () => {
+  const layout = layout60();
+  const centers = layout.keys.map((k) => ({ x: (k.x + k.width / 2) * 19.05, y: (k.y + k.height / 2) * 19.05 }));
+  const build = generateLegends(layout, undefined, centers, 12)!;
+
+  it('makes one quad per labelled key and none for the space bar', () => {
+    expect(legendText('Space')).toBe('');
+    const labelled = layout.keys.filter((k) => legendText(k.label) !== '').length;
+    expect(build.quads).toBe(labelled);
+    expect(build.quads).toBeLessThan(layout.keyCount);
+    expect(build.geometry.getAttribute('position').count).toBe(build.quads * 4);
+  });
+
+  it('atlas has each distinct text once and UVs stay inside [0,1]', () => {
+    expect(new Set(build.atlas).size).toBe(build.atlas.length);
+    expect(build.atlas).toContain('Tab');
+    const uv = build.geometry.getAttribute('uv');
+    for (let i = 0; i < uv.count; i++) {
+      expect(uv.getX(i)).toBeGreaterThanOrEqual(0);
+      expect(uv.getX(i)).toBeLessThanOrEqual(1);
+      expect(uv.getY(i)).toBeGreaterThanOrEqual(0);
+      expect(uv.getY(i)).toBeLessThanOrEqual(1);
+    }
+  });
+
+  it('quads face up and sit on top of their keycaps', () => {
+    const n = build.geometry.getAttribute('normal');
+    for (let i = 0; i < n.count; i++) expect(n.getY(i)).toBeGreaterThan(0.99);
+    const p = build.geometry.getAttribute('position');
+    for (let i = 0; i < p.count; i++) {
+      expect(p.getY(i)).toBeGreaterThan(12 + 8); // above the keycap base + most of its height
+      expect(p.getY(i)).toBeLessThan(12 + 12);
+    }
+  });
+
+  it('picks a contrasting legend colour (a rendering rule)', () => {
+    expect(legendColorFor('#383838')).toBe('#f1f1f1');
+    expect(legendColorFor('#e6e1d6')).toBe('#2b2b2b');
+    expect(legendColorFor(undefined)).toBe('#2b2b2b');
+  });
+});
+
+import { strapMountOutline } from '../../src/geometry/3d/CaseGenerator';
+import { boundsOf } from '../../src/geometry/shape';
+
+describe('strap mount attachment', () => {
+  const base = db.cases.find((c) => c.id === 'ref-60-case-a')!;
+  const withStrap = { ...base, attachments: [{ kind: 'strap-mount' as const, side: 'left' as const, from: 10, to: 45, depth: 6, source: 'photo' as const }] };
+
+  it('outline sticks out of the left edge by its depth and spans from..to', () => {
+    const { outline, slot } = strapMountOutline(withStrap.attachments[0]!, base.dimensions.width, base.dimensions.depth);
+    const b = boundsOf(outline.map((p) => p));
+    expect(b.minX).toBeCloseTo(-6, 1);
+    expect(b.maxX).toBeCloseTo(1.5, 1); // reaches 1.5 mm into the wall
+    expect(b.minY).toBeCloseTo(10, 1);
+    expect(b.maxY).toBeCloseTo(45, 1);
+    const s = boundsOf(slot);
+    expect(s.minX).toBeGreaterThan(b.minX);
+    expect(s.maxY).toBeLessThan(b.maxY);
+  });
+
+  it('is built as a separate part of the case and widens the assembly on that side', () => {
+    const a = buildAssembly({ case: withStrap });
+    const strap = a.parts.find((p) => p.id === 'case-strap');
+    expect(strap).toBeDefined();
+    expect(strap!.role).toBe('case');
+    const g = strap!.geometry;
+    g.computeBoundingBox();
+    expect((g.boundingBox as THREE.Box3).min.x).toBeCloseTo(-6, 1);
+    expect(a.warnings.join(' ')).toMatch(/Strap mount: position and size measured/);
+    const plain = buildAssembly({ case: base });
+    expect(plain.parts.find((p) => p.id === 'case-strap')).toBeUndefined();
+  });
+
+  it('works on every side', () => {
+    for (const side of ['left', 'right', 'back', 'front'] as const) {
+      const { outline } = strapMountOutline({ kind: 'strap-mount', side, from: 20, to: 50, depth: 5, source: 'user' }, 300, 110);
+      const b = boundsOf(outline);
+      if (side === 'left') expect(b.minX).toBeCloseTo(-5, 1);
+      if (side === 'right') expect(b.maxX).toBeCloseTo(305, 1);
+      if (side === 'back') expect(b.minY).toBeCloseTo(-5, 1);
+      if (side === 'front') expect(b.maxY).toBeCloseTo(115, 1);
+    }
   });
 });

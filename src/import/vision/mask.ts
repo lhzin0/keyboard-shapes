@@ -407,6 +407,8 @@ export interface TrimReport {
   right: number;
   top: number;
   bottom: number;
+  /** First/last row (left, right) or column (top, bottom) that protruded, in mask pixels. */
+  spans: Partial<Record<'left' | 'right' | 'top' | 'bottom', { first: number; last: number }>>;
 }
 
 const medianInt = (v: number[]) => {
@@ -423,7 +425,7 @@ const medianInt = (v: number[]) => {
 export function trimProtrusions(mask: Mask, minDepthPx: number, maxShare = 0.4): { mask: Mask; trimmed: TrimReport } {
   const { width: w, height: h } = mask;
   const data = mask.data.slice();
-  const report: TrimReport = { left: 0, right: 0, top: 0, bottom: 0 };
+  const report: TrimReport = { left: 0, right: 0, top: 0, bottom: 0, spans: {} };
 
   const extents = (lines: number, length: number, at: (line: number, i: number) => number) => {
     const first: number[] = new Array(lines).fill(-1);
@@ -472,6 +474,7 @@ export function trimProtrusions(mask: Mask, minDepthPx: number, maxShare = 0.4):
       }
     }
     report[side] = deepest;
+    report.spans[side] = { first: Math.min(...protruding), last: Math.max(...protruding) };
   };
   (['left', 'right', 'top', 'bottom'] as const).forEach(clip);
   return { mask: { width: w, height: h, data }, trimmed: report };

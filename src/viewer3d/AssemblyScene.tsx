@@ -3,6 +3,7 @@ import { useThree, type ThreeEvent } from '@react-three/fiber';
 import { memo, useEffect, useMemo, useState } from 'react';
 import * as THREE from 'three';
 import { tiltMatrix, type Assembly, type AssemblyPart } from '../geometry/3d/KeyboardAssembly';
+import { legendColorFor, legendTexture } from '../geometry/3d/LegendGenerator';
 import { EXPLODE_GAIN, ROLE_COLOR, ROLE_FINISH } from '../geometry/3d/palette';
 import { useIsMobile } from '../hooks';
 import { useViewer3D } from '../stores';
@@ -53,7 +54,16 @@ const PartMesh = memo(function PartMesh({ part, assembly, clip, onPick }: PartPr
   const opacity = layer.opacity * (renderMode === 'transparent' ? 0.38 : 1) * (part.placeholder ? 0.32 : 1);
   const tint = status ? STATUS_TINT[status] : undefined;
 
-  const material = useMemo(() => {
+  const material = useMemo((): THREE.MeshStandardMaterial | THREE.MeshBasicMaterial => {
+    if (part.legend) {
+      // legends: a text atlas (drawn in the browser) on thin quads sitting on the keycap tops
+      return new THREE.MeshBasicMaterial({
+        map: legendTexture(part.legend.atlas, legendColorFor(assembly.keycapColor)),
+        transparent: true,
+        alphaTest: 0.12,
+        toneMapped: false,
+      });
+    }
     const finish = ROLE_FINISH[part.role];
     const m = new THREE.MeshStandardMaterial({
       // the case wears the colour measured on its product photo when there is one; everything else uses the palette
@@ -67,17 +77,29 @@ const PartMesh = memo(function PartMesh({ part, assembly, clip, onPick }: PartPr
 
   useEffect(() => {
     material.wireframe = renderMode === 'wireframe';
-    material.transparent = opacity < 0.999;
     material.opacity = opacity;
-    material.depthWrite = opacity >= 0.999;
     material.side = sectionOn ? THREE.DoubleSide : THREE.FrontSide;
     material.clippingPlanes = clip;
-    material.emissive.set(tint ?? '#000000');
-    material.emissiveIntensity = tint ? 0.35 : 0;
+    if (material instanceof THREE.MeshStandardMaterial) {
+      material.transparent = opacity < 0.999;
+      material.depthWrite = opacity >= 0.999;
+      material.emissive.set(tint ?? '#000000');
+      material.emissiveIntensity = tint ? 0.35 : 0;
+    } else {
+      // legend quads are always alpha-tested text: never write depth, fade with the keycaps
+      material.transparent = true;
+      material.depthWrite = false;
+    }
     material.needsUpdate = true;
   }, [material, renderMode, opacity, sectionOn, clip, tint]);
 
-  useEffect(() => () => material.dispose(), [material]);
+  useEffect(
+    () => () => {
+      (material as THREE.MeshBasicMaterial).map?.dispose();
+      material.dispose();
+    },
+    [material],
+  );
 
   const dz = explode * EXPLODE_GAIN * (part.centerZ - assembly.centerZ);
 
@@ -91,7 +113,8 @@ const PartMesh = memo(function PartMesh({ part, assembly, clip, onPick }: PartPr
     return mesh;
   }, [part.instances, part.geometry, material]);
 
-  if (!visible) return null;
+  // text on a wireframe is just noise
+  if (!visible || (part.legend && renderMode === 'wireframe')) return null;
   return (
     <group position={[0, dz, 0]}>
       {instanced ? (

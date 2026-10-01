@@ -255,12 +255,28 @@ export interface Case {
   material?: string;
   /** How the case looks (viewer only): measured on a product photo or chosen by the user — never invented. */
   appearance?: Appearance;
+  /** Strap mounts and similar parts outside the main outline (position measured on a photo; details estimated). */
+  attachments?: CaseAttachment[];
   weight?: Measurement;
   model3d?: Model3D;
   images?: string[];
   tags?: string[];
   sources: SourceInfo[];
   confidence: ConfidenceInfo;
+}
+
+/** Something bolted to or moulded onto the outside of the case that is not part of the main outline. */
+export interface CaseAttachment {
+  kind: 'strap-mount';
+  /** Side of the case it sticks out from. */
+  side: Wall;
+  /** Extent along that side (mm, case frame: x for front/back, y for left/right). */
+  from: Millimetres;
+  to: Millimetres;
+  /** How far it sticks out (mm). */
+  depth: Millimetres;
+  source: 'photo' | 'user';
+  note?: string;
 }
 
 export interface Appearance {

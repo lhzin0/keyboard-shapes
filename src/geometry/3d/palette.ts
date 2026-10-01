@@ -1,6 +1,7 @@
 import type { ColorRole } from './KeyboardAssembly';
 
 export const ROLE_COLOR: Record<ColorRole, string> = {
+  legend: '#f1f1f1',
   case: '#8e9aae',
   pcb: '#1f8a63',
   plate: '#bcc5d3',
@@ -13,6 +14,7 @@ export const ROLE_COLOR: Record<ColorRole, string> = {
 };
 
 export const ROLE_FINISH: Record<ColorRole, { metalness: number; roughness: number }> = {
+  legend: { metalness: 0, roughness: 1 },
   case: { metalness: 0.65, roughness: 0.42 },
   pcb: { metalness: 0.1, roughness: 0.7 },
   plate: { metalness: 0.7, roughness: 0.35 },

@@ -17,7 +17,7 @@
  *
  * Output is `reconstructed` precision at best — never "official".
  */
-import type { ConfidenceInfo, MountingPoint, Point2D, Profile, Shape } from '../types/keyboard';
+import type { CaseAttachment, ConfidenceInfo, MountingPoint, Point2D, Profile, Shape } from '../types/keyboard';
 import { makeShape, offsetPolygon, round, simplifyPolygon, simplifyPolyline } from '../geometry/shape';
 import { traceContour, quadFromContour, rectifyPoints, type Quad } from './vision/geometry';
 import { downscale, fillHoles, findHoles, interiorColor, largestComponent, openMask, rimColor, segment, smooth, trimProtrusions, type ImageLike, type Mask } from './vision/mask';
@@ -68,6 +68,8 @@ export interface ReconstructResult {
   warnings: string[];
   /** Silhouette used, for debugging overlays. */
   mask: Mask;
+  /** Parts that were cut off the outline (strap mounts …), measured in the same millimetre frame as `shape`. */
+  attachments: CaseAttachment[];
   /** Colour of the object's rim (the case), `#rrggbb`; null when it could not be measured. */
   rimColor: string | null;
   /** Median colour of the inside of the object — the keycaps, on a photo that has them. */
@@ -104,6 +106,8 @@ export function reconstructShape(source: ImageLike, opts: ReconstructOptions = {
   if (!object) throw new Error('No object found: the image has no region different from its background.');
   const holesPx = findHoles(object.mask);
   let silhouette = fillHoles(object.mask);
+  let trimReport: import('./vision/mask').TrimReport | null = null;
+  let trimMmPerPx = 0;
   // coverage of the *filled* silhouette: a dark case around a plate that resembles the background is not "tiny"
   let filledArea = 0;
   for (let i = 0; i < silhouette.data.length; i++) filledArea += silhouette.data[i] as number;
@@ -135,6 +139,8 @@ export function reconstructShape(source: ImageLike, opts: ReconstructOptions = {
       const mmPerPx = (opts.knownWidthMm ?? (opts.knownDepthMm as number) * (wRaw / (raw.bbox.maxY - raw.bbox.minY + 1))) / wRaw;
       const t = trimProtrusions(silhouette, Math.max(1, Math.round(opts.trimProtrusionsMm / mmPerPx)));
       const cut = (['left', 'right', 'top', 'bottom'] as const).filter((k) => t.trimmed[k] > 0);
+      trimReport = t.trimmed;
+      trimMmPerPx = mmPerPx;
       if (cut.length) {
         const kept = largestComponent(t.mask);
         if (kept) {
@@ -177,6 +183,28 @@ export function reconstructShape(source: ImageLike, opts: ReconstructOptions = {
   } else {
     sx = sy = (opts.knownDepthMm as number) / hPx;
     steps.push(`calibrated with depth ${opts.knownDepthMm} mm (scale ${sx.toFixed(4)} mm/px)`);
+  }
+
+  const attachments: CaseAttachment[] = [];
+  if (trimReport) {
+    const rep = trimReport as import('./vision/mask').TrimReport;
+    for (const side of ['left', 'right', 'top', 'bottom'] as const) {
+      const span = rep.spans[side];
+      if (!span || rep[side] <= 0) continue;
+      const horizontalSide = side === 'left' || side === 'right';
+      const from = horizontalSide ? (span.first - minY) * sy : (span.first - minX) * sx;
+      const to = horizontalSide ? (span.last - minY + 1) * sy : (span.last - minX + 1) * sx;
+      attachments.push({
+        kind: 'strap-mount',
+        // image top = back of the keyboard, image bottom = front
+        side: side === 'left' ? 'left' : side === 'right' ? 'right' : side === 'top' ? 'back' : 'front',
+        from: round(Math.max(0, from), 1),
+        to: round(to, 1),
+        depth: round(rep[side] * trimMmPerPx, 1),
+        source: 'photo',
+        note: 'A short stretch sticking out of the straight edge of the case in the product photo (taken to be a strap mount / hook). Its position and size are measured; its detailed shape is estimated.',
+      });
+    }
   }
 
   // the contour runs through pixel centres: grow it by half a pixel so it follows the true edge
@@ -229,6 +257,7 @@ export function reconstructShape(source: ImageLike, opts: ReconstructOptions = {
     steps,
     warnings,
     mask: silhouette,
+    attachments,
     rimColor: rim ? toHex(rim) : null,
     interiorColor: inside ? toHex(inside) : null,
   };
