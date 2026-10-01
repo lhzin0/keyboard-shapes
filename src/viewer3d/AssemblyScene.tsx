@@ -4,6 +4,7 @@ import { memo, useEffect, useMemo, useState } from 'react';
 import * as THREE from 'three';
 import { tiltMatrix, type Assembly, type AssemblyPart } from '../geometry/3d/KeyboardAssembly';
 import { EXPLODE_GAIN, ROLE_COLOR, ROLE_FINISH } from '../geometry/3d/palette';
+import { useIsMobile } from '../hooks';
 import { useViewer3D } from '../stores';
 import type { CheckStatus } from '../types/keyboard';
 
@@ -164,20 +165,14 @@ function CameraRig({ box }: { box: THREE.Box3 }) {
   const projection = useViewer3D((s) => s.projection);
   const { camera, size, invalidate } = useThree();
   const controls = useThree((s) => s.controls) as unknown as { target: THREE.Vector3; update(): void } | null;
+  const mobile = useIsMobile();
 
   useEffect(() => {
     if (!controls) return;
     const center = box.getCenter(new THREE.Vector3());
     const dim = box.getSize(new THREE.Vector3());
     const maxDim = Math.max(dim.x, dim.y, dim.z, 1);
-    // fit the bounding sphere into the *narrower* field of view, so portrait phones do not crop the model
-    let dist = maxDim * 1.9;
-    if (camera instanceof THREE.PerspectiveCamera && size.width > 0 && size.height > 0) {
-      const sphere = box.getBoundingSphere(new THREE.Sphere());
-      const vfov = (camera.fov * Math.PI) / 180;
-      const hfov = 2 * Math.atan(Math.tan(vfov / 2) * (size.width / size.height));
-      dist = (sphere.radius / Math.sin(Math.min(vfov, hfov) / 2)) * 1.08;
-    }
+    // camera directions (from the target towards the camera) of the view presets
     const dirs: Record<string, THREE.Vector3> = {
       iso: new THREE.Vector3(0.55, 0.65, 0.9),
       reset: new THREE.Vector3(0.55, 0.65, 0.9),
@@ -185,6 +180,31 @@ function CameraRig({ box }: { box: THREE.Box3 }) {
       front: new THREE.Vector3(0, 0.12, 1),
       side: new THREE.Vector3(1, 0.12, 0),
     };
+    let dist = maxDim * 1.9;
+    if (camera instanceof THREE.PerspectiveCamera && size.width > 0 && size.height > 0) {
+      // tight fit: project the 8 corners of the box on the camera's right/up axes and take the distance at which
+      // every corner is inside both the horizontal and the vertical field of view
+      const vfov = (camera.fov * Math.PI) / 180;
+      const tanV = Math.tan(vfov / 2);
+      const tanH = tanV * (size.width / size.height);
+      const forward = (dirs[command.view] ?? dirs['iso']!).clone().normalize().negate();
+      const right = new THREE.Vector3().crossVectors(forward, new THREE.Vector3(0, 1, 0)).normalize();
+      if (right.lengthSq() < 1e-6) right.set(1, 0, 0);
+      const up = new THREE.Vector3().crossVectors(right, forward).normalize();
+      let need = 0;
+      const corner = new THREE.Vector3();
+      for (const x of [box.min.x, box.max.x]) {
+        for (const y of [box.min.y, box.max.y]) {
+          for (const z of [box.min.z, box.max.z]) {
+            corner.set(x, y, z).sub(center);
+            const depthOffset = corner.dot(forward);
+            need = Math.max(need, Math.abs(corner.dot(right)) / tanH - depthOffset, Math.abs(corner.dot(up)) / tanV - depthOffset);
+          }
+        }
+      }
+      // on phones the toolbar and the bottom bar cover part of the canvas: leave room for them
+      dist = Math.max(need * (mobile ? 1.32 : 1.1), maxDim * 0.6);
+    }
     const dir = (dirs[command.view] ?? dirs['iso']!).clone().normalize();
     camera.position.copy(center).addScaledVector(dir, dist);
     camera.up.set(0, 1, 0);
@@ -196,10 +216,19 @@ function CameraRig({ box }: { box: THREE.Box3 }) {
       camera.updateProjectionMatrix();
     }
     camera.lookAt(center);
+    if (mobile && camera instanceof THREE.PerspectiveCamera) {
+      // the bottom bar covers the lower part of the canvas: aim a little below the model so it sits higher on screen
+      camera.updateMatrixWorld();
+      const screenUp = new THREE.Vector3().setFromMatrixColumn(camera.matrixWorld, 1);
+      const shift = screenUp.multiplyScalar(-dist * Math.tan((camera.fov * Math.PI) / 360) * 0.2);
+      camera.position.add(shift);
+      controls.target.add(shift);
+      camera.lookAt(controls.target);
+    }
     controls.update();
     invalidate();
     // re-run when the model changes or the projection swaps (a new camera object is created)
-  }, [command.n, projection, box, camera, controls, size.width, size.height, invalidate, command.view]);
+  }, [command.n, projection, box, camera, controls, size.width, size.height, invalidate, command.view, mobile]);
   return null;
 }
 
