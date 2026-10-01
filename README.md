@@ -28,6 +28,8 @@ Node 20+ (developed on Node 24). No Python required.
 
 ## What is in the app
 
+> **Right now only the 2D views and the Compare page are switched on.** The 3D viewer, Build, Import, compatibility checks and "find similar" are off; their code is intact and each comes back with one flag in `src/app/features.ts`. The table below describes everything the code can do.
+
 | Area | Details |
 | --- | --- |
 | **Top / Side / Front views** (SVG, mm) | outlines, keys, mounting holes, USB, dimension lines, zoom/pan/pinch, fit / **1:1** (calibratable) / grid / ruler, two-click **measuring** with snapping |

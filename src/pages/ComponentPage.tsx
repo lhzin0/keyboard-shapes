@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Link, useLocation, useNavigate, useParams } from 'react-router-dom';
+import { FEATURES } from '../app/features';
 import { findCompatible } from '../compatibility/CompatibilityEngine';
 import { ConfidenceBadge, VerdictBadge } from '../components/Badges';
 import { ItemCard, KV, ShapeThumb, outlineOf } from '../components/Cards';
@@ -153,17 +154,17 @@ export default function ComponentPage() {
               <Icon name="compare" size={16} /> {inCompare ? 'In compare' : 'Compare'}
             </button>
           )}
-          {comparable && (
+          {FEATURES.similar && comparable && (
             <button className={ui['btn']} onClick={() => setSimilarOpen(!similarOpen)} aria-pressed={similarOpen}>
               <Icon name="target" size={16} /> Find similar
             </button>
           )}
-          {groups.length > 0 && (
+          {FEATURES.compatibility && groups.length > 0 && (
             <button className={ui['btn']} onClick={() => document.getElementById('compatible')?.scrollIntoView({ behavior: 'smooth' })}>
               <Icon name="link" size={16} /> {ctype === 'pcb' ? 'Find compatible cases' : ctype === 'case' ? 'Find compatible PCBs' : ctype === 'plate' ? 'Find compatible PCBs' : 'Find compatible'}
             </button>
           )}
-          {comparable && (
+          {FEATURES.build && comparable && (
             <button className={cx(ui['btn'], ui['primary'])} onClick={() => { build.reset(); build.set(ctype, component.id); navigate('/build'); }}>
               <Icon name="build" size={16} /> Use in a build
             </button>
@@ -182,7 +183,7 @@ export default function ComponentPage() {
             />
           )}
 
-          {groups.length > 0 && (
+          {FEATURES.compatibility && groups.length > 0 && (
             <section className={ui['cardPad']} id="compatible" aria-labelledby="h-comp">
               <h2 id="h-comp" className={ui['sectionTitle']} style={{ marginBottom: 6 }}>Find compatible</h2>
               <p className={ui['muted']} style={{ fontSize: 13, marginBottom: 12 }}>Each candidate was run through the geometry engine against this {COMPONENT_LABEL[ctype].toLowerCase()}. “Partially verified” means some data is missing — never read it as compatible.</p>
@@ -222,7 +223,7 @@ export default function ComponentPage() {
             </section>
           )}
 
-          {similarOpen && (
+          {FEATURES.similar && similarOpen && (
             <section className={ui['cardPad']} aria-labelledby="h-sim">
               <h2 id="h-sim" className={ui['sectionTitle']} style={{ marginBottom: 6 }}>Similar by shape</h2>
               <p className={ui['muted']} style={{ fontSize: 13, marginBottom: 12 }}>Visual similarity only — it does not imply the parts fit.</p>

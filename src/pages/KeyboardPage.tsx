@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react';
 import { evaluateBuild } from '../compatibility/CompatibilityEngine';
 import { Link, useNavigate, useParams } from 'react-router-dom';
+import { FEATURES } from '../app/features';
 import { BuildCompatibility } from '../components/CompatibilityPanel';
 import { ConfidenceBadge } from '../components/Badges';
 import { KV, ShapeThumb } from '../components/Cards';
@@ -81,17 +82,21 @@ export default function KeyboardPage() {
             <Icon name="compare" size={16} /> {inCompare ? 'In compare' : 'Compare'}
           </button>
           {inCompare && <Link to="/compare" className={ui['btn']}>Open compare</Link>}
-          <button className={ui['btn']} aria-pressed={similarOpen} onClick={() => setSimilarOpen(!similarOpen)}>
-            <Icon name="target" size={16} /> Find similar
-          </button>
-          {parts.pcb && (
+          {FEATURES.similar && (
+            <button className={ui['btn']} aria-pressed={similarOpen} onClick={() => setSimilarOpen(!similarOpen)}>
+              <Icon name="target" size={16} /> Find similar
+            </button>
+          )}
+          {FEATURES.compatibility && parts.pcb && (
             <Link to={`/component/pcb/${parts.pcb.slug}#compatible`} className={ui['btn']}>
               <Icon name="link" size={16} /> Find compatible
             </Link>
           )}
-          <button className={cx(ui['btn'], ui['primary'])} onClick={() => { loadBuild(kb); navigate('/build'); }}>
-            <Icon name="build" size={16} /> Build with this
-          </button>
+          {FEATURES.build && (
+            <button className={cx(ui['btn'], ui['primary'])} onClick={() => { loadBuild(kb); navigate('/build'); }}>
+              <Icon name="build" size={16} /> Build with this
+            </button>
+          )}
         </div>
       </div>
 
@@ -126,12 +131,14 @@ export default function KeyboardPage() {
             </p>
           )}
 
-          <section className={ui['cardPad']} aria-labelledby="h-compat">
-            <h2 id="h-compat" className={ui['sectionTitle']} style={{ marginBottom: 10 }}>Compatibility of its own parts</h2>
-            <BuildCompatibility evaluation={buildEval(selection)} />
-          </section>
+          {FEATURES.compatibility && (
+            <section className={ui['cardPad']} aria-labelledby="h-compat">
+              <h2 id="h-compat" className={ui['sectionTitle']} style={{ marginBottom: 10 }}>Compatibility of its own parts</h2>
+              <BuildCompatibility evaluation={buildEval(selection)} />
+            </section>
+          )}
 
-          {similarOpen && (
+          {FEATURES.similar && similarOpen && (
             <section className={ui['cardPad']} aria-labelledby="h-sim">
               <h2 id="h-sim" className={ui['sectionTitle']} style={{ marginBottom: 6 }}>Similar by shape</h2>
               <p className={ui['muted']} style={{ fontSize: 13, marginBottom: 12 }}>Outline, dimensions, aspect ratio, corner radius, layout, angle and key positions. Similarity says nothing about whether parts fit each other.</p>

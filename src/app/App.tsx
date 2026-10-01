@@ -1,5 +1,6 @@
 import { lazy, Suspense } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { FEATURES } from './features';
 import { AppShell } from '../layouts/AppShell';
 import HomePage from '../pages/HomePage';
 import NotFound from '../pages/NotFound';
@@ -32,8 +33,8 @@ export function App() {
             <Route path="keyboard/:slug" element={<KeyboardPage />} />
             <Route path="component/:type/:slug" element={<ComponentPage />} />
             <Route path="compare" element={<ComparePage />} />
-            <Route path="build" element={<BuildPage />} />
-            <Route path="import" element={<ImportPage />} />
+            {FEATURES.build && <Route path="build" element={<BuildPage />} />}
+            {FEATURES.importer && <Route path="import" element={<ImportPage />} />}
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>

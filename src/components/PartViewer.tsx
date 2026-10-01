@@ -3,6 +3,7 @@ import { useSearchParams } from 'react-router-dom';
 import type { AssemblySelection } from '../geometry/3d/KeyboardAssembly';
 import { KeyboardFrontView, KeyboardSideView } from '../viewer2d/ProfileViews';
 import { KeyboardTopView } from '../viewer2d/KeyboardTopView';
+import { FEATURES } from '../app/features';
 import { cx } from '../utils/format';
 import styles from '../pages/Pages.module.css';
 import ui from './ui.module.css';
@@ -34,8 +35,9 @@ interface Props {
 export function PartViewer({ selection, modelKey, defaultView = 'top', extra3d, onSelectTop, selectedTop, hide = [], className }: Props) {
   const [params, setParams] = useSearchParams();
   const requested = params.get('view') as ViewId | null;
-  const view: ViewId = requested && TABS.some((t) => t.id === requested) && !hide.includes(requested) ? requested : defaultView;
-  const tabs = TABS.filter((t) => !hide.includes(t.id));
+  const off: ViewId[] = FEATURES.viewer3d ? hide : [...hide, '3d'];
+  const view: ViewId = requested && TABS.some((t) => t.id === requested) && !off.includes(requested) ? requested : off.includes(defaultView) ? 'top' : defaultView;
+  const tabs = TABS.filter((t) => !off.includes(t.id));
 
   return (
     <div className={className}>

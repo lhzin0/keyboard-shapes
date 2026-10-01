@@ -1,5 +1,6 @@
 import { useId, useMemo, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { FEATURES } from '../app/features';
 import { Icon } from './Icon';
 import { catalog, parseQuery, search } from '../search';
 import styles from '../layouts/Shell.module.css';
@@ -24,7 +25,7 @@ export function SearchBar({ big, placeholder, initial = '' }: { big?: boolean; p
   };
   const submit = () => {
     if (!q.trim()) return;
-    if (parsed.isUrl) go(`/import?url=${encodeURIComponent(q.trim())}`);
+    if (FEATURES.importer && parsed.isUrl) go(`/import?url=${encodeURIComponent(q.trim())}`);
     else if (active >= 0 && hits[active]) go(hits[active].item.href);
     else go(`/search?q=${encodeURIComponent(q.trim())}`);
   };
@@ -60,9 +61,9 @@ export function SearchBar({ big, placeholder, initial = '' }: { big?: boolean; p
           } else if (e.key === 'Escape') setOpen(false);
         }}
       />
-      {open && (hits.length > 0 || parsed.isUrl) && (
+      {open && (hits.length > 0 || (FEATURES.importer && parsed.isUrl)) && (
         <ul id={listId} className={styles['suggest']} role="listbox">
-          {parsed.isUrl && (
+          {FEATURES.importer && parsed.isUrl && (
             <li role="option" aria-selected={false}>
               <button onMouseDown={(e) => e.preventDefault()} onClick={submit}>
                 <span>Import this product page</span>

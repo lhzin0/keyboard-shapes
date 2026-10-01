@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { FEATURES } from '../app/features';
 import { findCompatible } from '../compatibility/CompatibilityEngine';
 import { VerdictBadge } from '../components/Badges';
 import { ItemCard } from '../components/Cards';
@@ -38,14 +39,15 @@ export default function HomePage() {
     <div className={styles['page']}>
       <section className={styles['hero']}>
         <h1>
-          Compare keyboards by <span>shape</span> and <span>compatibility</span>.
+          Compare keyboards by <span>shape</span> and <span>size</span>.
         </h1>
         <p className={styles['lead']}>
-          Not just keyboards: every case, PCB, plate and daughterboard as real geometry in millimetres — so you can see whether the parts actually fit.
+          Top, front and side outlines of keyboards, to the same scale in millimetres.
         </p>
         <div className={styles['heroSearch']}>
           <SearchBar big placeholder="Search “65%”, “tkl”, “pcb”, “327mm”…" />
         </div>
+        {FEATURES.importer && (
         <form
           className={cx(styles['heroSearch'], ui['row'])}
           style={{ flexWrap: 'nowrap' }}
@@ -60,10 +62,13 @@ export default function HomePage() {
             Import
           </button>
         </form>
+        )}
         <div className={styles['heroActions']}>
-          <Link to="/build" className={ui['btn']}>
-            <Icon name="build" size={16} /> Build your keyboard
-          </Link>
+          {FEATURES.build && (
+            <Link to="/build" className={ui['btn']}>
+              <Icon name="build" size={16} /> Build your keyboard
+            </Link>
+          )}
           <Link to="/compare" className={ui['btn']}>
             <Icon name="compare" size={16} /> Compare shapes
           </Link>
@@ -73,7 +78,7 @@ export default function HomePage() {
       <p className={ui['notice']} role="note">
         <Icon name="info" size={16} />
         <span>
-          The catalog ships with an <strong>illustrative parametric reference set</strong> (generated from standard ANSI layouts and nominal dimensions). It is not data about commercial products — import real ones with their sources and precision level.
+          The catalog ships with an <strong>illustrative parametric reference set</strong> (generated from standard ANSI layouts and nominal dimensions). Those entries are not data about commercial products; every other keyboard shows its sources and precision level.
         </span>
       </p>
 
@@ -114,6 +119,7 @@ export default function HomePage() {
         </div>
       </section>
 
+      {FEATURES.compatibility && (
       <section className={styles['section']} aria-labelledby="h-compat">
         <div className={styles['sectionHead']}>
           <h2 id="h-compat">Compatible components</h2>
@@ -132,6 +138,7 @@ export default function HomePage() {
           ))}
         </div>
       </section>
+      )}
 
       <section className={styles['section']} aria-labelledby="h-compare">
         <div className={styles['sectionHead']}>
@@ -139,7 +146,7 @@ export default function HomePage() {
         </div>
         <div className={ui['cardPad']} style={{ display: 'flex', gap: 16, alignItems: 'center', flexWrap: 'wrap', justifyContent: 'space-between' }}>
           <p className={ui['muted']} style={{ maxWidth: '60ch' }}>
-            Overlay up to four outlines, align them by front, back or USB, and see exactly where they differ — then check physical compatibility separately. “Similar” never means “compatible”.
+            Put up to six keyboards side by side: top, front and side outlines on one scale.
           </p>
           <Link className={cx(ui['btn'], ui['primary'])} to="/compare?items=keyboard:ref-60,keyboard:ref-65">
             Try: 60% vs 65%

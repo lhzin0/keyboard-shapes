@@ -1,5 +1,6 @@
 import { NavLink, Outlet, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
+import { FEATURES } from '../app/features';
 import { Icon, type IconName } from '../components/Icon';
 import { SearchBar } from '../components/SearchBar';
 import { useCompareStore, useUiStore } from '../stores';
@@ -10,9 +11,9 @@ import styles from './Shell.module.css';
 const NAV: Array<{ to: string; label: string; icon: IconName; end?: boolean }> = [
   { to: '/', label: 'Home', icon: 'home', end: true },
   { to: '/search', label: 'Search', icon: 'search' },
-  { to: '/build', label: 'Build', icon: 'build' },
+  ...(FEATURES.build ? [{ to: '/build', label: 'Build', icon: 'build' as const }] : []),
   { to: '/compare', label: 'Compare', icon: 'compare' },
-  { to: '/import', label: 'Import', icon: 'import' },
+  ...(FEATURES.importer ? [{ to: '/import', label: 'Import', icon: 'import' as const }] : []),
 ];
 
 function Logo() {
@@ -68,7 +69,7 @@ export function AppShell() {
         KeyboardShapes · geometry-first keyboard analysis. Values marked <em>estimated</em> are not measurements.
       </footer>
 
-      <nav className={styles['bottomNav']} aria-label="Main">
+      <nav className={styles['bottomNav']} style={{ gridTemplateColumns: `repeat(${NAV.length}, 1fr)` }} aria-label="Main">
         {NAV.map((n) => (
           <NavLink key={n.to} to={n.to} end={n.end} className={({ isActive }) => cx(styles['bottomLink'], isActive && styles['bottomActive'])}>
             <Icon name={n.icon} size={22} />

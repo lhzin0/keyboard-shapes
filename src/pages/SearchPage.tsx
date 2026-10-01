@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
+import { FEATURES } from '../app/features';
 import { ItemCard } from '../components/Cards';
 import { Icon } from '../components/Icon';
 import { BottomSheet, Segmented } from '../components/Panels';
@@ -133,6 +134,7 @@ export default function SearchPage() {
       </div>
       <Chips label="Mounting" options={fac.mounting} selected={filters.mounting} onToggle={(v) => set({ mounting: toggle(filters.mounting, v) })} />
       <Chips label="Material" options={fac.materials} selected={filters.materials} onToggle={(v) => set({ materials: toggle(filters.materials, v) })} />
+      {FEATURES.compatibility && (
       <div className={styles['filterGroup']}>
         <label className={ui['label']} htmlFor="compat-with" style={{ margin: 0 }}>Compatible with…</label>
         <select
@@ -165,6 +167,7 @@ export default function SearchPage() {
         </select>
         {filters.compatibleWith && <p className={ui['muted']} style={{ fontSize: 12 }}>Hides everything proven incompatible by the geometry engine. Unknown results stay visible.</p>}
       </div>
+      )}
       <button className={ui['btn']} onClick={() => setFilters(emptyFilters())} disabled={n === 0}>
         Clear filters
       </button>
@@ -203,7 +206,7 @@ export default function SearchPage() {
           {results.length === 0 ? (
             <div className={styles['empty']}>
               <strong>No match</strong>
-              <span>Nothing in the catalog matches. {parsed.isUrl ? 'Looks like a URL — ' : 'Have a product page? '}<Link to={`/import${parsed.isUrl ? `?url=${encodeURIComponent(q)}` : ''}`}>import it</Link>.</span>
+              <span>Nothing in the catalog matches.{FEATURES.importer && <> {parsed.isUrl ? 'Looks like a URL — ' : 'Have a product page? '}<Link to={`/import${parsed.isUrl ? `?url=${encodeURIComponent(q)}` : ''}`}>import it</Link>.</>}</span>
             </div>
           ) : (
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(230px, 1fr))', gap: 14 }}>
