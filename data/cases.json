@@ -3395,5 +3395,167 @@
    "score": 0.7,
    "notes": "Outline reconstructed from the official top-view photo and calibrated with the published width, taken to include the strap-mount loop on the back-left (depth 114.4 mm agrees with the published 115 mm; taking the width without the loop gives 116.5 mm, which agrees worse); every curve and protrusion of the silhouette is kept. Interior (cavity, posts, cutouts) unknown. Key positions follow the photo: ANSI 60% with a 6.25u space bar, Esc in the first position and the Wooting key / Menu / Ctrl / Fn in the bottom row. The key area (15u × 5u) is placed where it sits in the photo (top-left corner at 12.6 mm, 4.7 mm from the case corner, ±0.5 mm)."
   }
+ },
+ {
+  "id": "su60-case",
+  "slug": "su60-case",
+  "brand": "SUMREDA",
+  "model": "SU60 case",
+  "dimensions": {
+   "width": 301,
+   "depth": 114.7,
+   "height": 17.5
+  },
+  "externalShape": {
+   "points": [
+    {
+     "x": 297,
+     "y": 0
+    },
+    {
+     "x": 298.035,
+     "y": 0.136
+    },
+    {
+     "x": 299,
+     "y": 0.536
+    },
+    {
+     "x": 299.828,
+     "y": 1.172
+    },
+    {
+     "x": 300.464,
+     "y": 2
+    },
+    {
+     "x": 300.864,
+     "y": 2.965
+    },
+    {
+     "x": 301,
+     "y": 4
+    },
+    {
+     "x": 301,
+     "y": 110.7
+    },
+    {
+     "x": 300.864,
+     "y": 111.735
+    },
+    {
+     "x": 300.464,
+     "y": 112.7
+    },
+    {
+     "x": 299.828,
+     "y": 113.528
+    },
+    {
+     "x": 299,
+     "y": 114.164
+    },
+    {
+     "x": 298.035,
+     "y": 114.564
+    },
+    {
+     "x": 297,
+     "y": 114.7
+    },
+    {
+     "x": 4,
+     "y": 114.7
+    },
+    {
+     "x": 2.965,
+     "y": 114.564
+    },
+    {
+     "x": 2,
+     "y": 114.164
+    },
+    {
+     "x": 1.172,
+     "y": 113.528
+    },
+    {
+     "x": 0.536,
+     "y": 112.7
+    },
+    {
+     "x": 0.136,
+     "y": 111.735
+    },
+    {
+     "x": 0,
+     "y": 110.7
+    },
+    {
+     "x": 0,
+     "y": 4
+    },
+    {
+     "x": 0.136,
+     "y": 2.965
+    },
+    {
+     "x": 0.536,
+     "y": 2
+    },
+    {
+     "x": 1.172,
+     "y": 1.172
+    },
+    {
+     "x": 2,
+     "y": 0.536
+    },
+    {
+     "x": 2.965,
+     "y": 0.136
+    },
+    {
+     "x": 4,
+     "y": 0
+    }
+   ],
+   "width": 301,
+   "depth": 114.7,
+   "closed": true
+  },
+  "mountingPoints": [],
+  "cutouts": [],
+  "material": "aluminum",
+  "model3d": {
+   "kind": "parametric"
+  },
+  "tags": [
+   "aluminum",
+   "60%",
+   "aftermarket"
+  ],
+  "sources": [
+   {
+    "sourceName": "SUMREDA SU60 product listing (image supplied by the user)",
+    "sourceType": "vendor",
+    "retrievedAt": "2026-10-01T23:44:47.809Z",
+    "method": "listing image text: \"Compatible: Wooting 60HE/Madlions Mad 60he/GH60/Raven61/Aula Win60/TiTAN-60\"; white, aluminum, sprayed",
+    "confidence": 0.5
+   },
+   {
+    "sourceName": "AliExpress SUMREDA SU60 listings (via a search-engine summary; the listing itself could not be read)",
+    "sourceType": "vendor",
+    "retrievedAt": "2026-10-01T23:44:47.809Z",
+    "method": "dimensions 301 × 114.7 × 17.5 mm quoted in the summary of seller listings; not verified against the primary listing",
+    "confidence": 0.4
+   }
+  ],
+  "confidence": {
+   "level": "estimated",
+   "score": 0.3,
+   "notes": "Outline assumed to be a rounded rectangle from the overall width × depth; the real shape may differ. Dimensions come from a secondary summary of marketplace listings and are not verified. Compatibility with the Wooting 60HE and the Madlions Mad60HE is the seller’s claim; the rows of Wooting’s own case-compatibility list that could be read did not include this case. The Madlions record is smaller (292 × 109 mm), so the two outlines are not interchangeable footprints."
+  }
  }
 ]

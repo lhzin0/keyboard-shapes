@@ -34,5 +34,41 @@
    "retrievedAt": "2026-10-01T00:00:00.000Z",
    "confidence": 1
   }
+ },
+ {
+  "from": {
+   "type": "case",
+   "id": "su60-case"
+  },
+  "to": {
+   "type": "case",
+   "id": "imp-wooting-60he-case"
+  },
+  "kind": "declared-compatible",
+  "source": {
+   "sourceName": "SUMREDA SU60 product listing (image supplied by the user)",
+   "sourceType": "vendor",
+   "retrievedAt": "2026-10-01T23:44:47.809Z",
+   "method": "listing image text: \"Compatible: Wooting 60HE/Madlions Mad 60he/GH60/Raven61/Aula Win60/TiTAN-60\"; white, aluminum, sprayed",
+   "confidence": 0.5
+  }
+ },
+ {
+  "from": {
+   "type": "case",
+   "id": "su60-case"
+  },
+  "to": {
+   "type": "case",
+   "id": "imp-madlions-mad60-he-e-sports-magnetic-switch-mechanical-keyboa-case"
+  },
+  "kind": "declared-compatible",
+  "source": {
+   "sourceName": "SUMREDA SU60 product listing (image supplied by the user)",
+   "sourceType": "vendor",
+   "retrievedAt": "2026-10-01T23:44:47.809Z",
+   "method": "listing image text: \"Compatible: Wooting 60HE/Madlions Mad 60he/GH60/Raven61/Aula Win60/TiTAN-60\"; white, aluminum, sprayed",
+   "confidence": 0.5
+  }
  }
 ]
