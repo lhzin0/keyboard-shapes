@@ -11,6 +11,8 @@ export interface ShapeEntry {
   /** Where the USB port/cutout is, in the shape's own frame (for "align by USB"). */
   usb?: Point2D;
   dimensions: { width: number; depth: number; height?: number };
+  /** Weight in grams, when known. */
+  weight?: number;
   confidence: { level: string; score: number };
 }
 
@@ -32,6 +34,7 @@ export function shapeEntry(item: CompareItem): ShapeEntry | undefined {
       shape,
       usb: usbCut ? usbAnchor(usbCut.wall, usbCut.center, parts.case as Case) : undefined,
       dimensions: kb.dimensions,
+      weight: kb.weight?.value ?? undefined,
       confidence: kb.confidence,
     };
   }
@@ -42,7 +45,7 @@ export function shapeEntry(item: CompareItem): ShapeEntry | undefined {
     case 'case': {
       const cs = c as Case;
       const usb = cs.cutouts.find((x) => x.kind === 'usb');
-      return { key: keyOf(item), label, kind: 'case', shape: cs.externalShape, usb: usb ? usbAnchor(usb.wall, usb.center, cs) : undefined, dimensions: cs.dimensions, confidence: cs.confidence };
+      return { key: keyOf(item), label, kind: 'case', shape: cs.externalShape, usb: usb ? usbAnchor(usb.wall, usb.center, cs) : undefined, dimensions: cs.dimensions, weight: cs.weight?.value ?? undefined, confidence: cs.confidence };
     }
     case 'pcb': {
       const p = c as PCB;

@@ -125,6 +125,7 @@ export default function ComparePage() {
                 <strong>{entry.label}</strong>
                 <span className="mono">
                   {fmt(entry.dimensions.width)} × {fmt(entry.dimensions.depth)} × {fmt(entry.dimensions.height)} mm
+                  {entry.weight !== undefined && <> · {Math.round(entry.weight)} g</>}
                 </span>
                 {(!layer.front || layer.front.box) && <small>{layer.front ? 'Front and side: overall height only' : 'Front and side: height not known'}</small>}
               </div>

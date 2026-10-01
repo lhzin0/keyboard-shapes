@@ -7409,6 +7409,13 @@
    "width": 305.33,
    "depth": 114.38
   },
+  "weight": {
+   "value": 945,
+   "unit": "g",
+   "source": "manufacturer",
+   "confidence": 0.95,
+   "method": "Wooting product page (wooting.io/wooting-60he-v2): aluminium version 945 g; ABS version 606 g"
+  },
   "components": {
    "caseId": "imp-wooting-60he-v2-case"
   },
