@@ -137,3 +137,57 @@ describe('stack and model source', () => {
     expect(resolveModelSource([{ kind: 'parametric', url: 'models/x.glb' }]).procedural).toBe(true);
   });
 });
+
+import { sculptedKeycap } from '../../src/geometry/3d/common';
+
+describe('sculpted keycap', () => {
+  const volume = (g: THREE.BufferGeometry) => {
+    const geo = g.index ? g.toNonIndexed() : g;
+    const p = geo.getAttribute('position');
+    const A = new THREE.Vector3();
+    const B = new THREE.Vector3();
+    const C = new THREE.Vector3();
+    let v = 0;
+    for (let i = 0; i < p.count; i += 3) {
+      A.fromBufferAttribute(p, i);
+      B.fromBufferAttribute(p, i + 1);
+      C.fromBufferAttribute(p, i + 2);
+      v += A.dot(B.clone().cross(C)) / 6;
+    }
+    return v;
+  };
+
+  it('is closed with outward faces and keeps its footprint and height', () => {
+    const g = sculptedKeycap(18, 18, 3, 8.4, 4.5);
+    g.computeBoundingBox();
+    const b = g.boundingBox as THREE.Box3;
+    expect(b.max.x - b.min.x).toBeCloseTo(18, 1);
+    expect(b.max.z - b.min.z).toBeCloseTo(18, 1);
+    expect(b.min.y).toBeCloseTo(4.5, 6);
+    expect(b.max.y).toBeLessThanOrEqual(4.5 + 8.4 + 1e-6);
+    expect(b.max.y).toBeGreaterThan(4.5 + 8.4 - 1);
+    expect(volume(g)).toBeGreaterThan(0); // positive volume = faces point outwards
+    // a keycap is a bit smaller than its bounding box (rounded, tapered): between 45% and 90% of the box volume
+    const box = 18 * 18 * 8.4;
+    expect(volume(g) / box).toBeGreaterThan(0.45);
+    expect(volume(g) / box).toBeLessThan(0.9);
+  });
+
+  it('is dished: the centre of the top sits below the rim', () => {
+    const g = sculptedKeycap(18, 18, 3, 8.4, 0, { dish: 0.8 });
+    const p = g.getAttribute('position');
+    let centreY = -1;
+    let maxY = -Infinity;
+    for (let i = 0; i < p.count; i++) {
+      maxY = Math.max(maxY, p.getY(i));
+      if (Math.abs(p.getX(i)) < 1e-6 && Math.abs(p.getZ(i) + 0.4) < 1e-6) centreY = Math.max(centreY, p.getY(i));
+    }
+    expect(centreY).toBeLessThan(maxY - 0.5);
+  });
+
+  it('handles wide keys (6.25u space bar)', () => {
+    const g = sculptedKeycap(6.25 * 19.05 - 1, 18, 3, 8.6, 4.5);
+    g.computeBoundingBox();
+    expect((g.boundingBox as THREE.Box3).max.x * 2).toBeCloseTo(6.25 * 19.05 - 1, 0);
+  });
+});

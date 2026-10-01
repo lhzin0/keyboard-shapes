@@ -117,3 +117,97 @@ export function bounds(g: THREE.BufferGeometry): THREE.Box3 {
   g.computeBoundingBox();
   return g.boundingBox ?? new THREE.Box3();
 }
+
+/** Counter-clockwise (seen from +Y) rounded-rectangle ring in the XZ plane with `seg + 1` points per corner. */
+function roundedRing(hw: number, hd: number, r: number, seg: number): Array<[number, number]> {
+  const rad = Math.max(0.05, Math.min(r, hw, hd));
+  const out: Array<[number, number]> = [];
+  // corner centres, walking counter-clockwise starting at the front-right corner
+  const corners: Array<[number, number, number]> = [
+    [hw - rad, hd - rad, 0],
+    [-(hw - rad), hd - rad, 90],
+    [-(hw - rad), -(hd - rad), 180],
+    [hw - rad, -(hd - rad), 270],
+  ];
+  for (const [cx, cz, start] of corners) {
+    for (let i = 0; i <= seg; i++) {
+      const a = ((start + (90 * i) / seg) * Math.PI) / 180;
+      out.push([cx + rad * Math.cos(a), cz + rad * Math.sin(a)]);
+    }
+  }
+  return out;
+}
+
+export interface KeycapShape {
+  /** Rounding radius of the base / top outline (mm). */
+  baseRadius?: number;
+  topRadius?: number;
+  /** How far the centre of the top surface sits below its rim (mm): the "dish". */
+  dish?: number;
+  /** Shift of the top surface towards the back (mm): the typical sculpted slope. */
+  topShift?: number;
+}
+
+/**
+ * Sculpted keycap: rounded base, softly tapered walls, rounded top rim and a concave (dished) top surface.
+ * Closed, indexed (smooth normals). Footprint w × d at y = z0, height `h`.
+ */
+export function sculptedKeycap(w: number, d: number, taper: number, h: number, z0 = 0, shape: KeycapShape = {}): THREE.BufferGeometry {
+  const seg = 5;
+  const hwB = w / 2;
+  const hdB = d / 2;
+  const hwT = Math.max(w / 2 - taper, 1);
+  const hdT = Math.max(d / 2 - taper, 1);
+  const base = roundedRing(hwB, hdB, shape.baseRadius ?? 1.4, seg);
+  const top = roundedRing(hwT, hdT, shape.topRadius ?? 2.6, seg);
+  const N = base.length;
+  const dish = shape.dish ?? Math.min(0.75, h * 0.08);
+  const shift = shape.topShift ?? -0.4;
+
+  const pos: number[] = [];
+  const idx: number[] = [];
+  const ringStart: number[] = [];
+  const addRing = (pts: Array<[number, number]>, y: number, dz = 0) => {
+    ringStart.push(pos.length / 3);
+    for (const [x, z] of pts) pos.push(x, y, z + dz);
+  };
+  const lerpRing = (t: number) => base.map(([bx, bz], i) => [bx + ((top[i] as [number, number])[0] - bx) * t, bz + ((top[i] as [number, number])[1] - bz) * t] as [number, number]);
+
+  // walls: bottom → rim, easing the taper so the upper part is steeper (a soft shoulder)
+  const wallSteps = 4;
+  for (let k = 0; k <= wallSteps; k++) {
+    const t = k / wallSteps;
+    const eased = 1 - (1 - t) ** 1.6;
+    addRing(lerpRing(eased), z0 + h * t * 0.97, shift * t);
+  }
+  // top surface: concentric rings shrinking to the centre; the dish deepens towards the middle
+  const topSteps = 4;
+  for (let k = 1; k <= topSteps; k++) {
+    const s = 1 - k / (topSteps + 1);
+    addRing(top.map(([x, z]) => [x * s, z * s] as [number, number]), z0 + h * 0.97 - dish * (1 - s * s) + h * 0.03 * s, shift);
+  }
+  const centre = pos.length / 3;
+  pos.push(0, z0 + h * 0.97 - dish, shift);
+  // bottom cap
+  const bottomCentre = centre + 1;
+  pos.push(0, z0, 0);
+
+  const stitch = (a: number, b: number) => {
+    for (let i = 0; i < N; i++) {
+      const j = (i + 1) % N;
+      // two triangles, outward-facing for rings stacked upwards (verified by the signed-volume test)
+      idx.push(a + i, b + j, a + j, a + i, b + i, b + j);
+    }
+  };
+  for (let r = 0; r + 1 < ringStart.length; r++) stitch(ringStart[r] as number, ringStart[r + 1] as number);
+  const lastRing = ringStart[ringStart.length - 1] as number;
+  for (let i = 0; i < N; i++) idx.push(lastRing + i, centre, lastRing + ((i + 1) % N));
+  const firstRing = ringStart[0] as number;
+  for (let i = 0; i < N; i++) idx.push(firstRing + ((i + 1) % N), bottomCentre, firstRing + i);
+
+  const g = new THREE.BufferGeometry();
+  g.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));
+  g.setIndex(idx);
+  g.computeVertexNormals();
+  return g;
+}

@@ -101,6 +101,7 @@ export function validateDatabase(db: DatabaseLike): Problem[] {
     if (c.internalCavity && c.externalShape && !containment(c.internalCavity.points, c.externalShape.points).contained) err(c.id, 'internalCavity is not inside externalShape');
     if (c.dimensions.width !== c.externalShape.width || c.dimensions.depth !== c.externalShape.depth) err(c.id, 'dimensions differ from externalShape');
     points(c.id, 'mounting post', c.mountingPoints, c.externalShape);
+    if (c.appearance && !/^#[0-9a-f]{6}$/i.test(c.appearance.color)) err(c.id, `appearance.color "${c.appearance.color}" is not #rrggbb`);
     for (const cu of c.cutouts) {
       const along = cu.wall === 'front' || cu.wall === 'back' ? c.dimensions.width : c.dimensions.depth;
       if (cu.center - cu.width / 2 < -0.01 || cu.center + cu.width / 2 > along + 0.01) err(c.id, `cutout ${cu.id} extends beyond the ${cu.wall} wall`);

@@ -13,12 +13,16 @@
  *   --json=file.json   write the full result (consumed by the web app: Import → Cross-check)
  *   --add              create a keyboard record from the reconciled values (needs width and depth)
  *   --layout="65%"     override the layout when adding
+ *   --top=img|url      with --add: reconstruct the REAL outline from a top-view photo (png/jpg/webp), calibrated by the
+ *                      reconciled width and checked against the depth; --calibrate-both uses width AND depth,
+ *                      --trim-protrusions=2 drops strap mounts/hooks, --remove-thin=8 drops thin tabs
  *
  * Politeness: honest User-Agent, robots.txt checked before every URL, ~1 request/second per site,
  * no retries on blocks. Blocked pages are reported, never worked around.
  */
 import { readFileSync, writeFileSync } from 'node:fs';
 import { buildDraft } from '../../src/import/DraftBuilder';
+import { ReconstructionRejected, reconstructShape, type ReconstructResult } from '../../src/import/ShapeReconstructor';
 import { lookup, type LookupDeps } from '../../src/import/lookup';
 import { deriveBrandModel } from '../../src/import/naming';
 import { ProductImporter } from '../../src/import/ProductImporter';
@@ -26,7 +30,7 @@ import { isAllowed, parseRobots } from '../../src/import/robots';
 import type { SiteDef } from '../../src/import/siteSearch';
 import { ImportFetchError } from '../../src/import/types';
 import type { Case, Keyboard, LayoutName } from '../../src/types/keyboard';
-import { c, dataDir, nodeFetcher, parseArgs, readJsonArray, USER_AGENT, writeJsonArray } from '../lib/node';
+import { c, dataDir, decodeImageAsync, downloadImage, nodeFetcher, parseArgs, readJsonArray, USER_AGENT, writeJsonArray } from '../lib/node';
 import { validateDatabase } from '../validate-data/validate';
 
 const args = parseArgs(process.argv.slice(2));
@@ -180,16 +184,43 @@ if (args['add']) {
   const { brand, model } = deriveBrandModel({ name: r.name, brand: r.brand, url: r.sources[0]?.sourceUrl ?? '' });
   const keyboards = readJsonArray<Keyboard>(dataDir('keyboards.json'));
   const cases = readJsonArray<Case>(dataDir('cases.json'));
+  // optional: reconstruct the real outline from a product photo (top view), calibrated and cross-checked with the reconciled size
+  let shape: ReconstructResult | undefined;
+  if (str('top')) {
+    const src = str('top') as string;
+    try {
+      const data = await decodeImageAsync(/^https?:/i.test(src) ? (await downloadImage(src)).buf : readFileSync(src));
+      const both = !!args['calibrate-both'];
+      shape = reconstructShape(data, {
+        knownWidthMm: r.width.value,
+        knownDepthMm: both ? r.depth.value : undefined,
+        expectedDepthMm: both ? undefined : r.depth.value,
+        removeThinFeaturesMm: str('remove-thin') ? Number(str('remove-thin')) : undefined,
+        trimProtrusionsMm: str('trim-protrusions') ? Number(str('trim-protrusions')) : undefined,
+      });
+      console.log('\n' + c.bold('Outline from photo') + c.dim(` (${src.slice(0, 80)})`));
+      shape.steps.forEach((s) => console.log(c.ok(s)));
+      shape.warnings.forEach((s) => console.log(c.warn(s)));
+    } catch (e) {
+      console.log('\n' + (e instanceof ReconstructionRejected ? c.fail(e.message) : c.warn(`outline not reconstructed: ${e instanceof Error ? e.message : String(e)}`)));
+    }
+  }
   const draft = buildDraft({
     brand,
     model,
     layout,
+    shape: shape?.shape,
+    shapeConfidence: shape?.confidence,
+    caseColor: shape?.rimColor ?? undefined,
     widthMm: r.width.value,
     depthMm: r.depth.value,
     heightMm: r.height?.value,
     frontHeightMm: r.frontHeight?.value,
     rearHeightMm: r.rearHeight?.value,
-    sources: r.sources,
+    sources: [
+      ...r.sources,
+      ...(shape ? [{ sourceName: 'KeyboardShapes shape reconstructor', sourceUrl: str('top')?.startsWith('http') ? str('top') : undefined, sourceType: 'photo-reconstruction' as const, retrievedAt: new Date().toISOString(), method: shape.steps.join(' → '), confidence: shape.confidence.score }] : []),
+    ],
     imageUrls: r.images.slice(0, 8).map((i) => i.url),
     existingSlugs: new Set(keyboards.map((k) => k.slug)),
   });

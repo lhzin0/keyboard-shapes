@@ -253,12 +253,21 @@ export interface Case {
   daughterboardArea?: { x: Millimetres; y: Millimetres; width: Millimetres; depth: Millimetres };
   clearance?: ClearanceData;
   material?: string;
+  /** How the case looks (viewer only): measured on a product photo or chosen by the user — never invented. */
+  appearance?: Appearance;
   weight?: Measurement;
   model3d?: Model3D;
   images?: string[];
   tags?: string[];
   sources: SourceInfo[];
   confidence: ConfidenceInfo;
+}
+
+export interface Appearance {
+  /** `#rrggbb` of the case surface. */
+  color: string;
+  source: 'photo' | 'user';
+  note?: string;
 }
 
 export interface PCB {

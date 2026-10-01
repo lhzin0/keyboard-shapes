@@ -27,7 +27,7 @@ import { ProductImporter } from '../../src/import/ProductImporter';
 import { ReconstructionRejected, holesToMountingPoints, reconstructProfile, reconstructShape, type ProfileResult, type ReconstructResult } from '../../src/import/ShapeReconstructor';
 import { ImportFetchError, type ImageType } from '../../src/import/types';
 import type { Case, Keyboard, LayoutName, SourceInfo } from '../../src/types/keyboard';
-import { c, dataDir, decodeImage, downloadImage, nodeFetcher, parseArgs, readJsonArray, robotsAllows, USER_AGENT, writeCache, writeJsonArray } from '../lib/node';
+import { c, dataDir, decodeImageAsync, downloadImage, nodeFetcher, parseArgs, readJsonArray, robotsAllows, USER_AGENT, writeCache, writeJsonArray } from '../lib/node';
 import { validateDatabase } from '../validate-data/validate';
 
 const args = parseArgs(process.argv.slice(2));
@@ -35,8 +35,8 @@ const str = (k: string) => (typeof args[k] === 'string' ? (args[k] as string) : 
 const num = (k: string) => (str(k) !== undefined ? Number(str(k)?.replace(',', '.')) : undefined);
 
 async function loadImage(src: string) {
-  if (/^https?:/i.test(src)) return decodeImage((await downloadImage(src)).buf);
-  return decodeImage(readFileSync(src));
+  if (/^https?:/i.test(src)) return decodeImageAsync((await downloadImage(src)).buf);
+  return decodeImageAsync(readFileSync(src));
 }
 
 async function main() {
@@ -117,7 +117,7 @@ async function main() {
   if (!str('top') && !topCandidate && p.images.length) console.log(c.unk(`${p.images.length} images found, none is confidently a top view of this product — pass --top=<url|file> to reconstruct the outline`));
   if (topCandidate && width) {
     try {
-      shape = reconstructShape(await loadImage(topCandidate), { knownWidthMm: width, knownDepthMm: undefined, expectedDepthMm: depth });
+      shape = reconstructShape(await loadImage(topCandidate), { knownWidthMm: width, knownDepthMm: undefined, expectedDepthMm: depth, removeThinFeaturesMm: num('remove-thin'), trimProtrusionsMm: num('trim-protrusions') });
       console.log('\n' + c.bold('Outline reconstruction') + c.dim(` (${topCandidate})`));
       shape.steps.forEach((s) => console.log(c.ok(s)));
       shape.warnings.forEach((s) => console.log(c.warn(s)));

@@ -34,6 +34,8 @@ export interface DraftInput {
   /** Outline from the shape reconstructor, already in mm. */
   shape?: Shape;
   shapeConfidence?: ConfidenceInfo;
+  /** Case colour measured on a photo (`#rrggbb`). */
+  caseColor?: string;
   holes?: MountingPoint[];
   profile?: Profile;
   sources: SourceInfo[];
@@ -117,6 +119,7 @@ export function buildDraft(input: DraftInput): Draft {
     angle,
     frontHeight: fh,
     rearHeight: rh,
+    appearance: input.caseColor ? { color: input.caseColor, source: 'photo', note: 'Median colour of the case rim in the product photo.' } : undefined,
     mountingPoints: input.holes ?? [],
     cutouts: [],
     model3d: { kind: 'parametric' },

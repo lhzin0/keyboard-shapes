@@ -312,3 +312,167 @@ export function smooth(mask: Mask): Mask {
   }
   return { width: w, height: h, data: out };
 }
+
+/** Offsets (dx per dy) of a filled disk of radius r — the structuring element for erode/dilate. */
+function diskSpans(r: number): Array<[number, number]> {
+  const spans: Array<[number, number]> = [];
+  for (let dy = -r; dy <= r; dy++) spans.push([dy, Math.floor(Math.sqrt(r * r - dy * dy))]);
+  return spans;
+}
+
+/** Binary erosion with a disk (an object pixel survives only if the whole disk around it is object). */
+export function erode(mask: Mask, r: number): Mask {
+  const { width: w, height: h, data } = mask;
+  const spans = diskSpans(r);
+  const out = new Uint8Array(w * h);
+  for (let y = 0; y < h; y++) {
+    for (let x = 0; x < w; x++) {
+      if (!data[y * w + x]) continue;
+      let keep = true;
+      for (const [dy, dx] of spans) {
+        const yy = y + dy;
+        if (yy < 0 || yy >= h || x - dx < 0 || x + dx >= w) {
+          keep = false;
+          break;
+        }
+        const row = yy * w;
+        // the span is contiguous: checking its two ends is not enough for arbitrary masks, so scan it
+        for (let xx = x - dx; xx <= x + dx; xx++) {
+          if (!data[row + xx]) {
+            keep = false;
+            break;
+          }
+        }
+        if (!keep) break;
+      }
+      if (keep) out[y * w + x] = 1;
+    }
+  }
+  return { width: w, height: h, data: out };
+}
+
+/** Binary dilation with a disk. */
+export function dilate(mask: Mask, r: number): Mask {
+  const { width: w, height: h, data } = mask;
+  const spans = diskSpans(r);
+  const out = new Uint8Array(w * h);
+  for (let y = 0; y < h; y++) {
+    for (let x = 0; x < w; x++) {
+      if (!data[y * w + x]) continue;
+      for (const [dy, dx] of spans) {
+        const yy = y + dy;
+        if (yy < 0 || yy >= h) continue;
+        const row = yy * w;
+        const x0 = Math.max(0, x - dx);
+        const x1 = Math.min(w - 1, x + dx);
+        for (let xx = x0; xx <= x1; xx++) out[row + xx] = 1;
+      }
+    }
+  }
+  return { width: w, height: h, data: out };
+}
+
+/**
+ * Opening (erode then dilate): removes everything thinner than 2r — straps, cables, tabs — while keeping
+ * the body and its rounded corners (a disk fits into any arc of radius ≥ r).
+ */
+export function openMask(mask: Mask, r: number): Mask {
+  return r < 1 ? mask : dilate(erode(mask, r), r);
+}
+
+/**
+ * Median colour of the object's outer rim (the band between the silhouette edge and `bandPx` inside it).
+ * This is the colour of the case itself, not of whatever is inside it (white plate, coloured switches).
+ */
+export function rimColor(img: ImageLike, silhouette: Mask, bandPx: number): { r: number; g: number; b: number } | null {
+  const inner = erode(silhouette, Math.max(1, bandPx));
+  const rs: number[] = [];
+  const gs: number[] = [];
+  const bs: number[] = [];
+  const inset = erode(silhouette, 2); // ignore the anti-aliased edge pixels
+  const stride = Math.max(1, Math.floor((silhouette.width * silhouette.height) / 60_000));
+  for (let i = 0; i < silhouette.data.length; i += stride) {
+    if (inset.data[i] && !inner.data[i]) {
+      rs.push(img.data[i * 4] as number);
+      gs.push(img.data[i * 4 + 1] as number);
+      bs.push(img.data[i * 4 + 2] as number);
+    }
+  }
+  if (rs.length < 20) return null;
+  return { r: median(rs), g: median(gs), b: median(bs) };
+}
+
+export interface TrimReport {
+  left: number;
+  right: number;
+  top: number;
+  bottom: number;
+}
+
+const medianInt = (v: number[]) => {
+  const s = [...v].sort((a, b) => a - b);
+  return s[Math.floor(s.length / 2)] ?? 0;
+};
+
+/**
+ * Clip short stretches that stick out of the body's straight edge (strap mounts, hooks, cable tabs glued to a side).
+ * For every side, the edge position is the median over the rows/columns; a block of rows that reaches further out than
+ * `minDepthPx` and covers at most `maxShare` of that side is a protrusion and is cut back to the median edge.
+ * Rounded corners are untouched: there the extent moves *inwards*, never outwards.
+ */
+export function trimProtrusions(mask: Mask, minDepthPx: number, maxShare = 0.4): { mask: Mask; trimmed: TrimReport } {
+  const { width: w, height: h } = mask;
+  const data = mask.data.slice();
+  const report: TrimReport = { left: 0, right: 0, top: 0, bottom: 0 };
+
+  const extents = (lines: number, length: number, at: (line: number, i: number) => number) => {
+    const first: number[] = new Array(lines).fill(-1);
+    const last: number[] = new Array(lines).fill(-1);
+    for (let l = 0; l < lines; l++) {
+      for (let i = 0; i < length; i++) if (at(l, i)) {
+        first[l] = i;
+        break;
+      }
+      for (let i = length - 1; i >= 0; i--) if (at(l, i)) {
+        last[l] = i;
+        break;
+      }
+    }
+    return { first, last };
+  };
+
+  // rows → left/right sides, columns → top/bottom sides
+  const rows = extents(h, w, (y, x) => data[y * w + x] as number);
+  const cols = extents(w, h, (x, y) => data[y * w + x] as number);
+
+  const clip = (side: 'left' | 'right' | 'top' | 'bottom') => {
+    const horizontal = side === 'left' || side === 'right';
+    const ex = horizontal ? rows : cols;
+    const lines = horizontal ? h : w;
+    const arr = side === 'left' || side === 'top' ? ex.first : ex.last;
+    const valid = arr.filter((v) => v >= 0);
+    if (valid.length === 0) return;
+    const med = medianInt(valid);
+    const outward = (v: number) => (side === 'left' || side === 'top' ? med - v : v - med);
+    const protruding: number[] = [];
+    for (let l = 0; l < lines; l++) if ((arr[l] as number) >= 0 && outward(arr[l] as number) > minDepthPx) protruding.push(l);
+    if (protruding.length === 0 || protruding.length / valid.length > maxShare) return;
+    let deepest = 0;
+    for (const l of protruding) {
+      deepest = Math.max(deepest, outward(arr[l] as number));
+      // erase everything beyond the median edge on this line
+      if (horizontal) {
+        const from = side === 'left' ? 0 : med + 1;
+        const to = side === 'left' ? med : w - 1;
+        for (let x = from; x <= to; x++) data[l * w + x] = 0;
+      } else {
+        const from = side === 'top' ? 0 : med + 1;
+        const to = side === 'top' ? med : h - 1;
+        for (let y = from; y <= to; y++) data[y * w + l] = 0;
+      }
+    }
+    report[side] = deepest;
+  };
+  (['left', 'right', 'top', 'bottom'] as const).forEach(clip);
+  return { mask: { width: w, height: h, data }, trimmed: report };
+}

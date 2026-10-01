@@ -168,3 +168,64 @@ describe('guards found by testing a real shop page (regressions)', () => {
     expect(() => reconstructProfile({ width: w, height: h, data }, { knownDepthMm: 300 })).toThrow(ReconstructionRejected);
   });
 });
+
+describe('strap mounts, thin tabs and case colour (found on the official Wooting render)', () => {
+  /** body 700×220 px + a 14×80 px strap block glued to the left side + a lighter plate inside the rim. */
+  function withStrap(): ImageLike {
+    const w = 800;
+    const h = 300;
+    const data = new Uint8ClampedArray(w * h * 4).fill(255);
+    const set = (x: number, y: number, v: [number, number, number]) => {
+      const i = (y * w + x) * 4;
+      data[i] = v[0];
+      data[i + 1] = v[1];
+      data[i + 2] = v[2];
+    };
+    for (let y = 40; y < 260; y++) for (let x = 50; x < 750; x++) set(x, y, [40, 36, 36]); // case rim, dark
+    for (let y = 80; y < 160; y++) for (let x = 36; x < 50; x++) set(x, y, [40, 36, 36]); // strap block
+    for (let y = 70; y < 230; y++) for (let x = 90; x < 710; x++) set(x, y, [235, 235, 235]); // plate, light
+    return { width: w, height: h, data };
+  }
+
+  it('trims a strap mount glued to the side, so the width is the body', () => {
+    const img = withStrap();
+    const raw = reconstructShape(img, { knownWidthMm: 325 });
+    const trimmed = reconstructShape(img, { knownWidthMm: 325, trimProtrusionsMm: 2 });
+    // without trimming the 14 px block counts as width: the scale (and so the depth) is slightly off
+    expect(trimmed.scale.x).toBeCloseTo(325 / 700, 2);
+    expect(raw.scale.x).toBeCloseTo(325 / 714, 2);
+    expect(raw.scale.x).toBeLessThan(trimmed.scale.x - 0.006); // the block really changed the calibration
+    expect(trimmed.shape.depth).toBeCloseTo(220 * (325 / 700), 0);
+    expect(trimmed.steps.join(' ')).toMatch(/protrusions trimmed/);
+    expect(trimmed.warnings.join(' ')).toMatch(/attachment/);
+  });
+
+  it('does not touch a clean body or its rounded corners', () => {
+    const w = 800;
+    const h = 300;
+    const data = new Uint8ClampedArray(w * h * 4).fill(255);
+    for (let y = 40; y < 260; y++) {
+      for (let x = 50; x < 750; x++) {
+        // rounded corners of radius 20
+        const cx = x < 70 ? 70 : x > 729 ? 729 : x;
+        const cy = y < 60 ? 60 : y > 239 ? 239 : y;
+        if ((x - cx) ** 2 + (y - cy) ** 2 <= 400) data.fill(30, (y * w + x) * 4, (y * w + x) * 4 + 3);
+      }
+    }
+    const r = reconstructShape({ width: w, height: h, data }, { knownWidthMm: 325, trimProtrusionsMm: 2 });
+    expect(r.steps.join(' ')).not.toMatch(/protrusions trimmed/);
+    expect(r.shape.width).toBeCloseTo(325, 0);
+  });
+
+  it('measures the colour of the case rim, not of the plate inside it', () => {
+    const r = reconstructShape(withStrap(), { knownWidthMm: 325, trimProtrusionsMm: 2 });
+    expect(r.rimColor).toMatch(/^#[0-9a-f]{6}$/);
+    const rr = parseInt((r.rimColor as string).slice(1, 3), 16);
+    expect(rr).toBeLessThan(80); // dark rim (40), not the light plate (235)
+  });
+
+  it('does not report a dark rim around a light plate as "very small in the frame"', () => {
+    const r = reconstructShape(withStrap(), { knownWidthMm: 325 });
+    expect(r.warnings.join(' ')).not.toMatch(/very small/);
+  });
+});

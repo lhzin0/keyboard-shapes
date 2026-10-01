@@ -85,7 +85,18 @@ export function decodeImage(buf: Buffer): ImageLike {
     const j = jpeg.decode(buf, { useTArray: true, formatAsRGBA: true });
     return { width: j.width, height: j.height, data: j.data };
   }
-  throw new Error('Unsupported image format (PNG and JPEG are supported in the CLI; WebP/AVIF: convert first or use the web app).');
+  throw new Error('Unsupported image format (PNG, JPEG and WebP are supported in the CLI; AVIF: use the web app).');
+}
+
+/** PNG / JPEG synchronously; WebP (what most shop CDNs serve today) through a WASM decoder. */
+export async function decodeImageAsync(buf: Buffer): Promise<ImageLike> {
+  const isWebp = buf.length > 12 && buf.toString('ascii', 0, 4) === 'RIFF' && buf.toString('ascii', 8, 12) === 'WEBP';
+  if (!isWebp) return decodeImage(buf);
+  const { default: decode, init } = await import('@jsquash/webp/decode.js');
+  // Node cannot fetch() a file:// URL for the wasm, so hand over the bytes
+  await init({ wasmBinary: readFileSync(new URL('../../node_modules/@jsquash/webp/codec/dec/webp_dec.wasm', import.meta.url)) as unknown as ArrayBuffer });
+  const img = await decode(buf.buffer.slice(buf.byteOffset, buf.byteOffset + buf.byteLength) as ArrayBuffer);
+  return { width: img.width, height: img.height, data: img.data };
 }
 
 export function readJsonArray<T>(path: string): T[] {

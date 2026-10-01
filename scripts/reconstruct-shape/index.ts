@@ -4,10 +4,13 @@
  *
  * Image → millimetre outline (PNG/JPEG). The calibration is mandatory: an image alone has no scale.
  * --depth in outline mode only *verifies* the result (rejects it if it contradicts the published depth).
+ * --remove-thin=8        drops attachments thinner than 8 mm (cable tabs) before measuring.
+ * --trim-protrusions=2    cuts back short stretches sticking out of the body's straight edge by more than 2 mm
+ *                         (strap mounts, hooks) — what a thin-feature filter cannot remove.
  */
 import { readFileSync, writeFileSync } from 'node:fs';
 import { ReconstructionRejected, holesToMountingPoints, reconstructProfile, reconstructShape } from '../../src/import/ShapeReconstructor';
-import { c, decodeImage, parseArgs } from '../lib/node';
+import { c, decodeImageAsync, parseArgs } from '../lib/node';
 
 const args = parseArgs(process.argv.slice(2));
 const str = (k: string) => (typeof args[k] === 'string' ? (args[k] as string) : undefined);
@@ -17,7 +20,7 @@ try {
   if (str('side')) {
     const depth = num('depth');
     if (!depth) throw new Error('--depth=<mm> is required to calibrate a side image');
-    const r = reconstructProfile(decodeImage(readFileSync(str('side') as string)), { knownDepthMm: depth, frontSide: str('front') === 'right' ? 'right' : 'left' });
+    const r = reconstructProfile(await decodeImageAsync(readFileSync(str('side') as string)), { knownDepthMm: depth, frontSide: str('front') === 'right' ? 'right' : 'left' });
     r.steps.forEach((s) => console.log(c.ok(s)));
     r.warnings.forEach((w) => console.log(c.warn(w)));
     console.log(JSON.stringify(r.profile, null, 1));
@@ -25,7 +28,9 @@ try {
   } else if (str('image')) {
     const width = num('width');
     if (!width) throw new Error('--width=<mm> is required to calibrate the image');
-    const r = reconstructShape(decodeImage(readFileSync(str('image') as string)), {
+    const r = reconstructShape(await decodeImageAsync(readFileSync(str('image') as string)), {
+      removeThinFeaturesMm: num('remove-thin'),
+      trimProtrusionsMm: num('trim-protrusions'),
       knownWidthMm: width,
       expectedDepthMm: num('depth'),
       perspective: str('perspective') === 'auto' ? 'auto' : 'none',

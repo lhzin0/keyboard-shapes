@@ -20,7 +20,7 @@
 import type { ConfidenceInfo, MountingPoint, Point2D, Profile, Shape } from '../types/keyboard';
 import { makeShape, offsetPolygon, round, simplifyPolygon, simplifyPolyline } from '../geometry/shape';
 import { traceContour, quadFromContour, rectifyPoints, type Quad } from './vision/geometry';
-import { downscale, fillHoles, findHoles, largestComponent, segment, smooth, type ImageLike, type Mask } from './vision/mask';
+import { downscale, fillHoles, findHoles, largestComponent, openMask, rimColor, segment, smooth, trimProtrusions, type ImageLike, type Mask } from './vision/mask';
 
 export interface ReconstructOptions {
   /** Real width (left-right extent) of the object in mm. */
@@ -33,6 +33,16 @@ export interface ReconstructOptions {
    * whose depth contradicts it by more than 15% is rejected: the image is not a clean top view.
    */
   expectedDepthMm?: number;
+  /**
+   * Remove attachments thinner than this (mm) before measuring: strap mounts, cable tabs, hooks. Applied to the
+   * silhouette with a disk, so rounded corners of the body (radius ≥ half of this) are preserved.
+   */
+  removeThinFeaturesMm?: number;
+  /**
+   * Cut back stretches that stick out of the body's straight edge by more than this many mm (strap mounts, hooks glued
+   * to a side). Only short stretches (≤ 40% of a side) are treated as protrusions.
+   */
+  trimProtrusionsMm?: number;
   /** Douglas–Peucker tolerance in mm. */
   simplifyMm?: number;
   /** Longest side used for processing. */
@@ -58,6 +68,8 @@ export interface ReconstructResult {
   warnings: string[];
   /** Silhouette used, for debugging overlays. */
   mask: Mask;
+  /** Colour of the object's rim (the case), `#rrggbb`; null when it could not be measured. */
+  rimColor: string | null;
 }
 
 /** The image produced a result that contradicts what is already known — better no outline than a wrong one. */
@@ -88,13 +100,49 @@ export function reconstructShape(source: ImageLike, opts: ReconstructOptions = {
 
   const object = largestComponent(smooth(seg.mask));
   if (!object) throw new Error('No object found: the image has no region different from its background.');
-  const coverage = object.area / (image.width * image.height);
+  const holesPx = findHoles(object.mask);
+  let silhouette = fillHoles(object.mask);
+  // coverage of the *filled* silhouette: a dark case around a plate that resembles the background is not "tiny"
+  let filledArea = 0;
+  for (let i = 0; i < silhouette.data.length; i++) filledArea += silhouette.data[i] as number;
+  const coverage = filledArea / (image.width * image.height);
   steps.push(`object detected (${(coverage * 100).toFixed(0)}% of the image)`);
   if (coverage < 0.05) warnings.push('The detected object is very small in the frame; the outline will be coarse.');
   if (coverage > 0.97) warnings.push('The object fills the whole image: the background may not have been separated.');
-
-  const holesPx = findHoles(object.mask);
-  const silhouette = fillHoles(object.mask);
+  if (opts.removeThinFeaturesMm && opts.removeThinFeaturesMm > 0) {
+    // first estimate of the scale from the raw width, to convert millimetres into pixels
+    const raw = largestComponent(silhouette);
+    if (raw) {
+      const wRaw = raw.bbox.maxX - raw.bbox.minX + 1;
+      const mmPerPx = (opts.knownWidthMm ?? (opts.knownDepthMm as number) * (wRaw / (raw.bbox.maxY - raw.bbox.minY + 1))) / wRaw;
+      const r = Math.round(opts.removeThinFeaturesMm / 2 / mmPerPx);
+      if (r >= 1) {
+        const before = raw.area;
+        const opened = largestComponent(openMask(silhouette, r));
+        if (opened) {
+          silhouette = opened.mask;
+          steps.push(`thin features (< ${opts.removeThinFeaturesMm} mm: straps, tabs) removed — ${Math.round((1 - opened.area / before) * 1000) / 10}% of the silhouette`);
+        }
+      }
+    }
+  }
+  if (opts.trimProtrusionsMm && opts.trimProtrusionsMm > 0) {
+    const raw = largestComponent(silhouette);
+    if (raw) {
+      const wRaw = raw.bbox.maxX - raw.bbox.minX + 1;
+      const mmPerPx = (opts.knownWidthMm ?? (opts.knownDepthMm as number) * (wRaw / (raw.bbox.maxY - raw.bbox.minY + 1))) / wRaw;
+      const t = trimProtrusions(silhouette, Math.max(1, Math.round(opts.trimProtrusionsMm / mmPerPx)));
+      const cut = (['left', 'right', 'top', 'bottom'] as const).filter((k) => t.trimmed[k] > 0);
+      if (cut.length) {
+        const kept = largestComponent(t.mask);
+        if (kept) {
+          silhouette = kept.mask;
+          steps.push(`protrusions trimmed to the body edge: ${cut.map((k) => `${k} ${(t.trimmed[k] * mmPerPx).toFixed(1)} mm`).join(', ')} (strap mount, hook or tab attached to the case)`);
+          warnings.push('Part of the silhouette was treated as an attachment (e.g. a strap mount) and left out of the outline.');
+        }
+      }
+    }
+  }
   let contour: Point2D[] = traceContour(silhouette);
   steps.push(`contour traced (${contour.length} points)`);
 
@@ -157,6 +205,9 @@ export function reconstructShape(source: ImageLike, opts: ReconstructOptions = {
     }));
   if (holes.length) steps.push(`${holes.length} enclosed circular holes detected`);
 
+  const rim = rimColor(image, silhouette, Math.max(3, Math.round(Math.min(silhouette.width, silhouette.height) * 0.012)));
+  if (rim) steps.push(`case colour measured on the rim: ${toHex(rim)}`);
+
   // confidence: calibrated twice > once; clean coverage > tiny; warnings subtract
   let score = opts.knownWidthMm && opts.knownDepthMm ? 0.8 : 0.7;
   if (coverage < 0.15) score -= 0.1;
@@ -175,8 +226,11 @@ export function reconstructShape(source: ImageLike, opts: ReconstructOptions = {
     steps,
     warnings,
     mask: silhouette,
+    rimColor: rim ? toHex(rim) : null,
   };
 }
+
+const toHex = (c: { r: number; g: number; b: number }) => '#' + [c.r, c.g, c.b].map((v) => Math.round(v).toString(16).padStart(2, '0')).join('');
 
 /** Holes that look like screw holes (1.5–6.5 mm) as mounting-point candidates. */
 export function holesToMountingPoints(holes: DetectedHole[], prefix = 'h'): MountingPoint[] {
