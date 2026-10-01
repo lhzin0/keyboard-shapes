@@ -1,0 +1,171 @@
+.stage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 240px;
+  background: var(--surface);
+  overflow: hidden;
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.svg {
+  display: block;
+  touch-action: none;
+}
+
+.content :global(*) {
+  vector-effect: non-scaling-stroke;
+}
+
+.grid {
+  stroke: var(--draw-grid);
+  stroke-width: 1;
+}
+.gridMajor {
+  stroke: color-mix(in srgb, var(--draw-grid) 60%, var(--border-strong));
+  stroke-width: 1;
+}
+
+.ruler rect {
+  fill: var(--surface-2);
+  opacity: 0.92;
+}
+.ruler line {
+  stroke: var(--text-faint);
+  stroke-width: 1;
+}
+.ruler text {
+  fill: var(--text-muted);
+  font: 10px var(--mono);
+}
+
+.scaleBar line {
+  stroke: var(--text-muted);
+  stroke-width: 1.5;
+}
+.scaleBar text {
+  fill: var(--text-muted);
+  font: 11px var(--mono);
+}
+
+.toolbar {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  max-width: calc(100% - 44px);
+  padding: 6px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: color-mix(in srgb, var(--surface) 88%, transparent);
+  backdrop-filter: blur(6px);
+}
+
+/* drawing */
+.caseOutline {
+  fill: color-mix(in srgb, var(--draw-case) 14%, transparent);
+  stroke: var(--draw-case);
+  stroke-width: 2;
+}
+.cavity {
+  fill: none;
+  stroke: var(--draw-cavity);
+  stroke-width: 1.5;
+  stroke-dasharray: 5 3;
+}
+.plateOutline {
+  fill: color-mix(in srgb, var(--draw-plate) 10%, transparent);
+  stroke: var(--draw-plate);
+  stroke-width: 1.5;
+}
+.pcbOutline {
+  fill: color-mix(in srgb, var(--draw-pcb) 10%, transparent);
+  stroke: var(--draw-pcb);
+  stroke-width: 1.5;
+}
+.dbOutline {
+  fill: color-mix(in srgb, var(--info) 14%, transparent);
+  stroke: var(--info);
+  stroke-width: 1.5;
+}
+.key {
+  fill: var(--draw-key);
+  stroke: var(--draw-key-stroke);
+  stroke-width: 1;
+}
+.keyLabel {
+  fill: var(--text-muted);
+  text-anchor: middle;
+  dominant-baseline: central;
+  pointer-events: none;
+}
+.hole {
+  fill: none;
+  stroke: var(--draw-hole);
+  stroke-width: 1.5;
+}
+.usb {
+  fill: color-mix(in srgb, var(--draw-usb) 30%, transparent);
+  stroke: var(--draw-usb);
+  stroke-width: 1.5;
+}
+.dim {
+  stroke: var(--draw-dim);
+  stroke-width: 1.25;
+  fill: none;
+}
+.dimText {
+  fill: var(--draw-dim);
+  text-anchor: middle;
+  font-family: var(--mono);
+  paint-order: stroke;
+  stroke: var(--surface);
+  stroke-width: 3px;
+}
+.selectable {
+  cursor: pointer;
+}
+.selectable:hover {
+  filter: brightness(1.25);
+}
+.selected {
+  stroke-width: 3 !important;
+}
+.fail {
+  stroke: var(--danger) !important;
+  fill: color-mix(in srgb, var(--danger) 14%, transparent) !important;
+}
+.warnState {
+  stroke: var(--warn) !important;
+}
+.collision {
+  fill: color-mix(in srgb, var(--danger) 35%, transparent);
+  stroke: var(--danger);
+  stroke-width: 1.5;
+}
+.snap {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 1.5;
+}
+
+.sideHost {
+  display: grid;
+  grid-template-rows: minmax(0, 1fr);
+  height: 100%;
+}
+
+.overlayA {
+  fill: color-mix(in srgb, var(--info) 30%, transparent);
+  stroke: var(--info);
+  stroke-width: 1.75;
+}
+.overlayB {
+  fill: color-mix(in srgb, var(--warn) 30%, transparent);
+  stroke: var(--warn);
+  stroke-width: 1.75;
+}

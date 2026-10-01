@@ -1,0 +1,6102 @@
+[
+ {
+  "id": "ref-60",
+  "brand": "KeyboardShapes",
+  "model": "Reference 60% ANSI",
+  "slug": "reference-60",
+  "layout": {
+   "name": "60%",
+   "description": "ANSI 60%",
+   "keys": [
+    {
+     "x": 0,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "`",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 1,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "1",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 2,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "2",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 3,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "3",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 4,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "4",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 5,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "5",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 6,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "6",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 7,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "7",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 8,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "8",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 9,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "9",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 10,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "0",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 11,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "-",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 12,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "=",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 13,
+     "y": 0,
+     "width": 2,
+     "height": 1,
+     "rotation": 0,
+     "label": "Backspace",
+     "row": 0,
+     "keycapSize": "2u"
+    },
+    {
+     "x": 0,
+     "y": 1,
+     "width": 1.5,
+     "height": 1,
+     "rotation": 0,
+     "label": "Tab",
+     "row": 1,
+     "keycapSize": "1.5u"
+    },
+    {
+     "x": 1.5,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Q",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 2.5,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "W",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 3.5,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "E",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 4.5,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "R",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 5.5,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "T",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 6.5,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Y",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 7.5,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "U",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 8.5,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "I",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 9.5,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "O",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 10.5,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "P",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 11.5,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "[",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 12.5,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "]",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 13.5,
+     "y": 1,
+     "width": 1.5,
+     "height": 1,
+     "rotation": 0,
+     "label": "\\",
+     "row": 1,
+     "keycapSize": "1.5u"
+    },
+    {
+     "x": 0,
+     "y": 2,
+     "width": 1.75,
+     "height": 1,
+     "rotation": 0,
+     "label": "Caps",
+     "row": 2,
+     "keycapSize": "1.75u"
+    },
+    {
+     "x": 1.75,
+     "y": 2,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "A",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 2.75,
+     "y": 2,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "S",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 3.75,
+     "y": 2,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "D",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 4.75,
+     "y": 2,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "F",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 5.75,
+     "y": 2,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "G",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 6.75,
+     "y": 2,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "H",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 7.75,
+     "y": 2,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "J",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 8.75,
+     "y": 2,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "K",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 9.75,
+     "y": 2,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "L",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 10.75,
+     "y": 2,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": ";",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 11.75,
+     "y": 2,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "'",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 12.75,
+     "y": 2,
+     "width": 2.25,
+     "height": 1,
+     "rotation": 0,
+     "label": "Enter",
+     "row": 2,
+     "keycapSize": "2.25u"
+    },
+    {
+     "x": 0,
+     "y": 3,
+     "width": 2.25,
+     "height": 1,
+     "rotation": 0,
+     "label": "Shift",
+     "row": 3,
+     "keycapSize": "2.25u"
+    },
+    {
+     "x": 2.25,
+     "y": 3,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Z",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 3.25,
+     "y": 3,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "X",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 4.25,
+     "y": 3,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "C",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 5.25,
+     "y": 3,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "V",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 6.25,
+     "y": 3,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "B",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 7.25,
+     "y": 3,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "N",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 8.25,
+     "y": 3,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "M",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 9.25,
+     "y": 3,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": ",",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 10.25,
+     "y": 3,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": ".",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 11.25,
+     "y": 3,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "/",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 12.25,
+     "y": 3,
+     "width": 2.75,
+     "height": 1,
+     "rotation": 0,
+     "label": "Shift",
+     "row": 3,
+     "keycapSize": "2.75u"
+    },
+    {
+     "x": 0,
+     "y": 4,
+     "width": 1.25,
+     "height": 1,
+     "rotation": 0,
+     "label": "Ctrl",
+     "row": 4,
+     "keycapSize": "1.25u"
+    },
+    {
+     "x": 1.25,
+     "y": 4,
+     "width": 1.25,
+     "height": 1,
+     "rotation": 0,
+     "label": "Win",
+     "row": 4,
+     "keycapSize": "1.25u"
+    },
+    {
+     "x": 2.5,
+     "y": 4,
+     "width": 1.25,
+     "height": 1,
+     "rotation": 0,
+     "label": "Alt",
+     "row": 4,
+     "keycapSize": "1.25u"
+    },
+    {
+     "x": 3.75,
+     "y": 4,
+     "width": 6.25,
+     "height": 1,
+     "rotation": 0,
+     "label": "Space",
+     "row": 4,
+     "keycapSize": "6.25u"
+    },
+    {
+     "x": 10,
+     "y": 4,
+     "width": 1.25,
+     "height": 1,
+     "rotation": 0,
+     "label": "Alt",
+     "row": 4,
+     "keycapSize": "1.25u"
+    },
+    {
+     "x": 11.25,
+     "y": 4,
+     "width": 1.25,
+     "height": 1,
+     "rotation": 0,
+     "label": "Win",
+     "row": 4,
+     "keycapSize": "1.25u"
+    },
+    {
+     "x": 12.5,
+     "y": 4,
+     "width": 1.25,
+     "height": 1,
+     "rotation": 0,
+     "label": "Fn",
+     "row": 4,
+     "keycapSize": "1.25u"
+    },
+    {
+     "x": 13.75,
+     "y": 4,
+     "width": 1.25,
+     "height": 1,
+     "rotation": 0,
+     "label": "Ctrl",
+     "row": 4,
+     "keycapSize": "1.25u"
+    }
+   ],
+   "widthU": 15,
+   "heightU": 5,
+   "keyCount": 61
+  },
+  "dimensions": {
+   "width": 301.75,
+   "depth": 113.25,
+   "height": 43
+  },
+  "components": {
+   "caseId": "ref-60-case-a",
+   "pcbId": "ref-60-pcb-a",
+   "plateId": "ref-60-plate-a",
+   "switchId": "ref-mx-linear",
+   "keycapId": "ref-keycap-cherry",
+   "stabilizerId": "ref-stab-plate",
+   "foamId": "ref-foam-case"
+  },
+  "profile": {
+   "angle": 6,
+   "frontHeight": 17.01,
+   "rearHeight": 28.85,
+   "points": [
+    {
+     "x": 0,
+     "height": 17.01
+    },
+    {
+     "x": 28.31,
+     "height": 19.97
+    },
+    {
+     "x": 56.63,
+     "height": 22.93
+    },
+    {
+     "x": 84.94,
+     "height": 25.89
+    },
+    {
+     "x": 113.25,
+     "height": 28.85
+    }
+   ]
+  },
+  "tags": [
+   "reference",
+   "60%",
+   "illustrative"
+  ],
+  "features": {
+   "hotswap": true,
+   "wireless": false,
+   "knob": false
+  },
+  "material": "aluminium",
+  "sources": [
+   {
+    "sourceName": "KeyboardShapes parametric reference",
+    "sourceType": "parametric-reference",
+    "method": "generated from ANSI layout and nominal published dimensions",
+    "retrievedAt": "2026-10-01T00:00:00.000Z",
+    "confidence": 0.4
+   }
+  ],
+  "confidence": {
+   "level": "estimated",
+   "score": 0.4,
+   "notes": "Illustrative parametric keyboard. Dimensions are generated, not measured."
+  },
+  "images": [],
+  "model3d": {
+   "kind": "parametric",
+   "url": "models/reference-60.glb",
+   "sourceName": "generated by npm run generate:models"
+  },
+  "addedAt": "2026-10-01T00:00:00.000Z"
+ },
+ {
+  "id": "ref-65",
+  "brand": "KeyboardShapes",
+  "model": "Reference 65% ANSI",
+  "slug": "reference-65",
+  "layout": {
+   "name": "65%",
+   "description": "ANSI 65%",
+   "keys": [
+    {
+     "x": 0,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "`",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 1,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "1",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 2,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "2",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 3,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "3",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 4,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "4",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 5,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "5",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 6,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "6",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 7,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "7",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 8,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "8",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 9,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "9",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 10,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "0",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 11,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "-",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 12,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "=",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 13,
+     "y": 0,
+     "width": 2,
+     "height": 1,
+     "rotation": 0,
+     "label": "Backspace",
+     "row": 0,
+     "keycapSize": "2u"
+    },
+    {
+     "x": 15,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Del",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 0,
+     "y": 1,
+     "width": 1.5,
+     "height": 1,
+     "rotation": 0,
+     "label": "Tab",
+     "row": 1,
+     "keycapSize": "1.5u"
+    },
+    {
+     "x": 1.5,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Q",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 2.5,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "W",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 3.5,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "E",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 4.5,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "R",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 5.5,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "T",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 6.5,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Y",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 7.5,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "U",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 8.5,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "I",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 9.5,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "O",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 10.5,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "P",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 11.5,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "[",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 12.5,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "]",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 13.5,
+     "y": 1,
+     "width": 1.5,
+     "height": 1,
+     "rotation": 0,
+     "label": "\\",
+     "row": 1,
+     "keycapSize": "1.5u"
+    },
+    {
+     "x": 15,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "PgUp",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 0,
+     "y": 2,
+     "width": 1.75,
+     "height": 1,
+     "rotation": 0,
+     "label": "Caps",
+     "row": 2,
+     "keycapSize": "1.75u"
+    },
+    {
+     "x": 1.75,
+     "y": 2,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "A",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 2.75,
+     "y": 2,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "S",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 3.75,
+     "y": 2,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "D",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 4.75,
+     "y": 2,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "F",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 5.75,
+     "y": 2,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "G",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 6.75,
+     "y": 2,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "H",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 7.75,
+     "y": 2,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "J",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 8.75,
+     "y": 2,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "K",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 9.75,
+     "y": 2,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "L",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 10.75,
+     "y": 2,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": ";",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 11.75,
+     "y": 2,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "'",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 12.75,
+     "y": 2,
+     "width": 2.25,
+     "height": 1,
+     "rotation": 0,
+     "label": "Enter",
+     "row": 2,
+     "keycapSize": "2.25u"
+    },
+    {
+     "x": 15,
+     "y": 2,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "PgDn",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 0,
+     "y": 3,
+     "width": 2.25,
+     "height": 1,
+     "rotation": 0,
+     "label": "Shift",
+     "row": 3,
+     "keycapSize": "2.25u"
+    },
+    {
+     "x": 2.25,
+     "y": 3,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Z",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 3.25,
+     "y": 3,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "X",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 4.25,
+     "y": 3,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "C",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 5.25,
+     "y": 3,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "V",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 6.25,
+     "y": 3,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "B",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 7.25,
+     "y": 3,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "N",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 8.25,
+     "y": 3,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "M",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 9.25,
+     "y": 3,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": ",",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 10.25,
+     "y": 3,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": ".",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 11.25,
+     "y": 3,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "/",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 12.25,
+     "y": 3,
+     "width": 1.75,
+     "height": 1,
+     "rotation": 0,
+     "label": "Shift",
+     "row": 3,
+     "keycapSize": "1.75u"
+    },
+    {
+     "x": 14,
+     "y": 3,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Up",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 15,
+     "y": 3,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "End",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 0,
+     "y": 4,
+     "width": 1.25,
+     "height": 1,
+     "rotation": 0,
+     "label": "Ctrl",
+     "row": 4,
+     "keycapSize": "1.25u"
+    },
+    {
+     "x": 1.25,
+     "y": 4,
+     "width": 1.25,
+     "height": 1,
+     "rotation": 0,
+     "label": "Win",
+     "row": 4,
+     "keycapSize": "1.25u"
+    },
+    {
+     "x": 2.5,
+     "y": 4,
+     "width": 1.25,
+     "height": 1,
+     "rotation": 0,
+     "label": "Alt",
+     "row": 4,
+     "keycapSize": "1.25u"
+    },
+    {
+     "x": 3.75,
+     "y": 4,
+     "width": 6.25,
+     "height": 1,
+     "rotation": 0,
+     "label": "Space",
+     "row": 4,
+     "keycapSize": "6.25u"
+    },
+    {
+     "x": 10,
+     "y": 4,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Alt",
+     "row": 4,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 11,
+     "y": 4,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Fn",
+     "row": 4,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 12,
+     "y": 4,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Ctrl",
+     "row": 4,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 13,
+     "y": 4,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Left",
+     "row": 4,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 14,
+     "y": 4,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Down",
+     "row": 4,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 15,
+     "y": 4,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Right",
+     "row": 4,
+     "keycapSize": "1u"
+    }
+   ],
+   "widthU": 16,
+   "heightU": 5,
+   "keyCount": 68
+  },
+  "dimensions": {
+   "width": 320.8,
+   "depth": 127.25,
+   "height": 44.4
+  },
+  "components": {
+   "caseId": "ref-65-case-a",
+   "pcbId": "ref-65-pcb-a",
+   "plateId": "ref-65-plate-a",
+   "daughterboardId": "ref-daughterboard-a",
+   "switchId": "ref-mx-linear",
+   "keycapId": "ref-keycap-cherry",
+   "stabilizerId": "ref-stab-plate",
+   "foamId": "ref-foam-case"
+  },
+  "profile": {
+   "angle": 6,
+   "frontHeight": 17.01,
+   "rearHeight": 30.31,
+   "points": [
+    {
+     "x": 0,
+     "height": 17.01
+    },
+    {
+     "x": 31.81,
+     "height": 20.34
+    },
+    {
+     "x": 63.63,
+     "height": 23.66
+    },
+    {
+     "x": 95.44,
+     "height": 26.99
+    },
+    {
+     "x": 127.25,
+     "height": 30.31
+    }
+   ]
+  },
+  "tags": [
+   "reference",
+   "65%",
+   "illustrative"
+  ],
+  "features": {
+   "hotswap": true,
+   "wireless": false,
+   "knob": false
+  },
+  "material": "aluminium",
+  "sources": [
+   {
+    "sourceName": "KeyboardShapes parametric reference",
+    "sourceType": "parametric-reference",
+    "method": "generated from ANSI layout and nominal published dimensions",
+    "retrievedAt": "2026-10-01T00:00:00.000Z",
+    "confidence": 0.4
+   }
+  ],
+  "confidence": {
+   "level": "estimated",
+   "score": 0.4,
+   "notes": "Illustrative parametric keyboard. Dimensions are generated, not measured."
+  },
+  "images": [],
+  "model3d": {
+   "kind": "parametric",
+   "url": "models/reference-65.glb",
+   "sourceName": "generated by npm run generate:models"
+  },
+  "addedAt": "2026-10-01T00:00:00.000Z"
+ },
+ {
+  "id": "ref-75",
+  "brand": "KeyboardShapes",
+  "model": "Reference 75% ANSI",
+  "slug": "reference-75",
+  "layout": {
+   "name": "75%",
+   "description": "ANSI 75%",
+   "keys": [
+    {
+     "x": 0,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Esc",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 1,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "F1",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 2,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "F2",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 3,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "F3",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 4,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "F4",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 5,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "F5",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 6,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "F6",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 7,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "F7",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 8,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "F8",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 9,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "F9",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 10,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "F10",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 11,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "F11",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 12,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "F12",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 13,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Prt",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 14,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Ins",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 15,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Del",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 0,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "`",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 1,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "1",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 2,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "2",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 3,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "3",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 4,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "4",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 5,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "5",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 6,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "6",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 7,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "7",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 8,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "8",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 9,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "9",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 10,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "0",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 11,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "-",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 12,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "=",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 13,
+     "y": 1,
+     "width": 2,
+     "height": 1,
+     "rotation": 0,
+     "label": "Backspace",
+     "row": 1,
+     "keycapSize": "2u"
+    },
+    {
+     "x": 15,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Home",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 0,
+     "y": 2,
+     "width": 1.5,
+     "height": 1,
+     "rotation": 0,
+     "label": "Tab",
+     "row": 2,
+     "keycapSize": "1.5u"
+    },
+    {
+     "x": 1.5,
+     "y": 2,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Q",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 2.5,
+     "y": 2,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "W",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 3.5,
+     "y": 2,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "E",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 4.5,
+     "y": 2,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "R",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 5.5,
+     "y": 2,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "T",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 6.5,
+     "y": 2,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Y",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 7.5,
+     "y": 2,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "U",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 8.5,
+     "y": 2,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "I",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 9.5,
+     "y": 2,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "O",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 10.5,
+     "y": 2,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "P",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 11.5,
+     "y": 2,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "[",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 12.5,
+     "y": 2,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "]",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 13.5,
+     "y": 2,
+     "width": 1.5,
+     "height": 1,
+     "rotation": 0,
+     "label": "\\",
+     "row": 2,
+     "keycapSize": "1.5u"
+    },
+    {
+     "x": 15,
+     "y": 2,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "PgUp",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 0,
+     "y": 3,
+     "width": 1.75,
+     "height": 1,
+     "rotation": 0,
+     "label": "Caps",
+     "row": 3,
+     "keycapSize": "1.75u"
+    },
+    {
+     "x": 1.75,
+     "y": 3,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "A",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 2.75,
+     "y": 3,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "S",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 3.75,
+     "y": 3,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "D",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 4.75,
+     "y": 3,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "F",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 5.75,
+     "y": 3,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "G",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 6.75,
+     "y": 3,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "H",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 7.75,
+     "y": 3,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "J",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 8.75,
+     "y": 3,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "K",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 9.75,
+     "y": 3,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "L",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 10.75,
+     "y": 3,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": ";",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 11.75,
+     "y": 3,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "'",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 12.75,
+     "y": 3,
+     "width": 2.25,
+     "height": 1,
+     "rotation": 0,
+     "label": "Enter",
+     "row": 3,
+     "keycapSize": "2.25u"
+    },
+    {
+     "x": 15,
+     "y": 3,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "PgDn",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 0,
+     "y": 4,
+     "width": 2.25,
+     "height": 1,
+     "rotation": 0,
+     "label": "Shift",
+     "row": 4,
+     "keycapSize": "2.25u"
+    },
+    {
+     "x": 2.25,
+     "y": 4,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Z",
+     "row": 4,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 3.25,
+     "y": 4,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "X",
+     "row": 4,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 4.25,
+     "y": 4,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "C",
+     "row": 4,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 5.25,
+     "y": 4,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "V",
+     "row": 4,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 6.25,
+     "y": 4,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "B",
+     "row": 4,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 7.25,
+     "y": 4,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "N",
+     "row": 4,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 8.25,
+     "y": 4,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "M",
+     "row": 4,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 9.25,
+     "y": 4,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": ",",
+     "row": 4,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 10.25,
+     "y": 4,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": ".",
+     "row": 4,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 11.25,
+     "y": 4,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "/",
+     "row": 4,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 12.25,
+     "y": 4,
+     "width": 1.75,
+     "height": 1,
+     "rotation": 0,
+     "label": "Shift",
+     "row": 4,
+     "keycapSize": "1.75u"
+    },
+    {
+     "x": 14,
+     "y": 4,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Up",
+     "row": 4,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 15,
+     "y": 4,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "End",
+     "row": 4,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 0,
+     "y": 5,
+     "width": 1.25,
+     "height": 1,
+     "rotation": 0,
+     "label": "Ctrl",
+     "row": 5,
+     "keycapSize": "1.25u"
+    },
+    {
+     "x": 1.25,
+     "y": 5,
+     "width": 1.25,
+     "height": 1,
+     "rotation": 0,
+     "label": "Win",
+     "row": 5,
+     "keycapSize": "1.25u"
+    },
+    {
+     "x": 2.5,
+     "y": 5,
+     "width": 1.25,
+     "height": 1,
+     "rotation": 0,
+     "label": "Alt",
+     "row": 5,
+     "keycapSize": "1.25u"
+    },
+    {
+     "x": 3.75,
+     "y": 5,
+     "width": 6.25,
+     "height": 1,
+     "rotation": 0,
+     "label": "Space",
+     "row": 5,
+     "keycapSize": "6.25u"
+    },
+    {
+     "x": 10,
+     "y": 5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Alt",
+     "row": 5,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 11,
+     "y": 5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Fn",
+     "row": 5,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 12,
+     "y": 5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Ctrl",
+     "row": 5,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 13,
+     "y": 5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Left",
+     "row": 5,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 14,
+     "y": 5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Down",
+     "row": 5,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 15,
+     "y": 5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Right",
+     "row": 5,
+     "keycapSize": "1u"
+    }
+   ],
+   "widthU": 16,
+   "heightU": 6,
+   "keyCount": 84
+  },
+  "dimensions": {
+   "width": 320.8,
+   "depth": 146.3,
+   "height": 46.4
+  },
+  "components": {
+   "caseId": "ref-75-case-a",
+   "pcbId": "ref-75-pcb-a",
+   "plateId": "ref-75-plate-a",
+   "daughterboardId": "ref-daughterboard-a",
+   "switchId": "ref-mx-linear",
+   "keycapId": "ref-keycap-cherry",
+   "stabilizerId": "ref-stab-plate",
+   "foamId": "ref-foam-case"
+  },
+  "profile": {
+   "angle": 6,
+   "frontHeight": 17.01,
+   "rearHeight": 32.3,
+   "points": [
+    {
+     "x": 0,
+     "height": 17.01
+    },
+    {
+     "x": 36.58,
+     "height": 20.83
+    },
+    {
+     "x": 73.15,
+     "height": 24.66
+    },
+    {
+     "x": 109.73,
+     "height": 28.48
+    },
+    {
+     "x": 146.3,
+     "height": 32.3
+    }
+   ]
+  },
+  "tags": [
+   "reference",
+   "75%",
+   "illustrative"
+  ],
+  "features": {
+   "hotswap": true,
+   "wireless": false,
+   "knob": false
+  },
+  "material": "aluminium",
+  "sources": [
+   {
+    "sourceName": "KeyboardShapes parametric reference",
+    "sourceType": "parametric-reference",
+    "method": "generated from ANSI layout and nominal published dimensions",
+    "retrievedAt": "2026-10-01T00:00:00.000Z",
+    "confidence": 0.4
+   }
+  ],
+  "confidence": {
+   "level": "estimated",
+   "score": 0.4,
+   "notes": "Illustrative parametric keyboard. Dimensions are generated, not measured."
+  },
+  "images": [],
+  "model3d": {
+   "kind": "parametric",
+   "url": "models/reference-75.glb",
+   "sourceName": "generated by npm run generate:models"
+  },
+  "addedAt": "2026-10-01T00:00:00.000Z"
+ },
+ {
+  "id": "ref-tkl",
+  "brand": "KeyboardShapes",
+  "model": "Reference TKL ANSI",
+  "slug": "reference-tkl",
+  "layout": {
+   "name": "TKL",
+   "description": "ANSI TKL (87)",
+   "keys": [
+    {
+     "x": 0,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Esc",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 2,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "F1",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 3,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "F2",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 4,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "F3",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 5,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "F4",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 6.5,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "F5",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 7.5,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "F6",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 8.5,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "F7",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 9.5,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "F8",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 11,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "F9",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 12,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "F10",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 13,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "F11",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 14,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "F12",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 15.25,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Prt",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 16.25,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Scr",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 17.25,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Pause",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 0,
+     "y": 1.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "`",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 1,
+     "y": 1.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "1",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 2,
+     "y": 1.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "2",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 3,
+     "y": 1.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "3",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 4,
+     "y": 1.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "4",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 5,
+     "y": 1.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "5",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 6,
+     "y": 1.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "6",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 7,
+     "y": 1.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "7",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 8,
+     "y": 1.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "8",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 9,
+     "y": 1.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "9",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 10,
+     "y": 1.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "0",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 11,
+     "y": 1.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "-",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 12,
+     "y": 1.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "=",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 13,
+     "y": 1.5,
+     "width": 2,
+     "height": 1,
+     "rotation": 0,
+     "label": "Backspace",
+     "row": 1,
+     "keycapSize": "2u"
+    },
+    {
+     "x": 15.25,
+     "y": 1.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Ins",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 16.25,
+     "y": 1.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Home",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 17.25,
+     "y": 1.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "PgUp",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 0,
+     "y": 2.5,
+     "width": 1.5,
+     "height": 1,
+     "rotation": 0,
+     "label": "Tab",
+     "row": 2,
+     "keycapSize": "1.5u"
+    },
+    {
+     "x": 1.5,
+     "y": 2.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Q",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 2.5,
+     "y": 2.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "W",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 3.5,
+     "y": 2.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "E",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 4.5,
+     "y": 2.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "R",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 5.5,
+     "y": 2.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "T",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 6.5,
+     "y": 2.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Y",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 7.5,
+     "y": 2.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "U",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 8.5,
+     "y": 2.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "I",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 9.5,
+     "y": 2.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "O",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 10.5,
+     "y": 2.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "P",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 11.5,
+     "y": 2.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "[",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 12.5,
+     "y": 2.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "]",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 13.5,
+     "y": 2.5,
+     "width": 1.5,
+     "height": 1,
+     "rotation": 0,
+     "label": "\\",
+     "row": 2,
+     "keycapSize": "1.5u"
+    },
+    {
+     "x": 15.25,
+     "y": 2.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Del",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 16.25,
+     "y": 2.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "End",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 17.25,
+     "y": 2.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "PgDn",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 0,
+     "y": 3.5,
+     "width": 1.75,
+     "height": 1,
+     "rotation": 0,
+     "label": "Caps",
+     "row": 3,
+     "keycapSize": "1.75u"
+    },
+    {
+     "x": 1.75,
+     "y": 3.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "A",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 2.75,
+     "y": 3.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "S",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 3.75,
+     "y": 3.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "D",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 4.75,
+     "y": 3.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "F",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 5.75,
+     "y": 3.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "G",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 6.75,
+     "y": 3.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "H",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 7.75,
+     "y": 3.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "J",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 8.75,
+     "y": 3.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "K",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 9.75,
+     "y": 3.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "L",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 10.75,
+     "y": 3.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": ";",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 11.75,
+     "y": 3.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "'",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 12.75,
+     "y": 3.5,
+     "width": 2.25,
+     "height": 1,
+     "rotation": 0,
+     "label": "Enter",
+     "row": 3,
+     "keycapSize": "2.25u"
+    },
+    {
+     "x": 0,
+     "y": 4.5,
+     "width": 2.25,
+     "height": 1,
+     "rotation": 0,
+     "label": "Shift",
+     "row": 4,
+     "keycapSize": "2.25u"
+    },
+    {
+     "x": 2.25,
+     "y": 4.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Z",
+     "row": 4,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 3.25,
+     "y": 4.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "X",
+     "row": 4,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 4.25,
+     "y": 4.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "C",
+     "row": 4,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 5.25,
+     "y": 4.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "V",
+     "row": 4,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 6.25,
+     "y": 4.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "B",
+     "row": 4,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 7.25,
+     "y": 4.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "N",
+     "row": 4,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 8.25,
+     "y": 4.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "M",
+     "row": 4,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 9.25,
+     "y": 4.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": ",",
+     "row": 4,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 10.25,
+     "y": 4.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": ".",
+     "row": 4,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 11.25,
+     "y": 4.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "/",
+     "row": 4,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 12.25,
+     "y": 4.5,
+     "width": 2.75,
+     "height": 1,
+     "rotation": 0,
+     "label": "Shift",
+     "row": 4,
+     "keycapSize": "2.75u"
+    },
+    {
+     "x": 16.25,
+     "y": 4.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Up",
+     "row": 4,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 0,
+     "y": 5.5,
+     "width": 1.25,
+     "height": 1,
+     "rotation": 0,
+     "label": "Ctrl",
+     "row": 5,
+     "keycapSize": "1.25u"
+    },
+    {
+     "x": 1.25,
+     "y": 5.5,
+     "width": 1.25,
+     "height": 1,
+     "rotation": 0,
+     "label": "Win",
+     "row": 5,
+     "keycapSize": "1.25u"
+    },
+    {
+     "x": 2.5,
+     "y": 5.5,
+     "width": 1.25,
+     "height": 1,
+     "rotation": 0,
+     "label": "Alt",
+     "row": 5,
+     "keycapSize": "1.25u"
+    },
+    {
+     "x": 3.75,
+     "y": 5.5,
+     "width": 6.25,
+     "height": 1,
+     "rotation": 0,
+     "label": "Space",
+     "row": 5,
+     "keycapSize": "6.25u"
+    },
+    {
+     "x": 10,
+     "y": 5.5,
+     "width": 1.25,
+     "height": 1,
+     "rotation": 0,
+     "label": "Alt",
+     "row": 5,
+     "keycapSize": "1.25u"
+    },
+    {
+     "x": 11.25,
+     "y": 5.5,
+     "width": 1.25,
+     "height": 1,
+     "rotation": 0,
+     "label": "Win",
+     "row": 5,
+     "keycapSize": "1.25u"
+    },
+    {
+     "x": 12.5,
+     "y": 5.5,
+     "width": 1.25,
+     "height": 1,
+     "rotation": 0,
+     "label": "Menu",
+     "row": 5,
+     "keycapSize": "1.25u"
+    },
+    {
+     "x": 13.75,
+     "y": 5.5,
+     "width": 1.25,
+     "height": 1,
+     "rotation": 0,
+     "label": "Ctrl",
+     "row": 5,
+     "keycapSize": "1.25u"
+    },
+    {
+     "x": 15.25,
+     "y": 5.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Left",
+     "row": 5,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 16.25,
+     "y": 5.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Down",
+     "row": 5,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 17.25,
+     "y": 5.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Right",
+     "row": 5,
+     "keycapSize": "1u"
+    }
+   ],
+   "widthU": 18.25,
+   "heightU": 6.5,
+   "keyCount": 87
+  },
+  "dimensions": {
+   "width": 363.663,
+   "depth": 141.825,
+   "height": 45.9
+  },
+  "components": {
+   "caseId": "ref-tkl-case-a",
+   "pcbId": "ref-tkl-pcb-a",
+   "plateId": "ref-tkl-plate-a",
+   "switchId": "ref-mx-linear",
+   "keycapId": "ref-keycap-cherry",
+   "stabilizerId": "ref-stab-plate",
+   "foamId": "ref-foam-case"
+  },
+  "profile": {
+   "angle": 6,
+   "frontHeight": 17.01,
+   "rearHeight": 31.83,
+   "points": [
+    {
+     "x": 0,
+     "height": 17.01
+    },
+    {
+     "x": 35.46,
+     "height": 20.72
+    },
+    {
+     "x": 70.91,
+     "height": 24.42
+    },
+    {
+     "x": 106.37,
+     "height": 28.13
+    },
+    {
+     "x": 141.82,
+     "height": 31.83
+    }
+   ]
+  },
+  "tags": [
+   "reference",
+   "TKL",
+   "illustrative"
+  ],
+  "features": {
+   "hotswap": true,
+   "wireless": false,
+   "knob": false
+  },
+  "material": "aluminium",
+  "sources": [
+   {
+    "sourceName": "KeyboardShapes parametric reference",
+    "sourceType": "parametric-reference",
+    "method": "generated from ANSI layout and nominal published dimensions",
+    "retrievedAt": "2026-10-01T00:00:00.000Z",
+    "confidence": 0.4
+   }
+  ],
+  "confidence": {
+   "level": "estimated",
+   "score": 0.4,
+   "notes": "Illustrative parametric keyboard. Dimensions are generated, not measured."
+  },
+  "images": [],
+  "model3d": {
+   "kind": "parametric",
+   "url": "models/reference-tkl.glb",
+   "sourceName": "generated by npm run generate:models"
+  },
+  "addedAt": "2026-10-01T00:00:00.000Z"
+ },
+ {
+  "id": "ref-full",
+  "brand": "KeyboardShapes",
+  "model": "Reference Full Size ANSI",
+  "slug": "reference-full",
+  "layout": {
+   "name": "Full Size",
+   "description": "ANSI Full Size (104)",
+   "keys": [
+    {
+     "x": 0,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Esc",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 2,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "F1",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 3,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "F2",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 4,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "F3",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 5,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "F4",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 6.5,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "F5",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 7.5,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "F6",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 8.5,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "F7",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 9.5,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "F8",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 11,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "F9",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 12,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "F10",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 13,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "F11",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 14,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "F12",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 15.25,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Prt",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 16.25,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Scr",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 17.25,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Pause",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 0,
+     "y": 1.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "`",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 1,
+     "y": 1.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "1",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 2,
+     "y": 1.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "2",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 3,
+     "y": 1.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "3",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 4,
+     "y": 1.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "4",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 5,
+     "y": 1.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "5",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 6,
+     "y": 1.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "6",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 7,
+     "y": 1.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "7",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 8,
+     "y": 1.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "8",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 9,
+     "y": 1.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "9",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 10,
+     "y": 1.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "0",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 11,
+     "y": 1.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "-",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 12,
+     "y": 1.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "=",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 13,
+     "y": 1.5,
+     "width": 2,
+     "height": 1,
+     "rotation": 0,
+     "label": "Backspace",
+     "row": 1,
+     "keycapSize": "2u"
+    },
+    {
+     "x": 15.25,
+     "y": 1.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Ins",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 16.25,
+     "y": 1.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Home",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 17.25,
+     "y": 1.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "PgUp",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 0,
+     "y": 2.5,
+     "width": 1.5,
+     "height": 1,
+     "rotation": 0,
+     "label": "Tab",
+     "row": 2,
+     "keycapSize": "1.5u"
+    },
+    {
+     "x": 1.5,
+     "y": 2.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Q",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 2.5,
+     "y": 2.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "W",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 3.5,
+     "y": 2.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "E",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 4.5,
+     "y": 2.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "R",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 5.5,
+     "y": 2.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "T",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 6.5,
+     "y": 2.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Y",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 7.5,
+     "y": 2.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "U",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 8.5,
+     "y": 2.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "I",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 9.5,
+     "y": 2.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "O",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 10.5,
+     "y": 2.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "P",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 11.5,
+     "y": 2.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "[",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 12.5,
+     "y": 2.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "]",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 13.5,
+     "y": 2.5,
+     "width": 1.5,
+     "height": 1,
+     "rotation": 0,
+     "label": "\\",
+     "row": 2,
+     "keycapSize": "1.5u"
+    },
+    {
+     "x": 15.25,
+     "y": 2.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Del",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 16.25,
+     "y": 2.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "End",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 17.25,
+     "y": 2.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "PgDn",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 0,
+     "y": 3.5,
+     "width": 1.75,
+     "height": 1,
+     "rotation": 0,
+     "label": "Caps",
+     "row": 3,
+     "keycapSize": "1.75u"
+    },
+    {
+     "x": 1.75,
+     "y": 3.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "A",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 2.75,
+     "y": 3.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "S",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 3.75,
+     "y": 3.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "D",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 4.75,
+     "y": 3.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "F",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 5.75,
+     "y": 3.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "G",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 6.75,
+     "y": 3.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "H",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 7.75,
+     "y": 3.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "J",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 8.75,
+     "y": 3.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "K",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 9.75,
+     "y": 3.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "L",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 10.75,
+     "y": 3.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": ";",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 11.75,
+     "y": 3.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "'",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 12.75,
+     "y": 3.5,
+     "width": 2.25,
+     "height": 1,
+     "rotation": 0,
+     "label": "Enter",
+     "row": 3,
+     "keycapSize": "2.25u"
+    },
+    {
+     "x": 0,
+     "y": 4.5,
+     "width": 2.25,
+     "height": 1,
+     "rotation": 0,
+     "label": "Shift",
+     "row": 4,
+     "keycapSize": "2.25u"
+    },
+    {
+     "x": 2.25,
+     "y": 4.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Z",
+     "row": 4,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 3.25,
+     "y": 4.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "X",
+     "row": 4,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 4.25,
+     "y": 4.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "C",
+     "row": 4,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 5.25,
+     "y": 4.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "V",
+     "row": 4,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 6.25,
+     "y": 4.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "B",
+     "row": 4,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 7.25,
+     "y": 4.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "N",
+     "row": 4,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 8.25,
+     "y": 4.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "M",
+     "row": 4,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 9.25,
+     "y": 4.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": ",",
+     "row": 4,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 10.25,
+     "y": 4.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": ".",
+     "row": 4,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 11.25,
+     "y": 4.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "/",
+     "row": 4,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 12.25,
+     "y": 4.5,
+     "width": 2.75,
+     "height": 1,
+     "rotation": 0,
+     "label": "Shift",
+     "row": 4,
+     "keycapSize": "2.75u"
+    },
+    {
+     "x": 16.25,
+     "y": 4.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Up",
+     "row": 4,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 0,
+     "y": 5.5,
+     "width": 1.25,
+     "height": 1,
+     "rotation": 0,
+     "label": "Ctrl",
+     "row": 5,
+     "keycapSize": "1.25u"
+    },
+    {
+     "x": 1.25,
+     "y": 5.5,
+     "width": 1.25,
+     "height": 1,
+     "rotation": 0,
+     "label": "Win",
+     "row": 5,
+     "keycapSize": "1.25u"
+    },
+    {
+     "x": 2.5,
+     "y": 5.5,
+     "width": 1.25,
+     "height": 1,
+     "rotation": 0,
+     "label": "Alt",
+     "row": 5,
+     "keycapSize": "1.25u"
+    },
+    {
+     "x": 3.75,
+     "y": 5.5,
+     "width": 6.25,
+     "height": 1,
+     "rotation": 0,
+     "label": "Space",
+     "row": 5,
+     "keycapSize": "6.25u"
+    },
+    {
+     "x": 10,
+     "y": 5.5,
+     "width": 1.25,
+     "height": 1,
+     "rotation": 0,
+     "label": "Alt",
+     "row": 5,
+     "keycapSize": "1.25u"
+    },
+    {
+     "x": 11.25,
+     "y": 5.5,
+     "width": 1.25,
+     "height": 1,
+     "rotation": 0,
+     "label": "Win",
+     "row": 5,
+     "keycapSize": "1.25u"
+    },
+    {
+     "x": 12.5,
+     "y": 5.5,
+     "width": 1.25,
+     "height": 1,
+     "rotation": 0,
+     "label": "Menu",
+     "row": 5,
+     "keycapSize": "1.25u"
+    },
+    {
+     "x": 13.75,
+     "y": 5.5,
+     "width": 1.25,
+     "height": 1,
+     "rotation": 0,
+     "label": "Ctrl",
+     "row": 5,
+     "keycapSize": "1.25u"
+    },
+    {
+     "x": 15.25,
+     "y": 5.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Left",
+     "row": 5,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 16.25,
+     "y": 5.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Down",
+     "row": 5,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 17.25,
+     "y": 5.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Right",
+     "row": 5,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 18.5,
+     "y": 1.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Num",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 19.5,
+     "y": 1.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "/",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 20.5,
+     "y": 1.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "*",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 21.5,
+     "y": 1.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "-",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 18.5,
+     "y": 2.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "7",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 19.5,
+     "y": 2.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "8",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 20.5,
+     "y": 2.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "9",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 21.5,
+     "y": 2.5,
+     "width": 1,
+     "height": 2,
+     "rotation": 0,
+     "label": "+",
+     "row": 2,
+     "keycapSize": "1x2u"
+    },
+    {
+     "x": 18.5,
+     "y": 3.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "4",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 19.5,
+     "y": 3.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "5",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 20.5,
+     "y": 3.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "6",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 18.5,
+     "y": 4.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "1",
+     "row": 4,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 19.5,
+     "y": 4.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "2",
+     "row": 4,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 20.5,
+     "y": 4.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "3",
+     "row": 4,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 21.5,
+     "y": 4.5,
+     "width": 1,
+     "height": 2,
+     "rotation": 0,
+     "label": "Ent",
+     "row": 4,
+     "keycapSize": "1x2u"
+    },
+    {
+     "x": 18.5,
+     "y": 5.5,
+     "width": 2,
+     "height": 1,
+     "rotation": 0,
+     "label": "0",
+     "row": 5,
+     "keycapSize": "2u"
+    },
+    {
+     "x": 20.5,
+     "y": 5.5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": ".",
+     "row": 5,
+     "keycapSize": "1u"
+    }
+   ],
+   "widthU": 22.5,
+   "heightU": 6.5,
+   "keyCount": 104
+  },
+  "dimensions": {
+   "width": 444.625,
+   "depth": 141.825,
+   "height": 45.9
+  },
+  "components": {
+   "caseId": "ref-full-case-a",
+   "pcbId": "ref-full-pcb-a",
+   "plateId": "ref-full-plate-a",
+   "switchId": "ref-mx-linear",
+   "keycapId": "ref-keycap-cherry",
+   "stabilizerId": "ref-stab-plate",
+   "foamId": "ref-foam-case"
+  },
+  "profile": {
+   "angle": 6,
+   "frontHeight": 17.01,
+   "rearHeight": 31.83,
+   "points": [
+    {
+     "x": 0,
+     "height": 17.01
+    },
+    {
+     "x": 35.46,
+     "height": 20.72
+    },
+    {
+     "x": 70.91,
+     "height": 24.42
+    },
+    {
+     "x": 106.37,
+     "height": 28.13
+    },
+    {
+     "x": 141.82,
+     "height": 31.83
+    }
+   ]
+  },
+  "tags": [
+   "reference",
+   "Full Size",
+   "illustrative"
+  ],
+  "features": {
+   "hotswap": true,
+   "wireless": false,
+   "knob": false
+  },
+  "material": "aluminium",
+  "sources": [
+   {
+    "sourceName": "KeyboardShapes parametric reference",
+    "sourceType": "parametric-reference",
+    "method": "generated from ANSI layout and nominal published dimensions",
+    "retrievedAt": "2026-10-01T00:00:00.000Z",
+    "confidence": 0.4
+   }
+  ],
+  "confidence": {
+   "level": "estimated",
+   "score": 0.4,
+   "notes": "Illustrative parametric keyboard. Dimensions are generated, not measured."
+  },
+  "images": [],
+  "model3d": {
+   "kind": "parametric",
+   "url": "models/reference-full.glb",
+   "sourceName": "generated by npm run generate:models"
+  },
+  "addedAt": "2026-10-01T00:00:00.000Z"
+ },
+ {
+  "id": "imp-madlions-mad60-he-e-sports-magnetic-switch-mechanical-keyboa",
+  "brand": "Madlions",
+  "model": "Mad60 HE E-sports Magnetic Switch Mechanical Keyboard – White",
+  "slug": "madlions-mad60-he-e-sports-magnetic-switch-mechanical-keyboa",
+  "layout": {
+   "name": "60%",
+   "description": "ANSI 60%",
+   "keys": [
+    {
+     "x": 0,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "`",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 1,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "1",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 2,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "2",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 3,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "3",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 4,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "4",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 5,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "5",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 6,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "6",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 7,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "7",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 8,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "8",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 9,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "9",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 10,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "0",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 11,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "-",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 12,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "=",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 13,
+     "y": 0,
+     "width": 2,
+     "height": 1,
+     "rotation": 0,
+     "label": "Backspace",
+     "row": 0,
+     "keycapSize": "2u"
+    },
+    {
+     "x": 0,
+     "y": 1,
+     "width": 1.5,
+     "height": 1,
+     "rotation": 0,
+     "label": "Tab",
+     "row": 1,
+     "keycapSize": "1.5u"
+    },
+    {
+     "x": 1.5,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Q",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 2.5,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "W",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 3.5,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "E",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 4.5,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "R",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 5.5,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "T",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 6.5,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Y",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 7.5,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "U",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 8.5,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "I",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 9.5,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "O",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 10.5,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "P",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 11.5,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "[",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 12.5,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "]",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 13.5,
+     "y": 1,
+     "width": 1.5,
+     "height": 1,
+     "rotation": 0,
+     "label": "\\",
+     "row": 1,
+     "keycapSize": "1.5u"
+    },
+    {
+     "x": 0,
+     "y": 2,
+     "width": 1.75,
+     "height": 1,
+     "rotation": 0,
+     "label": "Caps",
+     "row": 2,
+     "keycapSize": "1.75u"
+    },
+    {
+     "x": 1.75,
+     "y": 2,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "A",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 2.75,
+     "y": 2,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "S",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 3.75,
+     "y": 2,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "D",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 4.75,
+     "y": 2,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "F",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 5.75,
+     "y": 2,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "G",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 6.75,
+     "y": 2,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "H",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 7.75,
+     "y": 2,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "J",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 8.75,
+     "y": 2,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "K",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 9.75,
+     "y": 2,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "L",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 10.75,
+     "y": 2,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": ";",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 11.75,
+     "y": 2,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "'",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 12.75,
+     "y": 2,
+     "width": 2.25,
+     "height": 1,
+     "rotation": 0,
+     "label": "Enter",
+     "row": 2,
+     "keycapSize": "2.25u"
+    },
+    {
+     "x": 0,
+     "y": 3,
+     "width": 2.25,
+     "height": 1,
+     "rotation": 0,
+     "label": "Shift",
+     "row": 3,
+     "keycapSize": "2.25u"
+    },
+    {
+     "x": 2.25,
+     "y": 3,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Z",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 3.25,
+     "y": 3,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "X",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 4.25,
+     "y": 3,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "C",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 5.25,
+     "y": 3,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "V",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 6.25,
+     "y": 3,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "B",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 7.25,
+     "y": 3,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "N",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 8.25,
+     "y": 3,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "M",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 9.25,
+     "y": 3,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": ",",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 10.25,
+     "y": 3,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": ".",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 11.25,
+     "y": 3,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "/",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 12.25,
+     "y": 3,
+     "width": 2.75,
+     "height": 1,
+     "rotation": 0,
+     "label": "Shift",
+     "row": 3,
+     "keycapSize": "2.75u"
+    },
+    {
+     "x": 0,
+     "y": 4,
+     "width": 1.25,
+     "height": 1,
+     "rotation": 0,
+     "label": "Ctrl",
+     "row": 4,
+     "keycapSize": "1.25u"
+    },
+    {
+     "x": 1.25,
+     "y": 4,
+     "width": 1.25,
+     "height": 1,
+     "rotation": 0,
+     "label": "Win",
+     "row": 4,
+     "keycapSize": "1.25u"
+    },
+    {
+     "x": 2.5,
+     "y": 4,
+     "width": 1.25,
+     "height": 1,
+     "rotation": 0,
+     "label": "Alt",
+     "row": 4,
+     "keycapSize": "1.25u"
+    },
+    {
+     "x": 3.75,
+     "y": 4,
+     "width": 6.25,
+     "height": 1,
+     "rotation": 0,
+     "label": "Space",
+     "row": 4,
+     "keycapSize": "6.25u"
+    },
+    {
+     "x": 10,
+     "y": 4,
+     "width": 1.25,
+     "height": 1,
+     "rotation": 0,
+     "label": "Alt",
+     "row": 4,
+     "keycapSize": "1.25u"
+    },
+    {
+     "x": 11.25,
+     "y": 4,
+     "width": 1.25,
+     "height": 1,
+     "rotation": 0,
+     "label": "Win",
+     "row": 4,
+     "keycapSize": "1.25u"
+    },
+    {
+     "x": 12.5,
+     "y": 4,
+     "width": 1.25,
+     "height": 1,
+     "rotation": 0,
+     "label": "Fn",
+     "row": 4,
+     "keycapSize": "1.25u"
+    },
+    {
+     "x": 13.75,
+     "y": 4,
+     "width": 1.25,
+     "height": 1,
+     "rotation": 0,
+     "label": "Ctrl",
+     "row": 4,
+     "keycapSize": "1.25u"
+    }
+   ],
+   "widthU": 15,
+   "heightU": 5,
+   "keyCount": 61
+  },
+  "dimensions": {
+   "width": 292.1,
+   "depth": 109.2,
+   "height": 27.9
+  },
+  "components": {
+   "caseId": "imp-madlions-mad60-he-e-sports-magnetic-switch-mechanical-keyboa-case"
+  },
+  "tags": [
+   "imported",
+   "60%"
+  ],
+  "sources": [
+   {
+    "sourceUrl": "https://mkb.gg/products/madlions-mad60-mad68-he",
+    "sourceName": "MKB",
+    "sourceType": "vendor",
+    "retrievedAt": "2026-10-01T18:06:58.974Z",
+    "method": "json-ld",
+    "confidence": 0.75
+   },
+   {
+    "sourceUrl": "https://madlionskeyboard.com/product/mad60he-custom-keyboard/",
+    "sourceName": "MadlionsKeyboard",
+    "sourceType": "vendor",
+    "retrievedAt": "2026-10-01T18:07:00.706Z",
+    "method": "woocommerce-store-api",
+    "confidence": 0.6
+   },
+   {
+    "sourceUrl": "https://madlionskeyboard.com/product/custom-mad-60-he-magnetic-keyboard/",
+    "sourceName": "MadlionsKeyboard",
+    "sourceType": "vendor",
+    "retrievedAt": "2026-10-01T18:07:00.707Z",
+    "method": "woocommerce-store-api",
+    "confidence": 0.6
+   },
+   {
+    "sourceUrl": "https://computia.me/product/madlions-mad60-he-e-sports-magnetic-switch-mechanical-keyboard-white/",
+    "sourceName": "Computia",
+    "sourceType": "vendor",
+    "retrievedAt": "2026-10-01T18:07:02.655Z",
+    "method": "woocommerce-store-api",
+    "confidence": 0.6
+   },
+   {
+    "sourceUrl": "https://computia.me/product/madlions-mad60-he-e-sports-magnetic-switch-mechanical-keyboard/",
+    "sourceName": "Computia",
+    "sourceType": "vendor",
+    "retrievedAt": "2026-10-01T18:07:02.658Z",
+    "method": "woocommerce-store-api",
+    "confidence": 0.6
+   }
+  ],
+  "confidence": {
+   "level": "estimated",
+   "score": 0.3,
+   "notes": "Outline assumed to be a rounded rectangle from the overall width × depth. The real shape may differ. Overall dimensions cross-checked across 3 source(s) (width 31% confidence, estimated). Key positions are the generic ANSI 60% reference map, not this product's actual key map (ISO/JIS and special keys differ)."
+  },
+  "images": [
+   "https://mkb.gg/cdn/shop/files/madlions-mad60-mad68-he-side-profile.jpg?v=1775212137&width=1920",
+   "https://mkb.gg/cdn/shop/files/madlions-mad60-mad68-he-top-down.jpg?v=1775212138&width=1946",
+   "http://mkb.gg/cdn/shop/files/madlions-mad60-mad68-he-keyboard-front.jpg?v=1775212133",
+   "https://mkb.gg/cdn/shop/files/madlions-mad60-mad68-he-keyboard-front.jpg?v=1775212133&width=1946",
+   "https://mkb.gg/cdn/shop/files/madlions-mad60-mad68-he-backplate.jpg?v=1775212138&width=1946",
+   "https://mkb.gg/cdn/shop/files/ZLhoeFGK68adc2812e2b1_1756217985.png?v=1775212134&width=1946",
+   "https://mkb.gg/cdn/shop/files/5lFIT8IY6abc91304bfc6_1790742832.png?v=1790742850&width=1946",
+   "https://mkb.gg/cdn/shop/files/8a7aygaF68adc281341d9_1756217985.png?v=1775212142&width=1946"
+  ],
+  "model3d": {
+   "kind": "parametric"
+  },
+  "addedAt": "2026-10-01T18:07:02.667Z"
+ },
+ {
+  "id": "imp-keychron-q1-qmk-custom-mechanical-keyboard-version-1",
+  "brand": "Keychron",
+  "model": "Q1 QMK Custom Mechanical Keyboard - Version 1",
+  "slug": "keychron-q1-qmk-custom-mechanical-keyboard-version-1",
+  "layout": {
+   "name": "75%",
+   "description": "ANSI 75%",
+   "keys": [
+    {
+     "x": 0,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Esc",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 1,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "F1",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 2,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "F2",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 3,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "F3",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 4,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "F4",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 5,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "F5",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 6,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "F6",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 7,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "F7",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 8,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "F8",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 9,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "F9",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 10,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "F10",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 11,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "F11",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 12,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "F12",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 13,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Prt",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 14,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Ins",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 15,
+     "y": 0,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Del",
+     "row": 0,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 0,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "`",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 1,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "1",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 2,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "2",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 3,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "3",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 4,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "4",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 5,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "5",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 6,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "6",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 7,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "7",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 8,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "8",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 9,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "9",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 10,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "0",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 11,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "-",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 12,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "=",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 13,
+     "y": 1,
+     "width": 2,
+     "height": 1,
+     "rotation": 0,
+     "label": "Backspace",
+     "row": 1,
+     "keycapSize": "2u"
+    },
+    {
+     "x": 15,
+     "y": 1,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Home",
+     "row": 1,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 0,
+     "y": 2,
+     "width": 1.5,
+     "height": 1,
+     "rotation": 0,
+     "label": "Tab",
+     "row": 2,
+     "keycapSize": "1.5u"
+    },
+    {
+     "x": 1.5,
+     "y": 2,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Q",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 2.5,
+     "y": 2,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "W",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 3.5,
+     "y": 2,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "E",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 4.5,
+     "y": 2,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "R",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 5.5,
+     "y": 2,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "T",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 6.5,
+     "y": 2,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Y",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 7.5,
+     "y": 2,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "U",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 8.5,
+     "y": 2,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "I",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 9.5,
+     "y": 2,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "O",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 10.5,
+     "y": 2,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "P",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 11.5,
+     "y": 2,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "[",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 12.5,
+     "y": 2,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "]",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 13.5,
+     "y": 2,
+     "width": 1.5,
+     "height": 1,
+     "rotation": 0,
+     "label": "\\",
+     "row": 2,
+     "keycapSize": "1.5u"
+    },
+    {
+     "x": 15,
+     "y": 2,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "PgUp",
+     "row": 2,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 0,
+     "y": 3,
+     "width": 1.75,
+     "height": 1,
+     "rotation": 0,
+     "label": "Caps",
+     "row": 3,
+     "keycapSize": "1.75u"
+    },
+    {
+     "x": 1.75,
+     "y": 3,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "A",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 2.75,
+     "y": 3,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "S",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 3.75,
+     "y": 3,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "D",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 4.75,
+     "y": 3,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "F",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 5.75,
+     "y": 3,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "G",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 6.75,
+     "y": 3,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "H",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 7.75,
+     "y": 3,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "J",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 8.75,
+     "y": 3,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "K",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 9.75,
+     "y": 3,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "L",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 10.75,
+     "y": 3,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": ";",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 11.75,
+     "y": 3,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "'",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 12.75,
+     "y": 3,
+     "width": 2.25,
+     "height": 1,
+     "rotation": 0,
+     "label": "Enter",
+     "row": 3,
+     "keycapSize": "2.25u"
+    },
+    {
+     "x": 15,
+     "y": 3,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "PgDn",
+     "row": 3,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 0,
+     "y": 4,
+     "width": 2.25,
+     "height": 1,
+     "rotation": 0,
+     "label": "Shift",
+     "row": 4,
+     "keycapSize": "2.25u"
+    },
+    {
+     "x": 2.25,
+     "y": 4,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Z",
+     "row": 4,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 3.25,
+     "y": 4,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "X",
+     "row": 4,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 4.25,
+     "y": 4,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "C",
+     "row": 4,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 5.25,
+     "y": 4,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "V",
+     "row": 4,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 6.25,
+     "y": 4,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "B",
+     "row": 4,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 7.25,
+     "y": 4,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "N",
+     "row": 4,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 8.25,
+     "y": 4,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "M",
+     "row": 4,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 9.25,
+     "y": 4,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": ",",
+     "row": 4,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 10.25,
+     "y": 4,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": ".",
+     "row": 4,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 11.25,
+     "y": 4,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "/",
+     "row": 4,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 12.25,
+     "y": 4,
+     "width": 1.75,
+     "height": 1,
+     "rotation": 0,
+     "label": "Shift",
+     "row": 4,
+     "keycapSize": "1.75u"
+    },
+    {
+     "x": 14,
+     "y": 4,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Up",
+     "row": 4,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 15,
+     "y": 4,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "End",
+     "row": 4,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 0,
+     "y": 5,
+     "width": 1.25,
+     "height": 1,
+     "rotation": 0,
+     "label": "Ctrl",
+     "row": 5,
+     "keycapSize": "1.25u"
+    },
+    {
+     "x": 1.25,
+     "y": 5,
+     "width": 1.25,
+     "height": 1,
+     "rotation": 0,
+     "label": "Win",
+     "row": 5,
+     "keycapSize": "1.25u"
+    },
+    {
+     "x": 2.5,
+     "y": 5,
+     "width": 1.25,
+     "height": 1,
+     "rotation": 0,
+     "label": "Alt",
+     "row": 5,
+     "keycapSize": "1.25u"
+    },
+    {
+     "x": 3.75,
+     "y": 5,
+     "width": 6.25,
+     "height": 1,
+     "rotation": 0,
+     "label": "Space",
+     "row": 5,
+     "keycapSize": "6.25u"
+    },
+    {
+     "x": 10,
+     "y": 5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Alt",
+     "row": 5,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 11,
+     "y": 5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Fn",
+     "row": 5,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 12,
+     "y": 5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Ctrl",
+     "row": 5,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 13,
+     "y": 5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Left",
+     "row": 5,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 14,
+     "y": 5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Down",
+     "row": 5,
+     "keycapSize": "1u"
+    },
+    {
+     "x": 15,
+     "y": 5,
+     "width": 1,
+     "height": 1,
+     "rotation": 0,
+     "label": "Right",
+     "row": 5,
+     "keycapSize": "1u"
+    }
+   ],
+   "widthU": 16,
+   "heightU": 6,
+   "keyCount": 84
+  },
+  "dimensions": {
+   "width": 327.5,
+   "depth": 145,
+   "height": 34.8
+  },
+  "components": {
+   "caseId": "imp-keychron-q1-qmk-custom-mechanical-keyboard-version-1-case"
+  },
+  "tags": [
+   "imported",
+   "75%"
+  ],
+  "sources": [
+   {
+    "sourceUrl": "https://keychron.com/products/keychron-q1-qmk-custom-mechanical-keyboard",
+    "sourceName": "Keychron",
+    "sourceType": "manufacturer",
+    "retrievedAt": "2026-10-01T18:07:11.337Z",
+    "method": "spec-table",
+    "confidence": 0.95
+   },
+   {
+    "sourceUrl": "https://keychron.com/products/keychron-q1",
+    "sourceName": "Keychron",
+    "sourceType": "manufacturer",
+    "retrievedAt": "2026-10-01T18:07:14.113Z",
+    "method": "spec-table",
+    "confidence": 0.95
+   },
+   {
+    "sourceUrl": "https://keychron.com/products/keychron-q1-qmk-custom-mechanical-keyboard-iso-layout-collection-version-1",
+    "sourceName": "Keychron",
+    "sourceType": "manufacturer",
+    "retrievedAt": "2026-10-01T18:07:17.463Z",
+    "method": "spec-table",
+    "confidence": 0.95
+   },
+   {
+    "sourceUrl": "https://divinikey.com/products/keychron-q1-qmk-75-keyboard",
+    "sourceName": "Divinikey",
+    "sourceType": "vendor",
+    "retrievedAt": "2026-10-01T18:07:07.016Z",
+    "method": "page-text",
+    "confidence": 0.75
+   }
+  ],
+  "confidence": {
+   "level": "estimated",
+   "score": 0.3,
+   "notes": "Outline assumed to be a rounded rectangle from the overall width × depth. The real shape may differ. Overall dimensions cross-checked across 2 source(s) (width 92% confidence, official). Key positions are the generic ANSI 75% reference map, not this product's actual key map (ISO/JIS and special keys differ)."
+  },
+  "images": [
+   "http://divinikey.com/cdn/shop/products/keychron-q1-qmk-75-keyboard-522149.jpg?crop=center&height=1200&v=1650524871&width=1200",
+   "https://cdn.shopify.com/s/files/1/0059/0630/1017/files/Q1V1_US_OS_toggle.webp?v=1683538963",
+   "https://divinikey.com/cdn/shop/files/SB_2_Swagkeys_Bridge75.webp?v=1717539228&width=800",
+   "https://divinikey.com/cdn/shop/files/Media1_PBTFans_X-Ray_1_0436092b-4840-43b1-96d2-0f2895bd4326.webp?v=1725056888&width=800",
+   "http://www.keychron.com/cdn/shop/products/Keychron-Q1-QMK-VIA-custom-mechanical-keyboard-full-aluminum-for-Mac-Window-Linux-fully-assembled-knob-black-Keychron-K-Pro-switch-red.jpg?crop=center&height=1200&v=1683596389&width=1200",
+   "https://cdn.shopify.com/s/files/1/0059/0630/1017/files/Q1v1-US-1.jpg?v=1683603122",
+   "https://cdn.shopify.com/s/files/1/0059/0630/1017/files/Q1-V1-Wireless-Mechanical-Keyboard-Gray.jpg?v=1753843254",
+   "https://cdn.shopify.com/s/files/1/0059/0630/1017/files/Q1v1-US-2.jpg?v=1683603283"
+  ],
+  "model3d": {
+   "kind": "parametric"
+  },
+  "addedAt": "2026-10-01T18:07:18.605Z"
+ }
+]

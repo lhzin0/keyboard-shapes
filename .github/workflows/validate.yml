@@ -1,0 +1,40 @@
+name: Validate
+
+on:
+  pull_request:
+  push:
+    branches-ignore: [main]
+  schedule:
+    # weekly: also check that the source links in data/*.json are still alive
+    - cron: '17 4 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+
+      - name: JSON, references, geometry and provenance rules
+        run: npm run validate
+
+      - name: Types
+        run: npm run typecheck
+
+      - name: Unit tests (geometry, compatibility, import, components)
+        run: npm test
+
+      - name: 3D models referenced by the data exist and load
+        run: npm run generate:models -- --check
+
+      - name: Source links (weekly only)
+        if: github.event_name == 'schedule'
+        run: npm run validate -- --links

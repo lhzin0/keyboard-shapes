@@ -1,0 +1,111 @@
+.root {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  height: 100%;
+  min-height: 420px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: radial-gradient(120% 90% at 50% 20%, color-mix(in srgb, var(--surface-2) 90%, transparent), var(--bg));
+}
+
+.desktop {
+  grid-template-columns: minmax(0, 1fr) 320px;
+}
+
+.canvasWrap {
+  position: relative;
+  min-height: 360px;
+  touch-action: none;
+}
+
+.canvasWrap canvas {
+  display: block;
+  touch-action: none;
+}
+
+.side {
+  border-left: 1px solid var(--border);
+  background: var(--surface);
+  padding: 8px 14px;
+  overflow: auto;
+}
+
+.topbar {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  align-items: center;
+  pointer-events: none;
+}
+.topbar > * {
+  pointer-events: auto;
+}
+
+.cluster {
+  display: inline-flex;
+  gap: 4px;
+  padding: 4px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: color-mix(in srgb, var(--surface) 90%, transparent);
+  backdrop-filter: blur(6px);
+}
+
+.bottomBar {
+  position: absolute;
+  left: 8px;
+  right: 8px;
+  bottom: 8px;
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  padding: 6px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: color-mix(in srgb, var(--surface) 92%, transparent);
+  backdrop-filter: blur(8px);
+}
+.bottomBar button {
+  flex: 0 0 auto;
+  min-width: 64px;
+  min-height: 48px;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 11px;
+}
+
+.warnings {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  display: grid;
+  gap: 4px;
+  max-width: min(420px, 80%);
+  font-size: 12px;
+  color: var(--text-muted);
+  pointer-events: none;
+}
+
+.loading {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  color: var(--text-muted);
+}
+
+.fallback {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  min-height: 300px;
+  padding: 24px;
+  text-align: center;
+  color: var(--text-muted);
+}

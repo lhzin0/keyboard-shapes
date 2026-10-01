@@ -1,0 +1,62 @@
+{
+ "id": "ref-65-plate-b",
+ "unit": "mm",
+ "points": [
+  {
+   "id": "p1",
+   "x": 17.5,
+   "y": 32.08,
+   "diameter": 2.5,
+   "kind": "screw"
+  },
+  {
+   "id": "p2",
+   "x": 109.77,
+   "y": 32.08,
+   "diameter": 2.5,
+   "kind": "screw"
+  },
+  {
+   "id": "p3",
+   "x": 202.03,
+   "y": 32.08,
+   "diameter": 2.5,
+   "kind": "screw"
+  },
+  {
+   "id": "p4",
+   "x": 294.3,
+   "y": 32.08,
+   "diameter": 2.5,
+   "kind": "screw"
+  },
+  {
+   "id": "p5",
+   "x": 17.5,
+   "y": 70.18,
+   "diameter": 2.5,
+   "kind": "screw"
+  },
+  {
+   "id": "p6",
+   "x": 109.77,
+   "y": 70.18,
+   "diameter": 2.5,
+   "kind": "screw"
+  },
+  {
+   "id": "p7",
+   "x": 202.03,
+   "y": 70.18,
+   "diameter": 2.5,
+   "kind": "screw"
+  },
+  {
+   "id": "p8",
+   "x": 294.3,
+   "y": 70.18,
+   "diameter": 2.5,
+   "kind": "screw"
+  }
+ ]
+}

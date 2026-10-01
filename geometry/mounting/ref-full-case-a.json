@@ -1,0 +1,101 @@
+{
+ "id": "ref-full-case-a",
+ "unit": "mm",
+ "posts": [
+  {
+   "id": "post1",
+   "x": 16,
+   "y": 32.77,
+   "diameter": 4.5,
+   "kind": "standoff"
+  },
+  {
+   "id": "post2",
+   "x": 98.53,
+   "y": 32.77,
+   "diameter": 4.5,
+   "kind": "standoff"
+  },
+  {
+   "id": "post3",
+   "x": 181.05,
+   "y": 32.77,
+   "diameter": 4.5,
+   "kind": "standoff"
+  },
+  {
+   "id": "post4",
+   "x": 263.58,
+   "y": 32.77,
+   "diameter": 4.5,
+   "kind": "standoff"
+  },
+  {
+   "id": "post5",
+   "x": 346.1,
+   "y": 32.77,
+   "diameter": 4.5,
+   "kind": "standoff"
+  },
+  {
+   "id": "post6",
+   "x": 428.63,
+   "y": 32.77,
+   "diameter": 4.5,
+   "kind": "standoff"
+  },
+  {
+   "id": "post7",
+   "x": 16,
+   "y": 107.06,
+   "diameter": 4.5,
+   "kind": "standoff"
+  },
+  {
+   "id": "post8",
+   "x": 98.53,
+   "y": 107.06,
+   "diameter": 4.5,
+   "kind": "standoff"
+  },
+  {
+   "id": "post9",
+   "x": 181.05,
+   "y": 107.06,
+   "diameter": 4.5,
+   "kind": "standoff"
+  },
+  {
+   "id": "post10",
+   "x": 263.58,
+   "y": 107.06,
+   "diameter": 4.5,
+   "kind": "standoff"
+  },
+  {
+   "id": "post11",
+   "x": 346.1,
+   "y": 107.06,
+   "diameter": 4.5,
+   "kind": "standoff"
+  },
+  {
+   "id": "post12",
+   "x": 428.63,
+   "y": 107.06,
+   "diameter": 4.5,
+   "kind": "standoff"
+  }
+ ],
+ "cutouts": [
+  {
+   "id": "usb",
+   "kind": "usb",
+   "wall": "back",
+   "center": 222.313,
+   "width": 12,
+   "height": 6.5
+  }
+ ],
+ "daughterboardArea": null
+}

@@ -1,0 +1,173 @@
+/* Design tokens + resets. Component styling lives in CSS Modules next to each component. */
+:root {
+  color-scheme: dark;
+  --bg: #0b0e13;
+  --surface: #12171f;
+  --surface-2: #19202b;
+  --surface-3: #212a37;
+  --border: #263142;
+  --border-strong: #35445a;
+  --text: #e8edf4;
+  --text-muted: #93a0b3;
+  --text-faint: #66748a;
+  --accent: #5eead4;
+  --accent-strong: #2dd4bf;
+  --accent-ink: #04201c;
+  --ok: #4ade80;
+  --warn: #f5b94a;
+  --danger: #f0616d;
+  --unknown: #8b97a8;
+  --info: #7cb7ff;
+  --shadow: 0 1px 0 rgb(255 255 255 / 3%) inset, 0 8px 24px rgb(0 0 0 / 28%);
+  --radius: 10px;
+  --radius-sm: 6px;
+  --font: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --mono: ui-monospace, 'SF Mono', 'Cascadia Mono', Menlo, Consolas, monospace;
+  --nav-h: 56px;
+  --bottom-nav-h: 60px;
+  --gutter: 16px;
+  /* drawing colours (SVG) */
+  --draw-case: #8fa3bf;
+  --draw-cavity: #3c4b60;
+  --draw-plate: #c9d3e0;
+  --draw-pcb: #3fb68b;
+  --draw-key: #2a3544;
+  --draw-key-stroke: #4a5b73;
+  --draw-hole: #f5b94a;
+  --draw-usb: #7cb7ff;
+  --draw-dim: #5eead4;
+  --draw-grid: #1b2430;
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+  --bg: #f4f6f9;
+  --surface: #ffffff;
+  --surface-2: #f0f3f7;
+  --surface-3: #e5eaf1;
+  --border: #dce2eb;
+  --border-strong: #c3ccda;
+  --text: #121822;
+  --text-muted: #5a6779;
+  --text-faint: #8693a6;
+  --accent: #0f9488;
+  --accent-strong: #0b7a70;
+  --accent-ink: #ffffff;
+  --ok: #15803d;
+  --warn: #b45309;
+  --danger: #c62d3b;
+  --unknown: #6b7789;
+  --info: #1d6fd1;
+  --shadow: 0 1px 2px rgb(16 24 40 / 6%), 0 6px 18px rgb(16 24 40 / 6%);
+  --draw-case: #6b7c93;
+  --draw-cavity: #c2ccda;
+  --draw-plate: #8d9bb0;
+  --draw-pcb: #178a64;
+  --draw-key: #e2e8f0;
+  --draw-key-stroke: #b3bfd0;
+  --draw-hole: #c26a0a;
+  --draw-usb: #1d6fd1;
+  --draw-dim: #0f9488;
+  --draw-grid: #e6ebf2;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 15px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+p {
+  margin: 0;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--accent) 35%, transparent);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.mono {
+  font-family: var(--mono);
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* thin scrollbars */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-strong) transparent;
+}

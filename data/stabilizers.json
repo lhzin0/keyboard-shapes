@@ -1,0 +1,30 @@
+[
+ {
+  "id": "ref-stab-plate",
+  "slug": "ref-stab-plate",
+  "brand": "KeyboardShapes",
+  "model": "Reference plate-mount stabilizer",
+  "mount": "plate-mount",
+  "cutoutSpacing": {
+   "2u": 23.8,
+   "6.25u": 100,
+   "7u": 114.3
+  },
+  "tags": [
+   "reference"
+  ],
+  "sources": [
+   {
+    "sourceName": "KeyboardShapes parametric reference",
+    "sourceType": "parametric-reference",
+    "method": "Cherry-style wire spacing commonly published",
+    "retrievedAt": "2026-10-01T00:00:00.000Z",
+    "confidence": 0.4
+   }
+  ],
+  "confidence": {
+   "level": "estimated",
+   "score": 0.6
+  }
+ }
+]

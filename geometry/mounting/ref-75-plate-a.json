@@ -1,0 +1,62 @@
+{
+ "id": "ref-75-plate-a",
+ "unit": "mm",
+ "points": [
+  {
+   "id": "p1",
+   "x": 11.5,
+   "y": 26.36,
+   "diameter": 2.5,
+   "kind": "screw"
+  },
+  {
+   "id": "p2",
+   "x": 107.77,
+   "y": 26.36,
+   "diameter": 2.5,
+   "kind": "screw"
+  },
+  {
+   "id": "p3",
+   "x": 204.03,
+   "y": 26.36,
+   "diameter": 2.5,
+   "kind": "screw"
+  },
+  {
+   "id": "p4",
+   "x": 300.3,
+   "y": 26.36,
+   "diameter": 2.5,
+   "kind": "screw"
+  },
+  {
+   "id": "p5",
+   "x": 11.5,
+   "y": 94.94,
+   "diameter": 2.5,
+   "kind": "screw"
+  },
+  {
+   "id": "p6",
+   "x": 107.77,
+   "y": 94.94,
+   "diameter": 2.5,
+   "kind": "screw"
+  },
+  {
+   "id": "p7",
+   "x": 204.03,
+   "y": 94.94,
+   "diameter": 2.5,
+   "kind": "screw"
+  },
+  {
+   "id": "p8",
+   "x": 300.3,
+   "y": 94.94,
+   "diameter": 2.5,
+   "kind": "screw"
+  }
+ ]
+}

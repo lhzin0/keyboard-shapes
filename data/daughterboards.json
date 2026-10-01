@@ -1,0 +1,268 @@
+[
+ {
+  "id": "ref-daughterboard-a",
+  "slug": "ref-daughterboard-a",
+  "brand": "KeyboardShapes",
+  "model": "Reference daughterboard A (4-pin)",
+  "dimensions": {
+   "width": 22,
+   "depth": 14,
+   "height": 1.6
+  },
+  "outline": {
+   "points": [
+    {
+     "x": 21,
+     "y": 0
+    },
+    {
+     "x": 21.5,
+     "y": 0.134
+    },
+    {
+     "x": 21.866,
+     "y": 0.5
+    },
+    {
+     "x": 22,
+     "y": 1
+    },
+    {
+     "x": 22,
+     "y": 13
+    },
+    {
+     "x": 21.866,
+     "y": 13.5
+    },
+    {
+     "x": 21.5,
+     "y": 13.866
+    },
+    {
+     "x": 21,
+     "y": 14
+    },
+    {
+     "x": 1,
+     "y": 14
+    },
+    {
+     "x": 0.5,
+     "y": 13.866
+    },
+    {
+     "x": 0.134,
+     "y": 13.5
+    },
+    {
+     "x": 0,
+     "y": 13
+    },
+    {
+     "x": 0,
+     "y": 1
+    },
+    {
+     "x": 0.134,
+     "y": 0.5
+    },
+    {
+     "x": 0.5,
+     "y": 0.134
+    },
+    {
+     "x": 1,
+     "y": 0
+    }
+   ],
+   "width": 22,
+   "depth": 14,
+   "closed": true
+  },
+  "thickness": 1.6,
+  "mountingPoints": [
+   {
+    "id": "d1",
+    "x": 3,
+    "y": 9,
+    "diameter": 2.2,
+    "kind": "screw"
+   },
+   {
+    "id": "d2",
+    "x": 19,
+    "y": 9,
+    "diameter": 2.2,
+    "kind": "screw"
+   }
+  ],
+  "usbPort": {
+   "x": 11,
+   "y": 2.2,
+   "width": 8.94,
+   "height": 3.26,
+   "facing": "back",
+   "type": "USB-C"
+  },
+  "connectorType": "reference-4pin",
+  "connectorPosition": {
+   "x": 11,
+   "y": 11
+  },
+  "cableExit": "front",
+  "model3d": {
+   "kind": "parametric"
+  },
+  "tags": [
+   "reference"
+  ],
+  "sources": [
+   {
+    "sourceName": "KeyboardShapes parametric reference",
+    "sourceType": "parametric-reference",
+    "method": "generated from ANSI layout and nominal published dimensions",
+    "retrievedAt": "2026-10-01T00:00:00.000Z",
+    "confidence": 0.4
+   }
+  ],
+  "confidence": {
+   "level": "estimated",
+   "score": 0.4,
+   "notes": "Illustrative parametric daughterboard."
+  }
+ },
+ {
+  "id": "ref-daughterboard-b",
+  "slug": "ref-daughterboard-b",
+  "brand": "KeyboardShapes",
+  "model": "Reference daughterboard B (5-pin)",
+  "dimensions": {
+   "width": 22,
+   "depth": 14,
+   "height": 1.6
+  },
+  "outline": {
+   "points": [
+    {
+     "x": 21,
+     "y": 0
+    },
+    {
+     "x": 21.5,
+     "y": 0.134
+    },
+    {
+     "x": 21.866,
+     "y": 0.5
+    },
+    {
+     "x": 22,
+     "y": 1
+    },
+    {
+     "x": 22,
+     "y": 13
+    },
+    {
+     "x": 21.866,
+     "y": 13.5
+    },
+    {
+     "x": 21.5,
+     "y": 13.866
+    },
+    {
+     "x": 21,
+     "y": 14
+    },
+    {
+     "x": 1,
+     "y": 14
+    },
+    {
+     "x": 0.5,
+     "y": 13.866
+    },
+    {
+     "x": 0.134,
+     "y": 13.5
+    },
+    {
+     "x": 0,
+     "y": 13
+    },
+    {
+     "x": 0,
+     "y": 1
+    },
+    {
+     "x": 0.134,
+     "y": 0.5
+    },
+    {
+     "x": 0.5,
+     "y": 0.134
+    },
+    {
+     "x": 1,
+     "y": 0
+    }
+   ],
+   "width": 22,
+   "depth": 14,
+   "closed": true
+  },
+  "thickness": 1.6,
+  "mountingPoints": [
+   {
+    "id": "d1",
+    "x": 3,
+    "y": 9,
+    "diameter": 2.2,
+    "kind": "screw"
+   },
+   {
+    "id": "d2",
+    "x": 19,
+    "y": 9,
+    "diameter": 2.2,
+    "kind": "screw"
+   }
+  ],
+  "usbPort": {
+   "x": 11,
+   "y": 2.2,
+   "width": 8.94,
+   "height": 3.26,
+   "facing": "back",
+   "type": "USB-C"
+  },
+  "connectorType": "reference-5pin",
+  "connectorPosition": {
+   "x": 11,
+   "y": 11
+  },
+  "cableExit": "front",
+  "model3d": {
+   "kind": "parametric"
+  },
+  "tags": [
+   "reference"
+  ],
+  "sources": [
+   {
+    "sourceName": "KeyboardShapes parametric reference",
+    "sourceType": "parametric-reference",
+    "method": "generated from ANSI layout and nominal published dimensions",
+    "retrievedAt": "2026-10-01T00:00:00.000Z",
+    "confidence": 0.4
+   }
+  ],
+  "confidence": {
+   "level": "estimated",
+   "score": 0.4,
+   "notes": "Illustrative parametric daughterboard."
+  }
+ }
+]

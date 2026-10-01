@@ -1,0 +1,73 @@
+{
+ "id": "ref-60-case-a",
+ "unit": "mm",
+ "posts": [
+  {
+   "id": "post1",
+   "x": 16,
+   "y": 27.05,
+   "diameter": 4.5,
+   "kind": "standoff"
+  },
+  {
+   "id": "post2",
+   "x": 105.92,
+   "y": 27.05,
+   "diameter": 4.5,
+   "kind": "standoff"
+  },
+  {
+   "id": "post3",
+   "x": 195.83,
+   "y": 27.05,
+   "diameter": 4.5,
+   "kind": "standoff"
+  },
+  {
+   "id": "post4",
+   "x": 285.75,
+   "y": 27.05,
+   "diameter": 4.5,
+   "kind": "standoff"
+  },
+  {
+   "id": "post5",
+   "x": 16,
+   "y": 84.2,
+   "diameter": 4.5,
+   "kind": "standoff"
+  },
+  {
+   "id": "post6",
+   "x": 105.92,
+   "y": 84.2,
+   "diameter": 4.5,
+   "kind": "standoff"
+  },
+  {
+   "id": "post7",
+   "x": 195.83,
+   "y": 84.2,
+   "diameter": 4.5,
+   "kind": "standoff"
+  },
+  {
+   "id": "post8",
+   "x": 285.75,
+   "y": 84.2,
+   "diameter": 4.5,
+   "kind": "standoff"
+  }
+ ],
+ "cutouts": [
+  {
+   "id": "usb",
+   "kind": "usb",
+   "wall": "back",
+   "center": 150.875,
+   "width": 12,
+   "height": 6.5
+  }
+ ],
+ "daughterboardArea": null
+}

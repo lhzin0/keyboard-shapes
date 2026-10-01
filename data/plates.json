@@ -1,0 +1,4184 @@
+[
+ {
+  "id": "ref-60-plate-a",
+  "slug": "ref-60-plate-a",
+  "brand": "KeyboardShapes",
+  "model": "Reference 60% plate A",
+  "dimensions": {
+   "width": 292.75,
+   "depth": 102.25,
+   "height": 1.5
+  },
+  "outline": {
+   "points": [
+    {
+     "x": 291.25,
+     "y": 0
+    },
+    {
+     "x": 291.824,
+     "y": 0.114
+    },
+    {
+     "x": 292.311,
+     "y": 0.439
+    },
+    {
+     "x": 292.636,
+     "y": 0.926
+    },
+    {
+     "x": 292.75,
+     "y": 1.5
+    },
+    {
+     "x": 292.75,
+     "y": 100.75
+    },
+    {
+     "x": 292.636,
+     "y": 101.324
+    },
+    {
+     "x": 292.311,
+     "y": 101.811
+    },
+    {
+     "x": 291.824,
+     "y": 102.136
+    },
+    {
+     "x": 291.25,
+     "y": 102.25
+    },
+    {
+     "x": 1.5,
+     "y": 102.25
+    },
+    {
+     "x": 0.926,
+     "y": 102.136
+    },
+    {
+     "x": 0.439,
+     "y": 101.811
+    },
+    {
+     "x": 0.114,
+     "y": 101.324
+    },
+    {
+     "x": 0,
+     "y": 100.75
+    },
+    {
+     "x": 0,
+     "y": 1.5
+    },
+    {
+     "x": 0.114,
+     "y": 0.926
+    },
+    {
+     "x": 0.439,
+     "y": 0.439
+    },
+    {
+     "x": 0.926,
+     "y": 0.114
+    },
+    {
+     "x": 1.5,
+     "y": 0
+    }
+   ],
+   "width": 292.75,
+   "depth": 102.25,
+   "closed": true
+  },
+  "thickness": 1.5,
+  "material": "aluminium",
+  "switchCutouts": [
+   {
+    "keyIndex": 0,
+    "x": 13.025,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 1,
+    "x": 32.075,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 2,
+    "x": 51.125,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 3,
+    "x": 70.175,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 4,
+    "x": 89.225,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 5,
+    "x": 108.275,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 6,
+    "x": 127.325,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 7,
+    "x": 146.375,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 8,
+    "x": 165.425,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 9,
+    "x": 184.475,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 10,
+    "x": 203.525,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 11,
+    "x": 222.575,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 12,
+    "x": 241.625,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 13,
+    "x": 270.2,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 14,
+    "x": 17.788,
+    "y": 32.075,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 15,
+    "x": 41.6,
+    "y": 32.075,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 16,
+    "x": 60.65,
+    "y": 32.075,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 17,
+    "x": 79.7,
+    "y": 32.075,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 18,
+    "x": 98.75,
+    "y": 32.075,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 19,
+    "x": 117.8,
+    "y": 32.075,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 20,
+    "x": 136.85,
+    "y": 32.075,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 21,
+    "x": 155.9,
+    "y": 32.075,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 22,
+    "x": 174.95,
+    "y": 32.075,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 23,
+    "x": 194,
+    "y": 32.075,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 24,
+    "x": 213.05,
+    "y": 32.075,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 25,
+    "x": 232.1,
+    "y": 32.075,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 26,
+    "x": 251.15,
+    "y": 32.075,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 27,
+    "x": 274.963,
+    "y": 32.075,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 28,
+    "x": 20.169,
+    "y": 51.125,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 29,
+    "x": 46.363,
+    "y": 51.125,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 30,
+    "x": 65.412,
+    "y": 51.125,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 31,
+    "x": 84.463,
+    "y": 51.125,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 32,
+    "x": 103.513,
+    "y": 51.125,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 33,
+    "x": 122.563,
+    "y": 51.125,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 34,
+    "x": 141.613,
+    "y": 51.125,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 35,
+    "x": 160.663,
+    "y": 51.125,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 36,
+    "x": 179.713,
+    "y": 51.125,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 37,
+    "x": 198.763,
+    "y": 51.125,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 38,
+    "x": 217.813,
+    "y": 51.125,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 39,
+    "x": 236.863,
+    "y": 51.125,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 40,
+    "x": 267.819,
+    "y": 51.125,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 41,
+    "x": 24.931,
+    "y": 70.175,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 42,
+    "x": 55.888,
+    "y": 70.175,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 43,
+    "x": 74.938,
+    "y": 70.175,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 44,
+    "x": 93.988,
+    "y": 70.175,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 45,
+    "x": 113.038,
+    "y": 70.175,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 46,
+    "x": 132.088,
+    "y": 70.175,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 47,
+    "x": 151.138,
+    "y": 70.175,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 48,
+    "x": 170.188,
+    "y": 70.175,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 49,
+    "x": 189.238,
+    "y": 70.175,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 50,
+    "x": 208.288,
+    "y": 70.175,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 51,
+    "x": 227.338,
+    "y": 70.175,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 52,
+    "x": 263.056,
+    "y": 70.175,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 53,
+    "x": 15.406,
+    "y": 89.225,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 54,
+    "x": 39.219,
+    "y": 89.225,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 55,
+    "x": 63.031,
+    "y": 89.225,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 56,
+    "x": 134.469,
+    "y": 89.225,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 57,
+    "x": 205.906,
+    "y": 89.225,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 58,
+    "x": 229.719,
+    "y": 89.225,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 59,
+    "x": 253.531,
+    "y": 89.225,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 60,
+    "x": 277.344,
+    "y": 89.225,
+    "rotation": 0
+   }
+  ],
+  "stabilizerCutouts": [
+   {
+    "keyIndex": 13,
+    "x": 270.2,
+    "y": 13.025,
+    "spacing": 23.8,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 40,
+    "x": 267.819,
+    "y": 51.125,
+    "spacing": 23.8,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 41,
+    "x": 24.931,
+    "y": 70.175,
+    "spacing": 23.8,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 52,
+    "x": 263.056,
+    "y": 70.175,
+    "spacing": 23.8,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 56,
+    "x": 134.469,
+    "y": 89.225,
+    "spacing": 100,
+    "rotation": 0
+   }
+  ],
+  "mountingPoints": [
+   {
+    "id": "p1",
+    "x": 11.5,
+    "y": 22.55,
+    "diameter": 2.5,
+    "kind": "screw"
+   },
+   {
+    "id": "p2",
+    "x": 101.42,
+    "y": 22.55,
+    "diameter": 2.5,
+    "kind": "screw"
+   },
+   {
+    "id": "p3",
+    "x": 191.33,
+    "y": 22.55,
+    "diameter": 2.5,
+    "kind": "screw"
+   },
+   {
+    "id": "p4",
+    "x": 281.25,
+    "y": 22.55,
+    "diameter": 2.5,
+    "kind": "screw"
+   },
+   {
+    "id": "p5",
+    "x": 11.5,
+    "y": 79.7,
+    "diameter": 2.5,
+    "kind": "screw"
+   },
+   {
+    "id": "p6",
+    "x": 101.42,
+    "y": 79.7,
+    "diameter": 2.5,
+    "kind": "screw"
+   },
+   {
+    "id": "p7",
+    "x": 191.33,
+    "y": 79.7,
+    "diameter": 2.5,
+    "kind": "screw"
+   },
+   {
+    "id": "p8",
+    "x": 281.25,
+    "y": 79.7,
+    "diameter": 2.5,
+    "kind": "screw"
+   }
+  ],
+  "model3d": {
+   "kind": "parametric"
+  },
+  "tags": [
+   "reference",
+   "60%"
+  ],
+  "sources": [
+   {
+    "sourceName": "KeyboardShapes parametric reference",
+    "sourceType": "parametric-reference",
+    "method": "generated from ANSI layout and nominal published dimensions",
+    "retrievedAt": "2026-10-01T00:00:00.000Z",
+    "confidence": 0.4
+   }
+  ],
+  "confidence": {
+   "level": "estimated",
+   "score": 0.4,
+   "notes": "Illustrative parametric plate; not a commercial product."
+  }
+ },
+ {
+  "id": "ref-65-plate-a",
+  "slug": "ref-65-plate-a",
+  "brand": "KeyboardShapes",
+  "model": "Reference 65% plate A",
+  "dimensions": {
+   "width": 311.8,
+   "depth": 102.25,
+   "height": 1.5
+  },
+  "outline": {
+   "points": [
+    {
+     "x": 310.3,
+     "y": 0
+    },
+    {
+     "x": 310.874,
+     "y": 0.114
+    },
+    {
+     "x": 311.361,
+     "y": 0.439
+    },
+    {
+     "x": 311.686,
+     "y": 0.926
+    },
+    {
+     "x": 311.8,
+     "y": 1.5
+    },
+    {
+     "x": 311.8,
+     "y": 100.75
+    },
+    {
+     "x": 311.686,
+     "y": 101.324
+    },
+    {
+     "x": 311.361,
+     "y": 101.811
+    },
+    {
+     "x": 310.874,
+     "y": 102.136
+    },
+    {
+     "x": 310.3,
+     "y": 102.25
+    },
+    {
+     "x": 1.5,
+     "y": 102.25
+    },
+    {
+     "x": 0.926,
+     "y": 102.136
+    },
+    {
+     "x": 0.439,
+     "y": 101.811
+    },
+    {
+     "x": 0.114,
+     "y": 101.324
+    },
+    {
+     "x": 0,
+     "y": 100.75
+    },
+    {
+     "x": 0,
+     "y": 1.5
+    },
+    {
+     "x": 0.114,
+     "y": 0.926
+    },
+    {
+     "x": 0.439,
+     "y": 0.439
+    },
+    {
+     "x": 0.926,
+     "y": 0.114
+    },
+    {
+     "x": 1.5,
+     "y": 0
+    }
+   ],
+   "width": 311.8,
+   "depth": 102.25,
+   "closed": true
+  },
+  "thickness": 1.5,
+  "material": "aluminium",
+  "switchCutouts": [
+   {
+    "keyIndex": 0,
+    "x": 13.025,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 1,
+    "x": 32.075,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 2,
+    "x": 51.125,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 3,
+    "x": 70.175,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 4,
+    "x": 89.225,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 5,
+    "x": 108.275,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 6,
+    "x": 127.325,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 7,
+    "x": 146.375,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 8,
+    "x": 165.425,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 9,
+    "x": 184.475,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 10,
+    "x": 203.525,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 11,
+    "x": 222.575,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 12,
+    "x": 241.625,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 13,
+    "x": 270.2,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 14,
+    "x": 298.775,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 15,
+    "x": 17.788,
+    "y": 32.075,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 16,
+    "x": 41.6,
+    "y": 32.075,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 17,
+    "x": 60.65,
+    "y": 32.075,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 18,
+    "x": 79.7,
+    "y": 32.075,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 19,
+    "x": 98.75,
+    "y": 32.075,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 20,
+    "x": 117.8,
+    "y": 32.075,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 21,
+    "x": 136.85,
+    "y": 32.075,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 22,
+    "x": 155.9,
+    "y": 32.075,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 23,
+    "x": 174.95,
+    "y": 32.075,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 24,
+    "x": 194,
+    "y": 32.075,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 25,
+    "x": 213.05,
+    "y": 32.075,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 26,
+    "x": 232.1,
+    "y": 32.075,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 27,
+    "x": 251.15,
+    "y": 32.075,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 28,
+    "x": 274.963,
+    "y": 32.075,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 29,
+    "x": 298.775,
+    "y": 32.075,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 30,
+    "x": 20.169,
+    "y": 51.125,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 31,
+    "x": 46.363,
+    "y": 51.125,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 32,
+    "x": 65.412,
+    "y": 51.125,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 33,
+    "x": 84.463,
+    "y": 51.125,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 34,
+    "x": 103.513,
+    "y": 51.125,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 35,
+    "x": 122.563,
+    "y": 51.125,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 36,
+    "x": 141.613,
+    "y": 51.125,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 37,
+    "x": 160.663,
+    "y": 51.125,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 38,
+    "x": 179.713,
+    "y": 51.125,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 39,
+    "x": 198.763,
+    "y": 51.125,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 40,
+    "x": 217.813,
+    "y": 51.125,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 41,
+    "x": 236.863,
+    "y": 51.125,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 42,
+    "x": 267.819,
+    "y": 51.125,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 43,
+    "x": 298.775,
+    "y": 51.125,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 44,
+    "x": 24.931,
+    "y": 70.175,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 45,
+    "x": 55.888,
+    "y": 70.175,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 46,
+    "x": 74.938,
+    "y": 70.175,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 47,
+    "x": 93.988,
+    "y": 70.175,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 48,
+    "x": 113.038,
+    "y": 70.175,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 49,
+    "x": 132.088,
+    "y": 70.175,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 50,
+    "x": 151.138,
+    "y": 70.175,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 51,
+    "x": 170.188,
+    "y": 70.175,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 52,
+    "x": 189.238,
+    "y": 70.175,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 53,
+    "x": 208.288,
+    "y": 70.175,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 54,
+    "x": 227.338,
+    "y": 70.175,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 55,
+    "x": 253.531,
+    "y": 70.175,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 56,
+    "x": 279.725,
+    "y": 70.175,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 57,
+    "x": 298.775,
+    "y": 70.175,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 58,
+    "x": 15.406,
+    "y": 89.225,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 59,
+    "x": 39.219,
+    "y": 89.225,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 60,
+    "x": 63.031,
+    "y": 89.225,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 61,
+    "x": 134.469,
+    "y": 89.225,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 62,
+    "x": 203.525,
+    "y": 89.225,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 63,
+    "x": 222.575,
+    "y": 89.225,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 64,
+    "x": 241.625,
+    "y": 89.225,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 65,
+    "x": 260.675,
+    "y": 89.225,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 66,
+    "x": 279.725,
+    "y": 89.225,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 67,
+    "x": 298.775,
+    "y": 89.225,
+    "rotation": 0
+   }
+  ],
+  "stabilizerCutouts": [
+   {
+    "keyIndex": 13,
+    "x": 270.2,
+    "y": 13.025,
+    "spacing": 23.8,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 42,
+    "x": 267.819,
+    "y": 51.125,
+    "spacing": 23.8,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 44,
+    "x": 24.931,
+    "y": 70.175,
+    "spacing": 23.8,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 61,
+    "x": 134.469,
+    "y": 89.225,
+    "spacing": 100,
+    "rotation": 0
+   }
+  ],
+  "mountingPoints": [
+   {
+    "id": "p1",
+    "x": 11.5,
+    "y": 22.55,
+    "diameter": 2.5,
+    "kind": "screw"
+   },
+   {
+    "id": "p2",
+    "x": 107.77,
+    "y": 22.55,
+    "diameter": 2.5,
+    "kind": "screw"
+   },
+   {
+    "id": "p3",
+    "x": 204.03,
+    "y": 22.55,
+    "diameter": 2.5,
+    "kind": "screw"
+   },
+   {
+    "id": "p4",
+    "x": 300.3,
+    "y": 22.55,
+    "diameter": 2.5,
+    "kind": "screw"
+   },
+   {
+    "id": "p5",
+    "x": 11.5,
+    "y": 79.7,
+    "diameter": 2.5,
+    "kind": "screw"
+   },
+   {
+    "id": "p6",
+    "x": 107.77,
+    "y": 79.7,
+    "diameter": 2.5,
+    "kind": "screw"
+   },
+   {
+    "id": "p7",
+    "x": 204.03,
+    "y": 79.7,
+    "diameter": 2.5,
+    "kind": "screw"
+   },
+   {
+    "id": "p8",
+    "x": 300.3,
+    "y": 79.7,
+    "diameter": 2.5,
+    "kind": "screw"
+   }
+  ],
+  "model3d": {
+   "kind": "parametric"
+  },
+  "tags": [
+   "reference",
+   "65%"
+  ],
+  "sources": [
+   {
+    "sourceName": "KeyboardShapes parametric reference",
+    "sourceType": "parametric-reference",
+    "method": "generated from ANSI layout and nominal published dimensions",
+    "retrievedAt": "2026-10-01T00:00:00.000Z",
+    "confidence": 0.4
+   }
+  ],
+  "confidence": {
+   "level": "estimated",
+   "score": 0.4,
+   "notes": "Illustrative parametric plate; not a commercial product."
+  }
+ },
+ {
+  "id": "ref-65-plate-b",
+  "slug": "ref-65-plate-b",
+  "brand": "KeyboardShapes",
+  "model": "Reference 65% plate B (alternate hole pattern)",
+  "dimensions": {
+   "width": 311.8,
+   "depth": 102.25,
+   "height": 1.5
+  },
+  "outline": {
+   "points": [
+    {
+     "x": 310.3,
+     "y": 0
+    },
+    {
+     "x": 310.874,
+     "y": 0.114
+    },
+    {
+     "x": 311.361,
+     "y": 0.439
+    },
+    {
+     "x": 311.686,
+     "y": 0.926
+    },
+    {
+     "x": 311.8,
+     "y": 1.5
+    },
+    {
+     "x": 311.8,
+     "y": 100.75
+    },
+    {
+     "x": 311.686,
+     "y": 101.324
+    },
+    {
+     "x": 311.361,
+     "y": 101.811
+    },
+    {
+     "x": 310.874,
+     "y": 102.136
+    },
+    {
+     "x": 310.3,
+     "y": 102.25
+    },
+    {
+     "x": 1.5,
+     "y": 102.25
+    },
+    {
+     "x": 0.926,
+     "y": 102.136
+    },
+    {
+     "x": 0.439,
+     "y": 101.811
+    },
+    {
+     "x": 0.114,
+     "y": 101.324
+    },
+    {
+     "x": 0,
+     "y": 100.75
+    },
+    {
+     "x": 0,
+     "y": 1.5
+    },
+    {
+     "x": 0.114,
+     "y": 0.926
+    },
+    {
+     "x": 0.439,
+     "y": 0.439
+    },
+    {
+     "x": 0.926,
+     "y": 0.114
+    },
+    {
+     "x": 1.5,
+     "y": 0
+    }
+   ],
+   "width": 311.8,
+   "depth": 102.25,
+   "closed": true
+  },
+  "thickness": 1.5,
+  "material": "brass",
+  "switchCutouts": [
+   {
+    "keyIndex": 0,
+    "x": 13.025,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 1,
+    "x": 32.075,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 2,
+    "x": 51.125,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 3,
+    "x": 70.175,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 4,
+    "x": 89.225,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 5,
+    "x": 108.275,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 6,
+    "x": 127.325,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 7,
+    "x": 146.375,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 8,
+    "x": 165.425,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 9,
+    "x": 184.475,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 10,
+    "x": 203.525,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 11,
+    "x": 222.575,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 12,
+    "x": 241.625,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 13,
+    "x": 270.2,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 14,
+    "x": 298.775,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 15,
+    "x": 17.788,
+    "y": 32.075,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 16,
+    "x": 41.6,
+    "y": 32.075,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 17,
+    "x": 60.65,
+    "y": 32.075,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 18,
+    "x": 79.7,
+    "y": 32.075,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 19,
+    "x": 98.75,
+    "y": 32.075,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 20,
+    "x": 117.8,
+    "y": 32.075,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 21,
+    "x": 136.85,
+    "y": 32.075,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 22,
+    "x": 155.9,
+    "y": 32.075,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 23,
+    "x": 174.95,
+    "y": 32.075,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 24,
+    "x": 194,
+    "y": 32.075,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 25,
+    "x": 213.05,
+    "y": 32.075,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 26,
+    "x": 232.1,
+    "y": 32.075,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 27,
+    "x": 251.15,
+    "y": 32.075,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 28,
+    "x": 274.963,
+    "y": 32.075,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 29,
+    "x": 298.775,
+    "y": 32.075,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 30,
+    "x": 20.169,
+    "y": 51.125,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 31,
+    "x": 46.363,
+    "y": 51.125,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 32,
+    "x": 65.412,
+    "y": 51.125,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 33,
+    "x": 84.463,
+    "y": 51.125,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 34,
+    "x": 103.513,
+    "y": 51.125,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 35,
+    "x": 122.563,
+    "y": 51.125,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 36,
+    "x": 141.613,
+    "y": 51.125,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 37,
+    "x": 160.663,
+    "y": 51.125,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 38,
+    "x": 179.713,
+    "y": 51.125,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 39,
+    "x": 198.763,
+    "y": 51.125,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 40,
+    "x": 217.813,
+    "y": 51.125,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 41,
+    "x": 236.863,
+    "y": 51.125,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 42,
+    "x": 267.819,
+    "y": 51.125,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 43,
+    "x": 298.775,
+    "y": 51.125,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 44,
+    "x": 24.931,
+    "y": 70.175,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 45,
+    "x": 55.888,
+    "y": 70.175,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 46,
+    "x": 74.938,
+    "y": 70.175,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 47,
+    "x": 93.988,
+    "y": 70.175,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 48,
+    "x": 113.038,
+    "y": 70.175,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 49,
+    "x": 132.088,
+    "y": 70.175,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 50,
+    "x": 151.138,
+    "y": 70.175,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 51,
+    "x": 170.188,
+    "y": 70.175,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 52,
+    "x": 189.238,
+    "y": 70.175,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 53,
+    "x": 208.288,
+    "y": 70.175,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 54,
+    "x": 227.338,
+    "y": 70.175,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 55,
+    "x": 253.531,
+    "y": 70.175,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 56,
+    "x": 279.725,
+    "y": 70.175,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 57,
+    "x": 298.775,
+    "y": 70.175,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 58,
+    "x": 15.406,
+    "y": 89.225,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 59,
+    "x": 39.219,
+    "y": 89.225,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 60,
+    "x": 63.031,
+    "y": 89.225,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 61,
+    "x": 134.469,
+    "y": 89.225,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 62,
+    "x": 203.525,
+    "y": 89.225,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 63,
+    "x": 222.575,
+    "y": 89.225,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 64,
+    "x": 241.625,
+    "y": 89.225,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 65,
+    "x": 260.675,
+    "y": 89.225,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 66,
+    "x": 279.725,
+    "y": 89.225,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 67,
+    "x": 298.775,
+    "y": 89.225,
+    "rotation": 0
+   }
+  ],
+  "stabilizerCutouts": [
+   {
+    "keyIndex": 13,
+    "x": 270.2,
+    "y": 13.025,
+    "spacing": 23.8,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 42,
+    "x": 267.819,
+    "y": 51.125,
+    "spacing": 23.8,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 44,
+    "x": 24.931,
+    "y": 70.175,
+    "spacing": 23.8,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 61,
+    "x": 134.469,
+    "y": 89.225,
+    "spacing": 100,
+    "rotation": 0
+   }
+  ],
+  "mountingPoints": [
+   {
+    "id": "p1",
+    "x": 17.5,
+    "y": 32.08,
+    "diameter": 2.5,
+    "kind": "screw"
+   },
+   {
+    "id": "p2",
+    "x": 109.77,
+    "y": 32.08,
+    "diameter": 2.5,
+    "kind": "screw"
+   },
+   {
+    "id": "p3",
+    "x": 202.03,
+    "y": 32.08,
+    "diameter": 2.5,
+    "kind": "screw"
+   },
+   {
+    "id": "p4",
+    "x": 294.3,
+    "y": 32.08,
+    "diameter": 2.5,
+    "kind": "screw"
+   },
+   {
+    "id": "p5",
+    "x": 17.5,
+    "y": 70.18,
+    "diameter": 2.5,
+    "kind": "screw"
+   },
+   {
+    "id": "p6",
+    "x": 109.77,
+    "y": 70.18,
+    "diameter": 2.5,
+    "kind": "screw"
+   },
+   {
+    "id": "p7",
+    "x": 202.03,
+    "y": 70.18,
+    "diameter": 2.5,
+    "kind": "screw"
+   },
+   {
+    "id": "p8",
+    "x": 294.3,
+    "y": 70.18,
+    "diameter": 2.5,
+    "kind": "screw"
+   }
+  ],
+  "model3d": {
+   "kind": "parametric"
+  },
+  "tags": [
+   "reference",
+   "65%"
+  ],
+  "sources": [
+   {
+    "sourceName": "KeyboardShapes parametric reference",
+    "sourceType": "parametric-reference",
+    "method": "generated from ANSI layout and nominal published dimensions",
+    "retrievedAt": "2026-10-01T00:00:00.000Z",
+    "confidence": 0.4
+   }
+  ],
+  "confidence": {
+   "level": "estimated",
+   "score": 0.4,
+   "notes": "Illustrative parametric plate; not a commercial product."
+  }
+ },
+ {
+  "id": "ref-75-plate-a",
+  "slug": "ref-75-plate-a",
+  "brand": "KeyboardShapes",
+  "model": "Reference 75% plate A",
+  "dimensions": {
+   "width": 311.8,
+   "depth": 121.3,
+   "height": 1.5
+  },
+  "outline": {
+   "points": [
+    {
+     "x": 310.3,
+     "y": 0
+    },
+    {
+     "x": 310.874,
+     "y": 0.114
+    },
+    {
+     "x": 311.361,
+     "y": 0.439
+    },
+    {
+     "x": 311.686,
+     "y": 0.926
+    },
+    {
+     "x": 311.8,
+     "y": 1.5
+    },
+    {
+     "x": 311.8,
+     "y": 119.8
+    },
+    {
+     "x": 311.686,
+     "y": 120.374
+    },
+    {
+     "x": 311.361,
+     "y": 120.861
+    },
+    {
+     "x": 310.874,
+     "y": 121.186
+    },
+    {
+     "x": 310.3,
+     "y": 121.3
+    },
+    {
+     "x": 1.5,
+     "y": 121.3
+    },
+    {
+     "x": 0.926,
+     "y": 121.186
+    },
+    {
+     "x": 0.439,
+     "y": 120.861
+    },
+    {
+     "x": 0.114,
+     "y": 120.374
+    },
+    {
+     "x": 0,
+     "y": 119.8
+    },
+    {
+     "x": 0,
+     "y": 1.5
+    },
+    {
+     "x": 0.114,
+     "y": 0.926
+    },
+    {
+     "x": 0.439,
+     "y": 0.439
+    },
+    {
+     "x": 0.926,
+     "y": 0.114
+    },
+    {
+     "x": 1.5,
+     "y": 0
+    }
+   ],
+   "width": 311.8,
+   "depth": 121.3,
+   "closed": true
+  },
+  "thickness": 1.5,
+  "material": "aluminium",
+  "switchCutouts": [
+   {
+    "keyIndex": 0,
+    "x": 13.025,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 1,
+    "x": 32.075,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 2,
+    "x": 51.125,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 3,
+    "x": 70.175,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 4,
+    "x": 89.225,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 5,
+    "x": 108.275,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 6,
+    "x": 127.325,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 7,
+    "x": 146.375,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 8,
+    "x": 165.425,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 9,
+    "x": 184.475,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 10,
+    "x": 203.525,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 11,
+    "x": 222.575,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 12,
+    "x": 241.625,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 13,
+    "x": 260.675,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 14,
+    "x": 279.725,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 15,
+    "x": 298.775,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 16,
+    "x": 13.025,
+    "y": 32.075,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 17,
+    "x": 32.075,
+    "y": 32.075,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 18,
+    "x": 51.125,
+    "y": 32.075,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 19,
+    "x": 70.175,
+    "y": 32.075,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 20,
+    "x": 89.225,
+    "y": 32.075,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 21,
+    "x": 108.275,
+    "y": 32.075,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 22,
+    "x": 127.325,
+    "y": 32.075,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 23,
+    "x": 146.375,
+    "y": 32.075,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 24,
+    "x": 165.425,
+    "y": 32.075,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 25,
+    "x": 184.475,
+    "y": 32.075,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 26,
+    "x": 203.525,
+    "y": 32.075,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 27,
+    "x": 222.575,
+    "y": 32.075,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 28,
+    "x": 241.625,
+    "y": 32.075,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 29,
+    "x": 270.2,
+    "y": 32.075,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 30,
+    "x": 298.775,
+    "y": 32.075,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 31,
+    "x": 17.788,
+    "y": 51.125,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 32,
+    "x": 41.6,
+    "y": 51.125,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 33,
+    "x": 60.65,
+    "y": 51.125,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 34,
+    "x": 79.7,
+    "y": 51.125,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 35,
+    "x": 98.75,
+    "y": 51.125,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 36,
+    "x": 117.8,
+    "y": 51.125,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 37,
+    "x": 136.85,
+    "y": 51.125,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 38,
+    "x": 155.9,
+    "y": 51.125,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 39,
+    "x": 174.95,
+    "y": 51.125,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 40,
+    "x": 194,
+    "y": 51.125,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 41,
+    "x": 213.05,
+    "y": 51.125,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 42,
+    "x": 232.1,
+    "y": 51.125,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 43,
+    "x": 251.15,
+    "y": 51.125,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 44,
+    "x": 274.963,
+    "y": 51.125,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 45,
+    "x": 298.775,
+    "y": 51.125,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 46,
+    "x": 20.169,
+    "y": 70.175,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 47,
+    "x": 46.363,
+    "y": 70.175,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 48,
+    "x": 65.412,
+    "y": 70.175,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 49,
+    "x": 84.463,
+    "y": 70.175,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 50,
+    "x": 103.513,
+    "y": 70.175,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 51,
+    "x": 122.563,
+    "y": 70.175,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 52,
+    "x": 141.613,
+    "y": 70.175,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 53,
+    "x": 160.663,
+    "y": 70.175,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 54,
+    "x": 179.713,
+    "y": 70.175,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 55,
+    "x": 198.763,
+    "y": 70.175,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 56,
+    "x": 217.813,
+    "y": 70.175,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 57,
+    "x": 236.863,
+    "y": 70.175,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 58,
+    "x": 267.819,
+    "y": 70.175,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 59,
+    "x": 298.775,
+    "y": 70.175,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 60,
+    "x": 24.931,
+    "y": 89.225,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 61,
+    "x": 55.888,
+    "y": 89.225,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 62,
+    "x": 74.938,
+    "y": 89.225,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 63,
+    "x": 93.988,
+    "y": 89.225,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 64,
+    "x": 113.038,
+    "y": 89.225,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 65,
+    "x": 132.088,
+    "y": 89.225,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 66,
+    "x": 151.138,
+    "y": 89.225,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 67,
+    "x": 170.188,
+    "y": 89.225,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 68,
+    "x": 189.238,
+    "y": 89.225,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 69,
+    "x": 208.288,
+    "y": 89.225,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 70,
+    "x": 227.338,
+    "y": 89.225,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 71,
+    "x": 253.531,
+    "y": 89.225,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 72,
+    "x": 279.725,
+    "y": 89.225,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 73,
+    "x": 298.775,
+    "y": 89.225,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 74,
+    "x": 15.406,
+    "y": 108.275,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 75,
+    "x": 39.219,
+    "y": 108.275,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 76,
+    "x": 63.031,
+    "y": 108.275,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 77,
+    "x": 134.469,
+    "y": 108.275,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 78,
+    "x": 203.525,
+    "y": 108.275,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 79,
+    "x": 222.575,
+    "y": 108.275,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 80,
+    "x": 241.625,
+    "y": 108.275,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 81,
+    "x": 260.675,
+    "y": 108.275,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 82,
+    "x": 279.725,
+    "y": 108.275,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 83,
+    "x": 298.775,
+    "y": 108.275,
+    "rotation": 0
+   }
+  ],
+  "stabilizerCutouts": [
+   {
+    "keyIndex": 29,
+    "x": 270.2,
+    "y": 32.075,
+    "spacing": 23.8,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 58,
+    "x": 267.819,
+    "y": 70.175,
+    "spacing": 23.8,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 60,
+    "x": 24.931,
+    "y": 89.225,
+    "spacing": 23.8,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 77,
+    "x": 134.469,
+    "y": 108.275,
+    "spacing": 100,
+    "rotation": 0
+   }
+  ],
+  "mountingPoints": [
+   {
+    "id": "p1",
+    "x": 11.5,
+    "y": 26.36,
+    "diameter": 2.5,
+    "kind": "screw"
+   },
+   {
+    "id": "p2",
+    "x": 107.77,
+    "y": 26.36,
+    "diameter": 2.5,
+    "kind": "screw"
+   },
+   {
+    "id": "p3",
+    "x": 204.03,
+    "y": 26.36,
+    "diameter": 2.5,
+    "kind": "screw"
+   },
+   {
+    "id": "p4",
+    "x": 300.3,
+    "y": 26.36,
+    "diameter": 2.5,
+    "kind": "screw"
+   },
+   {
+    "id": "p5",
+    "x": 11.5,
+    "y": 94.94,
+    "diameter": 2.5,
+    "kind": "screw"
+   },
+   {
+    "id": "p6",
+    "x": 107.77,
+    "y": 94.94,
+    "diameter": 2.5,
+    "kind": "screw"
+   },
+   {
+    "id": "p7",
+    "x": 204.03,
+    "y": 94.94,
+    "diameter": 2.5,
+    "kind": "screw"
+   },
+   {
+    "id": "p8",
+    "x": 300.3,
+    "y": 94.94,
+    "diameter": 2.5,
+    "kind": "screw"
+   }
+  ],
+  "model3d": {
+   "kind": "parametric"
+  },
+  "tags": [
+   "reference",
+   "75%"
+  ],
+  "sources": [
+   {
+    "sourceName": "KeyboardShapes parametric reference",
+    "sourceType": "parametric-reference",
+    "method": "generated from ANSI layout and nominal published dimensions",
+    "retrievedAt": "2026-10-01T00:00:00.000Z",
+    "confidence": 0.4
+   }
+  ],
+  "confidence": {
+   "level": "estimated",
+   "score": 0.4,
+   "notes": "Illustrative parametric plate; not a commercial product."
+  }
+ },
+ {
+  "id": "ref-tkl-plate-a",
+  "slug": "ref-tkl-plate-a",
+  "brand": "KeyboardShapes",
+  "model": "Reference TKL plate A",
+  "dimensions": {
+   "width": 354.663,
+   "depth": 130.825,
+   "height": 1.5
+  },
+  "outline": {
+   "points": [
+    {
+     "x": 353.163,
+     "y": 0
+    },
+    {
+     "x": 353.737,
+     "y": 0.114
+    },
+    {
+     "x": 354.224,
+     "y": 0.439
+    },
+    {
+     "x": 354.549,
+     "y": 0.926
+    },
+    {
+     "x": 354.663,
+     "y": 1.5
+    },
+    {
+     "x": 354.663,
+     "y": 129.325
+    },
+    {
+     "x": 354.549,
+     "y": 129.899
+    },
+    {
+     "x": 354.224,
+     "y": 130.386
+    },
+    {
+     "x": 353.737,
+     "y": 130.711
+    },
+    {
+     "x": 353.163,
+     "y": 130.825
+    },
+    {
+     "x": 1.5,
+     "y": 130.825
+    },
+    {
+     "x": 0.926,
+     "y": 130.711
+    },
+    {
+     "x": 0.439,
+     "y": 130.386
+    },
+    {
+     "x": 0.114,
+     "y": 129.899
+    },
+    {
+     "x": 0,
+     "y": 129.325
+    },
+    {
+     "x": 0,
+     "y": 1.5
+    },
+    {
+     "x": 0.114,
+     "y": 0.926
+    },
+    {
+     "x": 0.439,
+     "y": 0.439
+    },
+    {
+     "x": 0.926,
+     "y": 0.114
+    },
+    {
+     "x": 1.5,
+     "y": 0
+    }
+   ],
+   "width": 354.663,
+   "depth": 130.825,
+   "closed": true
+  },
+  "thickness": 1.5,
+  "material": "aluminium",
+  "switchCutouts": [
+   {
+    "keyIndex": 0,
+    "x": 13.025,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 1,
+    "x": 51.125,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 2,
+    "x": 70.175,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 3,
+    "x": 89.225,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 4,
+    "x": 108.275,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 5,
+    "x": 136.85,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 6,
+    "x": 155.9,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 7,
+    "x": 174.95,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 8,
+    "x": 194,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 9,
+    "x": 222.575,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 10,
+    "x": 241.625,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 11,
+    "x": 260.675,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 12,
+    "x": 279.725,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 13,
+    "x": 303.538,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 14,
+    "x": 322.588,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 15,
+    "x": 341.638,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 16,
+    "x": 13.025,
+    "y": 41.6,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 17,
+    "x": 32.075,
+    "y": 41.6,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 18,
+    "x": 51.125,
+    "y": 41.6,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 19,
+    "x": 70.175,
+    "y": 41.6,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 20,
+    "x": 89.225,
+    "y": 41.6,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 21,
+    "x": 108.275,
+    "y": 41.6,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 22,
+    "x": 127.325,
+    "y": 41.6,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 23,
+    "x": 146.375,
+    "y": 41.6,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 24,
+    "x": 165.425,
+    "y": 41.6,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 25,
+    "x": 184.475,
+    "y": 41.6,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 26,
+    "x": 203.525,
+    "y": 41.6,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 27,
+    "x": 222.575,
+    "y": 41.6,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 28,
+    "x": 241.625,
+    "y": 41.6,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 29,
+    "x": 270.2,
+    "y": 41.6,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 30,
+    "x": 303.538,
+    "y": 41.6,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 31,
+    "x": 322.588,
+    "y": 41.6,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 32,
+    "x": 341.638,
+    "y": 41.6,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 33,
+    "x": 17.788,
+    "y": 60.65,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 34,
+    "x": 41.6,
+    "y": 60.65,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 35,
+    "x": 60.65,
+    "y": 60.65,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 36,
+    "x": 79.7,
+    "y": 60.65,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 37,
+    "x": 98.75,
+    "y": 60.65,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 38,
+    "x": 117.8,
+    "y": 60.65,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 39,
+    "x": 136.85,
+    "y": 60.65,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 40,
+    "x": 155.9,
+    "y": 60.65,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 41,
+    "x": 174.95,
+    "y": 60.65,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 42,
+    "x": 194,
+    "y": 60.65,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 43,
+    "x": 213.05,
+    "y": 60.65,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 44,
+    "x": 232.1,
+    "y": 60.65,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 45,
+    "x": 251.15,
+    "y": 60.65,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 46,
+    "x": 274.963,
+    "y": 60.65,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 47,
+    "x": 303.538,
+    "y": 60.65,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 48,
+    "x": 322.588,
+    "y": 60.65,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 49,
+    "x": 341.638,
+    "y": 60.65,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 50,
+    "x": 20.169,
+    "y": 79.7,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 51,
+    "x": 46.363,
+    "y": 79.7,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 52,
+    "x": 65.412,
+    "y": 79.7,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 53,
+    "x": 84.463,
+    "y": 79.7,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 54,
+    "x": 103.513,
+    "y": 79.7,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 55,
+    "x": 122.563,
+    "y": 79.7,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 56,
+    "x": 141.613,
+    "y": 79.7,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 57,
+    "x": 160.663,
+    "y": 79.7,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 58,
+    "x": 179.713,
+    "y": 79.7,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 59,
+    "x": 198.763,
+    "y": 79.7,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 60,
+    "x": 217.813,
+    "y": 79.7,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 61,
+    "x": 236.863,
+    "y": 79.7,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 62,
+    "x": 267.819,
+    "y": 79.7,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 63,
+    "x": 24.931,
+    "y": 98.75,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 64,
+    "x": 55.888,
+    "y": 98.75,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 65,
+    "x": 74.938,
+    "y": 98.75,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 66,
+    "x": 93.988,
+    "y": 98.75,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 67,
+    "x": 113.038,
+    "y": 98.75,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 68,
+    "x": 132.088,
+    "y": 98.75,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 69,
+    "x": 151.138,
+    "y": 98.75,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 70,
+    "x": 170.188,
+    "y": 98.75,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 71,
+    "x": 189.238,
+    "y": 98.75,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 72,
+    "x": 208.288,
+    "y": 98.75,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 73,
+    "x": 227.338,
+    "y": 98.75,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 74,
+    "x": 263.056,
+    "y": 98.75,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 75,
+    "x": 322.588,
+    "y": 98.75,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 76,
+    "x": 15.406,
+    "y": 117.8,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 77,
+    "x": 39.219,
+    "y": 117.8,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 78,
+    "x": 63.031,
+    "y": 117.8,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 79,
+    "x": 134.469,
+    "y": 117.8,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 80,
+    "x": 205.906,
+    "y": 117.8,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 81,
+    "x": 229.719,
+    "y": 117.8,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 82,
+    "x": 253.531,
+    "y": 117.8,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 83,
+    "x": 277.344,
+    "y": 117.8,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 84,
+    "x": 303.538,
+    "y": 117.8,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 85,
+    "x": 322.588,
+    "y": 117.8,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 86,
+    "x": 341.638,
+    "y": 117.8,
+    "rotation": 0
+   }
+  ],
+  "stabilizerCutouts": [
+   {
+    "keyIndex": 29,
+    "x": 270.2,
+    "y": 41.6,
+    "spacing": 23.8,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 62,
+    "x": 267.819,
+    "y": 79.7,
+    "spacing": 23.8,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 63,
+    "x": 24.931,
+    "y": 98.75,
+    "spacing": 23.8,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 74,
+    "x": 263.056,
+    "y": 98.75,
+    "spacing": 23.8,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 79,
+    "x": 134.469,
+    "y": 117.8,
+    "spacing": 100,
+    "rotation": 0
+   }
+  ],
+  "mountingPoints": [
+   {
+    "id": "p1",
+    "x": 11.5,
+    "y": 28.27,
+    "diameter": 2.5,
+    "kind": "screw"
+   },
+   {
+    "id": "p2",
+    "x": 94.42,
+    "y": 28.27,
+    "diameter": 2.5,
+    "kind": "screw"
+   },
+   {
+    "id": "p3",
+    "x": 177.33,
+    "y": 28.27,
+    "diameter": 2.5,
+    "kind": "screw"
+   },
+   {
+    "id": "p4",
+    "x": 260.25,
+    "y": 28.27,
+    "diameter": 2.5,
+    "kind": "screw"
+   },
+   {
+    "id": "p5",
+    "x": 343.16,
+    "y": 28.27,
+    "diameter": 2.5,
+    "kind": "screw"
+   },
+   {
+    "id": "p6",
+    "x": 11.5,
+    "y": 102.56,
+    "diameter": 2.5,
+    "kind": "screw"
+   },
+   {
+    "id": "p7",
+    "x": 94.42,
+    "y": 102.56,
+    "diameter": 2.5,
+    "kind": "screw"
+   },
+   {
+    "id": "p8",
+    "x": 177.33,
+    "y": 102.56,
+    "diameter": 2.5,
+    "kind": "screw"
+   },
+   {
+    "id": "p9",
+    "x": 260.25,
+    "y": 102.56,
+    "diameter": 2.5,
+    "kind": "screw"
+   },
+   {
+    "id": "p10",
+    "x": 343.16,
+    "y": 102.56,
+    "diameter": 2.5,
+    "kind": "screw"
+   }
+  ],
+  "model3d": {
+   "kind": "parametric"
+  },
+  "tags": [
+   "reference",
+   "TKL"
+  ],
+  "sources": [
+   {
+    "sourceName": "KeyboardShapes parametric reference",
+    "sourceType": "parametric-reference",
+    "method": "generated from ANSI layout and nominal published dimensions",
+    "retrievedAt": "2026-10-01T00:00:00.000Z",
+    "confidence": 0.4
+   }
+  ],
+  "confidence": {
+   "level": "estimated",
+   "score": 0.4,
+   "notes": "Illustrative parametric plate; not a commercial product."
+  }
+ },
+ {
+  "id": "ref-full-plate-a",
+  "slug": "ref-full-plate-a",
+  "brand": "KeyboardShapes",
+  "model": "Reference Full Size plate A",
+  "dimensions": {
+   "width": 435.625,
+   "depth": 130.825,
+   "height": 1.5
+  },
+  "outline": {
+   "points": [
+    {
+     "x": 434.125,
+     "y": 0
+    },
+    {
+     "x": 434.699,
+     "y": 0.114
+    },
+    {
+     "x": 435.186,
+     "y": 0.439
+    },
+    {
+     "x": 435.511,
+     "y": 0.926
+    },
+    {
+     "x": 435.625,
+     "y": 1.5
+    },
+    {
+     "x": 435.625,
+     "y": 129.325
+    },
+    {
+     "x": 435.511,
+     "y": 129.899
+    },
+    {
+     "x": 435.186,
+     "y": 130.386
+    },
+    {
+     "x": 434.699,
+     "y": 130.711
+    },
+    {
+     "x": 434.125,
+     "y": 130.825
+    },
+    {
+     "x": 1.5,
+     "y": 130.825
+    },
+    {
+     "x": 0.926,
+     "y": 130.711
+    },
+    {
+     "x": 0.439,
+     "y": 130.386
+    },
+    {
+     "x": 0.114,
+     "y": 129.899
+    },
+    {
+     "x": 0,
+     "y": 129.325
+    },
+    {
+     "x": 0,
+     "y": 1.5
+    },
+    {
+     "x": 0.114,
+     "y": 0.926
+    },
+    {
+     "x": 0.439,
+     "y": 0.439
+    },
+    {
+     "x": 0.926,
+     "y": 0.114
+    },
+    {
+     "x": 1.5,
+     "y": 0
+    }
+   ],
+   "width": 435.625,
+   "depth": 130.825,
+   "closed": true
+  },
+  "thickness": 1.5,
+  "material": "aluminium",
+  "switchCutouts": [
+   {
+    "keyIndex": 0,
+    "x": 13.025,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 1,
+    "x": 51.125,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 2,
+    "x": 70.175,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 3,
+    "x": 89.225,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 4,
+    "x": 108.275,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 5,
+    "x": 136.85,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 6,
+    "x": 155.9,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 7,
+    "x": 174.95,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 8,
+    "x": 194,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 9,
+    "x": 222.575,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 10,
+    "x": 241.625,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 11,
+    "x": 260.675,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 12,
+    "x": 279.725,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 13,
+    "x": 303.538,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 14,
+    "x": 322.588,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 15,
+    "x": 341.638,
+    "y": 13.025,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 16,
+    "x": 13.025,
+    "y": 41.6,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 17,
+    "x": 32.075,
+    "y": 41.6,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 18,
+    "x": 51.125,
+    "y": 41.6,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 19,
+    "x": 70.175,
+    "y": 41.6,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 20,
+    "x": 89.225,
+    "y": 41.6,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 21,
+    "x": 108.275,
+    "y": 41.6,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 22,
+    "x": 127.325,
+    "y": 41.6,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 23,
+    "x": 146.375,
+    "y": 41.6,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 24,
+    "x": 165.425,
+    "y": 41.6,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 25,
+    "x": 184.475,
+    "y": 41.6,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 26,
+    "x": 203.525,
+    "y": 41.6,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 27,
+    "x": 222.575,
+    "y": 41.6,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 28,
+    "x": 241.625,
+    "y": 41.6,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 29,
+    "x": 270.2,
+    "y": 41.6,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 30,
+    "x": 303.538,
+    "y": 41.6,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 31,
+    "x": 322.588,
+    "y": 41.6,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 32,
+    "x": 341.638,
+    "y": 41.6,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 33,
+    "x": 17.788,
+    "y": 60.65,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 34,
+    "x": 41.6,
+    "y": 60.65,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 35,
+    "x": 60.65,
+    "y": 60.65,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 36,
+    "x": 79.7,
+    "y": 60.65,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 37,
+    "x": 98.75,
+    "y": 60.65,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 38,
+    "x": 117.8,
+    "y": 60.65,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 39,
+    "x": 136.85,
+    "y": 60.65,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 40,
+    "x": 155.9,
+    "y": 60.65,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 41,
+    "x": 174.95,
+    "y": 60.65,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 42,
+    "x": 194,
+    "y": 60.65,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 43,
+    "x": 213.05,
+    "y": 60.65,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 44,
+    "x": 232.1,
+    "y": 60.65,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 45,
+    "x": 251.15,
+    "y": 60.65,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 46,
+    "x": 274.963,
+    "y": 60.65,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 47,
+    "x": 303.538,
+    "y": 60.65,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 48,
+    "x": 322.588,
+    "y": 60.65,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 49,
+    "x": 341.638,
+    "y": 60.65,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 50,
+    "x": 20.169,
+    "y": 79.7,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 51,
+    "x": 46.363,
+    "y": 79.7,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 52,
+    "x": 65.412,
+    "y": 79.7,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 53,
+    "x": 84.463,
+    "y": 79.7,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 54,
+    "x": 103.513,
+    "y": 79.7,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 55,
+    "x": 122.563,
+    "y": 79.7,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 56,
+    "x": 141.613,
+    "y": 79.7,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 57,
+    "x": 160.663,
+    "y": 79.7,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 58,
+    "x": 179.713,
+    "y": 79.7,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 59,
+    "x": 198.763,
+    "y": 79.7,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 60,
+    "x": 217.813,
+    "y": 79.7,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 61,
+    "x": 236.863,
+    "y": 79.7,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 62,
+    "x": 267.819,
+    "y": 79.7,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 63,
+    "x": 24.931,
+    "y": 98.75,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 64,
+    "x": 55.888,
+    "y": 98.75,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 65,
+    "x": 74.938,
+    "y": 98.75,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 66,
+    "x": 93.988,
+    "y": 98.75,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 67,
+    "x": 113.038,
+    "y": 98.75,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 68,
+    "x": 132.088,
+    "y": 98.75,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 69,
+    "x": 151.138,
+    "y": 98.75,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 70,
+    "x": 170.188,
+    "y": 98.75,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 71,
+    "x": 189.238,
+    "y": 98.75,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 72,
+    "x": 208.288,
+    "y": 98.75,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 73,
+    "x": 227.338,
+    "y": 98.75,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 74,
+    "x": 263.056,
+    "y": 98.75,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 75,
+    "x": 322.588,
+    "y": 98.75,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 76,
+    "x": 15.406,
+    "y": 117.8,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 77,
+    "x": 39.219,
+    "y": 117.8,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 78,
+    "x": 63.031,
+    "y": 117.8,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 79,
+    "x": 134.469,
+    "y": 117.8,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 80,
+    "x": 205.906,
+    "y": 117.8,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 81,
+    "x": 229.719,
+    "y": 117.8,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 82,
+    "x": 253.531,
+    "y": 117.8,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 83,
+    "x": 277.344,
+    "y": 117.8,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 84,
+    "x": 303.538,
+    "y": 117.8,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 85,
+    "x": 322.588,
+    "y": 117.8,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 86,
+    "x": 341.638,
+    "y": 117.8,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 87,
+    "x": 365.45,
+    "y": 41.6,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 88,
+    "x": 384.5,
+    "y": 41.6,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 89,
+    "x": 403.55,
+    "y": 41.6,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 90,
+    "x": 422.6,
+    "y": 41.6,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 91,
+    "x": 365.45,
+    "y": 60.65,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 92,
+    "x": 384.5,
+    "y": 60.65,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 93,
+    "x": 403.55,
+    "y": 60.65,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 94,
+    "x": 422.6,
+    "y": 70.175,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 95,
+    "x": 365.45,
+    "y": 79.7,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 96,
+    "x": 384.5,
+    "y": 79.7,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 97,
+    "x": 403.55,
+    "y": 79.7,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 98,
+    "x": 365.45,
+    "y": 98.75,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 99,
+    "x": 384.5,
+    "y": 98.75,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 100,
+    "x": 403.55,
+    "y": 98.75,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 101,
+    "x": 422.6,
+    "y": 108.275,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 102,
+    "x": 374.975,
+    "y": 117.8,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 103,
+    "x": 403.55,
+    "y": 117.8,
+    "rotation": 0
+   }
+  ],
+  "stabilizerCutouts": [
+   {
+    "keyIndex": 29,
+    "x": 270.2,
+    "y": 41.6,
+    "spacing": 23.8,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 62,
+    "x": 267.819,
+    "y": 79.7,
+    "spacing": 23.8,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 63,
+    "x": 24.931,
+    "y": 98.75,
+    "spacing": 23.8,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 74,
+    "x": 263.056,
+    "y": 98.75,
+    "spacing": 23.8,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 79,
+    "x": 134.469,
+    "y": 117.8,
+    "spacing": 100,
+    "rotation": 0
+   },
+   {
+    "keyIndex": 94,
+    "x": 422.6,
+    "y": 70.175,
+    "spacing": 23.8,
+    "rotation": 90
+   },
+   {
+    "keyIndex": 101,
+    "x": 422.6,
+    "y": 108.275,
+    "spacing": 23.8,
+    "rotation": 90
+   },
+   {
+    "keyIndex": 102,
+    "x": 374.975,
+    "y": 117.8,
+    "spacing": 23.8,
+    "rotation": 0
+   }
+  ],
+  "mountingPoints": [
+   {
+    "id": "p1",
+    "x": 11.5,
+    "y": 28.27,
+    "diameter": 2.5,
+    "kind": "screw"
+   },
+   {
+    "id": "p2",
+    "x": 94.03,
+    "y": 28.27,
+    "diameter": 2.5,
+    "kind": "screw"
+   },
+   {
+    "id": "p3",
+    "x": 176.55,
+    "y": 28.27,
+    "diameter": 2.5,
+    "kind": "screw"
+   },
+   {
+    "id": "p4",
+    "x": 259.08,
+    "y": 28.27,
+    "diameter": 2.5,
+    "kind": "screw"
+   },
+   {
+    "id": "p5",
+    "x": 341.6,
+    "y": 28.27,
+    "diameter": 2.5,
+    "kind": "screw"
+   },
+   {
+    "id": "p6",
+    "x": 424.13,
+    "y": 28.27,
+    "diameter": 2.5,
+    "kind": "screw"
+   },
+   {
+    "id": "p7",
+    "x": 11.5,
+    "y": 102.56,
+    "diameter": 2.5,
+    "kind": "screw"
+   },
+   {
+    "id": "p8",
+    "x": 94.03,
+    "y": 102.56,
+    "diameter": 2.5,
+    "kind": "screw"
+   },
+   {
+    "id": "p9",
+    "x": 176.55,
+    "y": 102.56,
+    "diameter": 2.5,
+    "kind": "screw"
+   },
+   {
+    "id": "p10",
+    "x": 259.08,
+    "y": 102.56,
+    "diameter": 2.5,
+    "kind": "screw"
+   },
+   {
+    "id": "p11",
+    "x": 341.6,
+    "y": 102.56,
+    "diameter": 2.5,
+    "kind": "screw"
+   },
+   {
+    "id": "p12",
+    "x": 424.13,
+    "y": 102.56,
+    "diameter": 2.5,
+    "kind": "screw"
+   }
+  ],
+  "model3d": {
+   "kind": "parametric"
+  },
+  "tags": [
+   "reference",
+   "Full Size"
+  ],
+  "sources": [
+   {
+    "sourceName": "KeyboardShapes parametric reference",
+    "sourceType": "parametric-reference",
+    "method": "generated from ANSI layout and nominal published dimensions",
+    "retrievedAt": "2026-10-01T00:00:00.000Z",
+    "confidence": 0.4
+   }
+  ],
+  "confidence": {
+   "level": "estimated",
+   "score": 0.4,
+   "notes": "Illustrative parametric plate; not a commercial product."
+  }
+ }
+]

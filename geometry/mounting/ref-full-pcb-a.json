@@ -1,0 +1,90 @@
+{
+ "id": "ref-full-pcb-a",
+ "unit": "mm",
+ "points": [
+  {
+   "id": "h1",
+   "x": 10.5,
+   "y": 27.27,
+   "diameter": 2.5,
+   "kind": "screw"
+  },
+  {
+   "id": "h2",
+   "x": 93.03,
+   "y": 27.27,
+   "diameter": 2.5,
+   "kind": "screw"
+  },
+  {
+   "id": "h3",
+   "x": 175.55,
+   "y": 27.27,
+   "diameter": 2.5,
+   "kind": "screw"
+  },
+  {
+   "id": "h4",
+   "x": 258.08,
+   "y": 27.27,
+   "diameter": 2.5,
+   "kind": "screw"
+  },
+  {
+   "id": "h5",
+   "x": 340.6,
+   "y": 27.27,
+   "diameter": 2.5,
+   "kind": "screw"
+  },
+  {
+   "id": "h6",
+   "x": 423.13,
+   "y": 27.27,
+   "diameter": 2.5,
+   "kind": "screw"
+  },
+  {
+   "id": "h7",
+   "x": 10.5,
+   "y": 101.56,
+   "diameter": 2.5,
+   "kind": "screw"
+  },
+  {
+   "id": "h8",
+   "x": 93.03,
+   "y": 101.56,
+   "diameter": 2.5,
+   "kind": "screw"
+  },
+  {
+   "id": "h9",
+   "x": 175.55,
+   "y": 101.56,
+   "diameter": 2.5,
+   "kind": "screw"
+  },
+  {
+   "id": "h10",
+   "x": 258.08,
+   "y": 101.56,
+   "diameter": 2.5,
+   "kind": "screw"
+  },
+  {
+   "id": "h11",
+   "x": 340.6,
+   "y": 101.56,
+   "diameter": 2.5,
+   "kind": "screw"
+  },
+  {
+   "id": "h12",
+   "x": 423.13,
+   "y": 101.56,
+   "diameter": 2.5,
+   "kind": "screw"
+  }
+ ]
+}

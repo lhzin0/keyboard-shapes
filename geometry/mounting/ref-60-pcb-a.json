@@ -1,0 +1,62 @@
+{
+ "id": "ref-60-pcb-a",
+ "unit": "mm",
+ "points": [
+  {
+   "id": "h1",
+   "x": 10.5,
+   "y": 21.55,
+   "diameter": 2.5,
+   "kind": "screw"
+  },
+  {
+   "id": "h2",
+   "x": 100.42,
+   "y": 21.55,
+   "diameter": 2.5,
+   "kind": "screw"
+  },
+  {
+   "id": "h3",
+   "x": 190.33,
+   "y": 21.55,
+   "diameter": 2.5,
+   "kind": "screw"
+  },
+  {
+   "id": "h4",
+   "x": 280.25,
+   "y": 21.55,
+   "diameter": 2.5,
+   "kind": "screw"
+  },
+  {
+   "id": "h5",
+   "x": 10.5,
+   "y": 78.7,
+   "diameter": 2.5,
+   "kind": "screw"
+  },
+  {
+   "id": "h6",
+   "x": 100.42,
+   "y": 78.7,
+   "diameter": 2.5,
+   "kind": "screw"
+  },
+  {
+   "id": "h7",
+   "x": 190.33,
+   "y": 78.7,
+   "diameter": 2.5,
+   "kind": "screw"
+  },
+  {
+   "id": "h8",
+   "x": 280.25,
+   "y": 78.7,
+   "diameter": 2.5,
+   "kind": "screw"
+  }
+ ]
+}

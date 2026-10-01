@@ -1,0 +1,90 @@
+{
+ "id": "ref-full-plate-a",
+ "unit": "mm",
+ "points": [
+  {
+   "id": "p1",
+   "x": 11.5,
+   "y": 28.27,
+   "diameter": 2.5,
+   "kind": "screw"
+  },
+  {
+   "id": "p2",
+   "x": 94.03,
+   "y": 28.27,
+   "diameter": 2.5,
+   "kind": "screw"
+  },
+  {
+   "id": "p3",
+   "x": 176.55,
+   "y": 28.27,
+   "diameter": 2.5,
+   "kind": "screw"
+  },
+  {
+   "id": "p4",
+   "x": 259.08,
+   "y": 28.27,
+   "diameter": 2.5,
+   "kind": "screw"
+  },
+  {
+   "id": "p5",
+   "x": 341.6,
+   "y": 28.27,
+   "diameter": 2.5,
+   "kind": "screw"
+  },
+  {
+   "id": "p6",
+   "x": 424.13,
+   "y": 28.27,
+   "diameter": 2.5,
+   "kind": "screw"
+  },
+  {
+   "id": "p7",
+   "x": 11.5,
+   "y": 102.56,
+   "diameter": 2.5,
+   "kind": "screw"
+  },
+  {
+   "id": "p8",
+   "x": 94.03,
+   "y": 102.56,
+   "diameter": 2.5,
+   "kind": "screw"
+  },
+  {
+   "id": "p9",
+   "x": 176.55,
+   "y": 102.56,
+   "diameter": 2.5,
+   "kind": "screw"
+  },
+  {
+   "id": "p10",
+   "x": 259.08,
+   "y": 102.56,
+   "diameter": 2.5,
+   "kind": "screw"
+  },
+  {
+   "id": "p11",
+   "x": 341.6,
+   "y": 102.56,
+   "diameter": 2.5,
+   "kind": "screw"
+  },
+  {
+   "id": "p12",
+   "x": 424.13,
+   "y": 102.56,
+   "diameter": 2.5,
+   "kind": "screw"
+  }
+ ]
+}

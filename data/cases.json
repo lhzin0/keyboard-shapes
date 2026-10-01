@@ -1,0 +1,2873 @@
+[
+ {
+  "id": "ref-60-case-a",
+  "slug": "ref-60-case-a",
+  "brand": "KeyboardShapes",
+  "model": "Reference 60% case A",
+  "dimensions": {
+   "width": 301.75,
+   "depth": 113.25,
+   "height": 28.85
+  },
+  "externalShape": {
+   "points": [
+    {
+     "x": 297.75,
+     "y": 0
+    },
+    {
+     "x": 298.785,
+     "y": 0.136
+    },
+    {
+     "x": 299.75,
+     "y": 0.536
+    },
+    {
+     "x": 300.578,
+     "y": 1.172
+    },
+    {
+     "x": 301.214,
+     "y": 2
+    },
+    {
+     "x": 301.614,
+     "y": 2.965
+    },
+    {
+     "x": 301.75,
+     "y": 4
+    },
+    {
+     "x": 301.75,
+     "y": 109.25
+    },
+    {
+     "x": 301.614,
+     "y": 110.285
+    },
+    {
+     "x": 301.214,
+     "y": 111.25
+    },
+    {
+     "x": 300.578,
+     "y": 112.078
+    },
+    {
+     "x": 299.75,
+     "y": 112.714
+    },
+    {
+     "x": 298.785,
+     "y": 113.114
+    },
+    {
+     "x": 297.75,
+     "y": 113.25
+    },
+    {
+     "x": 4,
+     "y": 113.25
+    },
+    {
+     "x": 2.965,
+     "y": 113.114
+    },
+    {
+     "x": 2,
+     "y": 112.714
+    },
+    {
+     "x": 1.172,
+     "y": 112.078
+    },
+    {
+     "x": 0.536,
+     "y": 111.25
+    },
+    {
+     "x": 0.136,
+     "y": 110.285
+    },
+    {
+     "x": 0,
+     "y": 109.25
+    },
+    {
+     "x": 0,
+     "y": 4
+    },
+    {
+     "x": 0.136,
+     "y": 2.965
+    },
+    {
+     "x": 0.536,
+     "y": 2
+    },
+    {
+     "x": 1.172,
+     "y": 1.172
+    },
+    {
+     "x": 2,
+     "y": 0.536
+    },
+    {
+     "x": 2.965,
+     "y": 0.136
+    },
+    {
+     "x": 4,
+     "y": 0
+    }
+   ],
+   "width": 301.75,
+   "depth": 113.25,
+   "closed": true
+  },
+  "internalCavity": {
+   "points": [
+    {
+     "x": 297.554,
+     "y": 3
+    },
+    {
+     "x": 298.002,
+     "y": 3.059
+    },
+    {
+     "x": 298.236,
+     "y": 3.156
+    },
+    {
+     "x": 298.439,
+     "y": 3.311
+    },
+    {
+     "x": 298.594,
+     "y": 3.514
+    },
+    {
+     "x": 298.691,
+     "y": 3.748
+    },
+    {
+     "x": 298.75,
+     "y": 4.196
+    },
+    {
+     "x": 298.75,
+     "y": 109.054
+    },
+    {
+     "x": 298.691,
+     "y": 109.502
+    },
+    {
+     "x": 298.594,
+     "y": 109.736
+    },
+    {
+     "x": 298.439,
+     "y": 109.939
+    },
+    {
+     "x": 298.236,
+     "y": 110.094
+    },
+    {
+     "x": 298.002,
+     "y": 110.191
+    },
+    {
+     "x": 297.554,
+     "y": 110.25
+    },
+    {
+     "x": 4.196,
+     "y": 110.25
+    },
+    {
+     "x": 3.748,
+     "y": 110.191
+    },
+    {
+     "x": 3.514,
+     "y": 110.094
+    },
+    {
+     "x": 3.311,
+     "y": 109.939
+    },
+    {
+     "x": 3.156,
+     "y": 109.736
+    },
+    {
+     "x": 3.059,
+     "y": 109.502
+    },
+    {
+     "x": 3,
+     "y": 109.054
+    },
+    {
+     "x": 3,
+     "y": 4.196
+    },
+    {
+     "x": 3.059,
+     "y": 3.748
+    },
+    {
+     "x": 3.156,
+     "y": 3.514
+    },
+    {
+     "x": 3.311,
+     "y": 3.311
+    },
+    {
+     "x": 3.514,
+     "y": 3.156
+    },
+    {
+     "x": 3.748,
+     "y": 3.059
+    },
+    {
+     "x": 4.196,
+     "y": 3
+    }
+   ],
+   "width": 295.75,
+   "depth": 107.25,
+   "closed": true
+  },
+  "angle": 6,
+  "frontHeight": 17.01,
+  "rearHeight": 28.85,
+  "wallThickness": 3,
+  "floorThickness": 4,
+  "mountingPoints": [
+   {
+    "id": "post1",
+    "x": 16,
+    "y": 27.05,
+    "diameter": 4.5,
+    "kind": "standoff"
+   },
+   {
+    "id": "post2",
+    "x": 105.92,
+    "y": 27.05,
+    "diameter": 4.5,
+    "kind": "standoff"
+   },
+   {
+    "id": "post3",
+    "x": 195.83,
+    "y": 27.05,
+    "diameter": 4.5,
+    "kind": "standoff"
+   },
+   {
+    "id": "post4",
+    "x": 285.75,
+    "y": 27.05,
+    "diameter": 4.5,
+    "kind": "standoff"
+   },
+   {
+    "id": "post5",
+    "x": 16,
+    "y": 84.2,
+    "diameter": 4.5,
+    "kind": "standoff"
+   },
+   {
+    "id": "post6",
+    "x": 105.92,
+    "y": 84.2,
+    "diameter": 4.5,
+    "kind": "standoff"
+   },
+   {
+    "id": "post7",
+    "x": 195.83,
+    "y": 84.2,
+    "diameter": 4.5,
+    "kind": "standoff"
+   },
+   {
+    "id": "post8",
+    "x": 285.75,
+    "y": 84.2,
+    "diameter": 4.5,
+    "kind": "standoff"
+   }
+  ],
+  "cutouts": [
+   {
+    "id": "usb",
+    "kind": "usb",
+    "wall": "back",
+    "center": 150.875,
+    "width": 12,
+    "height": 6.5
+   }
+  ],
+  "clearance": {
+   "floorToPcb": 5,
+   "plateTopToRim": 0
+  },
+  "material": "aluminium",
+  "model3d": {
+   "kind": "parametric"
+  },
+  "tags": [
+   "reference",
+   "60%"
+  ],
+  "sources": [
+   {
+    "sourceName": "KeyboardShapes parametric reference",
+    "sourceType": "parametric-reference",
+    "method": "generated from ANSI layout and nominal published dimensions",
+    "retrievedAt": "2026-10-01T00:00:00.000Z",
+    "confidence": 0.4
+   }
+  ],
+  "confidence": {
+   "level": "estimated",
+   "score": 0.4,
+   "notes": "Illustrative parametric case; not a commercial product."
+  }
+ },
+ {
+  "id": "ref-65-case-a",
+  "slug": "ref-65-case-a",
+  "brand": "KeyboardShapes",
+  "model": "Reference 65% case A",
+  "dimensions": {
+   "width": 320.8,
+   "depth": 127.25,
+   "height": 30.31
+  },
+  "externalShape": {
+   "points": [
+    {
+     "x": 316.8,
+     "y": 0
+    },
+    {
+     "x": 317.835,
+     "y": 0.136
+    },
+    {
+     "x": 318.8,
+     "y": 0.536
+    },
+    {
+     "x": 319.628,
+     "y": 1.172
+    },
+    {
+     "x": 320.264,
+     "y": 2
+    },
+    {
+     "x": 320.664,
+     "y": 2.965
+    },
+    {
+     "x": 320.8,
+     "y": 4
+    },
+    {
+     "x": 320.8,
+     "y": 123.25
+    },
+    {
+     "x": 320.664,
+     "y": 124.285
+    },
+    {
+     "x": 320.264,
+     "y": 125.25
+    },
+    {
+     "x": 319.628,
+     "y": 126.078
+    },
+    {
+     "x": 318.8,
+     "y": 126.714
+    },
+    {
+     "x": 317.835,
+     "y": 127.114
+    },
+    {
+     "x": 316.8,
+     "y": 127.25
+    },
+    {
+     "x": 4,
+     "y": 127.25
+    },
+    {
+     "x": 2.965,
+     "y": 127.114
+    },
+    {
+     "x": 2,
+     "y": 126.714
+    },
+    {
+     "x": 1.172,
+     "y": 126.078
+    },
+    {
+     "x": 0.536,
+     "y": 125.25
+    },
+    {
+     "x": 0.136,
+     "y": 124.285
+    },
+    {
+     "x": 0,
+     "y": 123.25
+    },
+    {
+     "x": 0,
+     "y": 4
+    },
+    {
+     "x": 0.136,
+     "y": 2.965
+    },
+    {
+     "x": 0.536,
+     "y": 2
+    },
+    {
+     "x": 1.172,
+     "y": 1.172
+    },
+    {
+     "x": 2,
+     "y": 0.536
+    },
+    {
+     "x": 2.965,
+     "y": 0.136
+    },
+    {
+     "x": 4,
+     "y": 0
+    }
+   ],
+   "width": 320.8,
+   "depth": 127.25,
+   "closed": true
+  },
+  "internalCavity": {
+   "points": [
+    {
+     "x": 316.604,
+     "y": 3
+    },
+    {
+     "x": 317.052,
+     "y": 3.059
+    },
+    {
+     "x": 317.286,
+     "y": 3.156
+    },
+    {
+     "x": 317.489,
+     "y": 3.311
+    },
+    {
+     "x": 317.644,
+     "y": 3.514
+    },
+    {
+     "x": 317.741,
+     "y": 3.748
+    },
+    {
+     "x": 317.8,
+     "y": 4.196
+    },
+    {
+     "x": 317.8,
+     "y": 123.054
+    },
+    {
+     "x": 317.741,
+     "y": 123.502
+    },
+    {
+     "x": 317.644,
+     "y": 123.736
+    },
+    {
+     "x": 317.489,
+     "y": 123.939
+    },
+    {
+     "x": 317.286,
+     "y": 124.094
+    },
+    {
+     "x": 317.052,
+     "y": 124.191
+    },
+    {
+     "x": 316.604,
+     "y": 124.25
+    },
+    {
+     "x": 4.196,
+     "y": 124.25
+    },
+    {
+     "x": 3.748,
+     "y": 124.191
+    },
+    {
+     "x": 3.514,
+     "y": 124.094
+    },
+    {
+     "x": 3.311,
+     "y": 123.939
+    },
+    {
+     "x": 3.156,
+     "y": 123.736
+    },
+    {
+     "x": 3.059,
+     "y": 123.502
+    },
+    {
+     "x": 3,
+     "y": 123.054
+    },
+    {
+     "x": 3,
+     "y": 4.196
+    },
+    {
+     "x": 3.059,
+     "y": 3.748
+    },
+    {
+     "x": 3.156,
+     "y": 3.514
+    },
+    {
+     "x": 3.311,
+     "y": 3.311
+    },
+    {
+     "x": 3.514,
+     "y": 3.156
+    },
+    {
+     "x": 3.748,
+     "y": 3.059
+    },
+    {
+     "x": 4.196,
+     "y": 3
+    }
+   ],
+   "width": 314.8,
+   "depth": 121.25,
+   "closed": true
+  },
+  "angle": 6,
+  "frontHeight": 17.01,
+  "rearHeight": 30.31,
+  "wallThickness": 3,
+  "floorThickness": 4,
+  "mountingPoints": [
+   {
+    "id": "post1",
+    "x": 16,
+    "y": 41.05,
+    "diameter": 4.5,
+    "kind": "standoff"
+   },
+   {
+    "id": "post2",
+    "x": 112.27,
+    "y": 41.05,
+    "diameter": 4.5,
+    "kind": "standoff"
+   },
+   {
+    "id": "post3",
+    "x": 208.53,
+    "y": 41.05,
+    "diameter": 4.5,
+    "kind": "standoff"
+   },
+   {
+    "id": "post4",
+    "x": 304.8,
+    "y": 41.05,
+    "diameter": 4.5,
+    "kind": "standoff"
+   },
+   {
+    "id": "post5",
+    "x": 16,
+    "y": 98.2,
+    "diameter": 4.5,
+    "kind": "standoff"
+   },
+   {
+    "id": "post6",
+    "x": 112.27,
+    "y": 98.2,
+    "diameter": 4.5,
+    "kind": "standoff"
+   },
+   {
+    "id": "post7",
+    "x": 208.53,
+    "y": 98.2,
+    "diameter": 4.5,
+    "kind": "standoff"
+   },
+   {
+    "id": "post8",
+    "x": 304.8,
+    "y": 98.2,
+    "diameter": 4.5,
+    "kind": "standoff"
+   }
+  ],
+  "cutouts": [
+   {
+    "id": "usb",
+    "kind": "usb",
+    "wall": "back",
+    "center": 160.4,
+    "width": 12,
+    "height": 6.5
+   }
+  ],
+  "daughterboardArea": {
+   "x": 145.4,
+   "y": 3,
+   "width": 30,
+   "depth": 15.5
+  },
+  "clearance": {
+   "floorToPcb": 5,
+   "plateTopToRim": 0
+  },
+  "material": "aluminium",
+  "model3d": {
+   "kind": "parametric"
+  },
+  "tags": [
+   "reference",
+   "65%"
+  ],
+  "sources": [
+   {
+    "sourceName": "KeyboardShapes parametric reference",
+    "sourceType": "parametric-reference",
+    "method": "generated from ANSI layout and nominal published dimensions",
+    "retrievedAt": "2026-10-01T00:00:00.000Z",
+    "confidence": 0.4
+   }
+  ],
+  "confidence": {
+   "level": "estimated",
+   "score": 0.4,
+   "notes": "Illustrative parametric case; not a commercial product."
+  }
+ },
+ {
+  "id": "ref-65-case-b",
+  "slug": "ref-65-case-b",
+  "brand": "KeyboardShapes",
+  "model": "Reference 65% case B (low profile)",
+  "dimensions": {
+   "width": 320.8,
+   "depth": 127.25,
+   "height": 27.32
+  },
+  "externalShape": {
+   "points": [
+    {
+     "x": 316.8,
+     "y": 0
+    },
+    {
+     "x": 317.835,
+     "y": 0.136
+    },
+    {
+     "x": 318.8,
+     "y": 0.536
+    },
+    {
+     "x": 319.628,
+     "y": 1.172
+    },
+    {
+     "x": 320.264,
+     "y": 2
+    },
+    {
+     "x": 320.664,
+     "y": 2.965
+    },
+    {
+     "x": 320.8,
+     "y": 4
+    },
+    {
+     "x": 320.8,
+     "y": 123.25
+    },
+    {
+     "x": 320.664,
+     "y": 124.285
+    },
+    {
+     "x": 320.264,
+     "y": 125.25
+    },
+    {
+     "x": 319.628,
+     "y": 126.078
+    },
+    {
+     "x": 318.8,
+     "y": 126.714
+    },
+    {
+     "x": 317.835,
+     "y": 127.114
+    },
+    {
+     "x": 316.8,
+     "y": 127.25
+    },
+    {
+     "x": 4,
+     "y": 127.25
+    },
+    {
+     "x": 2.965,
+     "y": 127.114
+    },
+    {
+     "x": 2,
+     "y": 126.714
+    },
+    {
+     "x": 1.172,
+     "y": 126.078
+    },
+    {
+     "x": 0.536,
+     "y": 125.25
+    },
+    {
+     "x": 0.136,
+     "y": 124.285
+    },
+    {
+     "x": 0,
+     "y": 123.25
+    },
+    {
+     "x": 0,
+     "y": 4
+    },
+    {
+     "x": 0.136,
+     "y": 2.965
+    },
+    {
+     "x": 0.536,
+     "y": 2
+    },
+    {
+     "x": 1.172,
+     "y": 1.172
+    },
+    {
+     "x": 2,
+     "y": 0.536
+    },
+    {
+     "x": 2.965,
+     "y": 0.136
+    },
+    {
+     "x": 4,
+     "y": 0
+    }
+   ],
+   "width": 320.8,
+   "depth": 127.25,
+   "closed": true
+  },
+  "internalCavity": {
+   "points": [
+    {
+     "x": 316.473,
+     "y": 5
+    },
+    {
+     "x": 316.53,
+     "y": 5.007
+    },
+    {
+     "x": 316.277,
+     "y": 4.903
+    },
+    {
+     "x": 316.062,
+     "y": 4.738
+    },
+    {
+     "x": 315.897,
+     "y": 4.523
+    },
+    {
+     "x": 315.793,
+     "y": 4.27
+    },
+    {
+     "x": 315.8,
+     "y": 4.327
+    },
+    {
+     "x": 315.8,
+     "y": 122.923
+    },
+    {
+     "x": 315.793,
+     "y": 122.98
+    },
+    {
+     "x": 315.897,
+     "y": 122.727
+    },
+    {
+     "x": 316.062,
+     "y": 122.512
+    },
+    {
+     "x": 316.277,
+     "y": 122.347
+    },
+    {
+     "x": 316.53,
+     "y": 122.243
+    },
+    {
+     "x": 316.473,
+     "y": 122.25
+    },
+    {
+     "x": 4.327,
+     "y": 122.25
+    },
+    {
+     "x": 4.27,
+     "y": 122.243
+    },
+    {
+     "x": 4.523,
+     "y": 122.347
+    },
+    {
+     "x": 4.738,
+     "y": 122.512
+    },
+    {
+     "x": 4.903,
+     "y": 122.727
+    },
+    {
+     "x": 5.007,
+     "y": 122.98
+    },
+    {
+     "x": 5,
+     "y": 122.923
+    },
+    {
+     "x": 5,
+     "y": 4.327
+    },
+    {
+     "x": 5.007,
+     "y": 4.27
+    },
+    {
+     "x": 4.903,
+     "y": 4.523
+    },
+    {
+     "x": 4.738,
+     "y": 4.738
+    },
+    {
+     "x": 4.523,
+     "y": 4.903
+    },
+    {
+     "x": 4.27,
+     "y": 5.007
+    },
+    {
+     "x": 4.327,
+     "y": 5
+    }
+   ],
+   "width": 312.26,
+   "depth": 118.71,
+   "closed": true
+  },
+  "angle": 6,
+  "frontHeight": 14.02,
+  "rearHeight": 27.32,
+  "wallThickness": 5,
+  "floorThickness": 4,
+  "mountingPoints": [
+   {
+    "id": "post1",
+    "x": 16,
+    "y": 41.05,
+    "diameter": 4.5,
+    "kind": "standoff"
+   },
+   {
+    "id": "post2",
+    "x": 112.27,
+    "y": 41.05,
+    "diameter": 4.5,
+    "kind": "standoff"
+   },
+   {
+    "id": "post3",
+    "x": 208.53,
+    "y": 41.05,
+    "diameter": 4.5,
+    "kind": "standoff"
+   },
+   {
+    "id": "post4",
+    "x": 304.8,
+    "y": 41.05,
+    "diameter": 4.5,
+    "kind": "standoff"
+   },
+   {
+    "id": "post5",
+    "x": 16,
+    "y": 98.2,
+    "diameter": 4.5,
+    "kind": "standoff"
+   },
+   {
+    "id": "post6",
+    "x": 112.27,
+    "y": 98.2,
+    "diameter": 4.5,
+    "kind": "standoff"
+   },
+   {
+    "id": "post7",
+    "x": 208.53,
+    "y": 98.2,
+    "diameter": 4.5,
+    "kind": "standoff"
+   },
+   {
+    "id": "post8",
+    "x": 304.8,
+    "y": 98.2,
+    "diameter": 4.5,
+    "kind": "standoff"
+   }
+  ],
+  "cutouts": [
+   {
+    "id": "usb",
+    "kind": "usb",
+    "wall": "back",
+    "center": 160.4,
+    "width": 12,
+    "height": 6.5
+   }
+  ],
+  "daughterboardArea": {
+   "x": 145.4,
+   "y": 5,
+   "width": 30,
+   "depth": 15.5
+  },
+  "clearance": {
+   "floorToPcb": 2,
+   "plateTopToRim": 0
+  },
+  "material": "aluminium",
+  "model3d": {
+   "kind": "parametric"
+  },
+  "tags": [
+   "reference",
+   "65%",
+   "low-profile"
+  ],
+  "sources": [
+   {
+    "sourceName": "KeyboardShapes parametric reference",
+    "sourceType": "parametric-reference",
+    "method": "generated from ANSI layout and nominal published dimensions",
+    "retrievedAt": "2026-10-01T00:00:00.000Z",
+    "confidence": 0.4
+   }
+  ],
+  "confidence": {
+   "level": "estimated",
+   "score": 0.4,
+   "notes": "Illustrative parametric case; not a commercial product."
+  }
+ },
+ {
+  "id": "ref-65-case-c",
+  "slug": "ref-65-case-c",
+  "brand": "KeyboardShapes",
+  "model": "Reference 65% case C (offset USB cutout)",
+  "dimensions": {
+   "width": 320.8,
+   "depth": 127.25,
+   "height": 30.31
+  },
+  "externalShape": {
+   "points": [
+    {
+     "x": 316.8,
+     "y": 0
+    },
+    {
+     "x": 317.835,
+     "y": 0.136
+    },
+    {
+     "x": 318.8,
+     "y": 0.536
+    },
+    {
+     "x": 319.628,
+     "y": 1.172
+    },
+    {
+     "x": 320.264,
+     "y": 2
+    },
+    {
+     "x": 320.664,
+     "y": 2.965
+    },
+    {
+     "x": 320.8,
+     "y": 4
+    },
+    {
+     "x": 320.8,
+     "y": 123.25
+    },
+    {
+     "x": 320.664,
+     "y": 124.285
+    },
+    {
+     "x": 320.264,
+     "y": 125.25
+    },
+    {
+     "x": 319.628,
+     "y": 126.078
+    },
+    {
+     "x": 318.8,
+     "y": 126.714
+    },
+    {
+     "x": 317.835,
+     "y": 127.114
+    },
+    {
+     "x": 316.8,
+     "y": 127.25
+    },
+    {
+     "x": 4,
+     "y": 127.25
+    },
+    {
+     "x": 2.965,
+     "y": 127.114
+    },
+    {
+     "x": 2,
+     "y": 126.714
+    },
+    {
+     "x": 1.172,
+     "y": 126.078
+    },
+    {
+     "x": 0.536,
+     "y": 125.25
+    },
+    {
+     "x": 0.136,
+     "y": 124.285
+    },
+    {
+     "x": 0,
+     "y": 123.25
+    },
+    {
+     "x": 0,
+     "y": 4
+    },
+    {
+     "x": 0.136,
+     "y": 2.965
+    },
+    {
+     "x": 0.536,
+     "y": 2
+    },
+    {
+     "x": 1.172,
+     "y": 1.172
+    },
+    {
+     "x": 2,
+     "y": 0.536
+    },
+    {
+     "x": 2.965,
+     "y": 0.136
+    },
+    {
+     "x": 4,
+     "y": 0
+    }
+   ],
+   "width": 320.8,
+   "depth": 127.25,
+   "closed": true
+  },
+  "internalCavity": {
+   "points": [
+    {
+     "x": 316.604,
+     "y": 3
+    },
+    {
+     "x": 317.052,
+     "y": 3.059
+    },
+    {
+     "x": 317.286,
+     "y": 3.156
+    },
+    {
+     "x": 317.489,
+     "y": 3.311
+    },
+    {
+     "x": 317.644,
+     "y": 3.514
+    },
+    {
+     "x": 317.741,
+     "y": 3.748
+    },
+    {
+     "x": 317.8,
+     "y": 4.196
+    },
+    {
+     "x": 317.8,
+     "y": 123.054
+    },
+    {
+     "x": 317.741,
+     "y": 123.502
+    },
+    {
+     "x": 317.644,
+     "y": 123.736
+    },
+    {
+     "x": 317.489,
+     "y": 123.939
+    },
+    {
+     "x": 317.286,
+     "y": 124.094
+    },
+    {
+     "x": 317.052,
+     "y": 124.191
+    },
+    {
+     "x": 316.604,
+     "y": 124.25
+    },
+    {
+     "x": 4.196,
+     "y": 124.25
+    },
+    {
+     "x": 3.748,
+     "y": 124.191
+    },
+    {
+     "x": 3.514,
+     "y": 124.094
+    },
+    {
+     "x": 3.311,
+     "y": 123.939
+    },
+    {
+     "x": 3.156,
+     "y": 123.736
+    },
+    {
+     "x": 3.059,
+     "y": 123.502
+    },
+    {
+     "x": 3,
+     "y": 123.054
+    },
+    {
+     "x": 3,
+     "y": 4.196
+    },
+    {
+     "x": 3.059,
+     "y": 3.748
+    },
+    {
+     "x": 3.156,
+     "y": 3.514
+    },
+    {
+     "x": 3.311,
+     "y": 3.311
+    },
+    {
+     "x": 3.514,
+     "y": 3.156
+    },
+    {
+     "x": 3.748,
+     "y": 3.059
+    },
+    {
+     "x": 4.196,
+     "y": 3
+    }
+   ],
+   "width": 314.8,
+   "depth": 121.25,
+   "closed": true
+  },
+  "angle": 6,
+  "frontHeight": 17.01,
+  "rearHeight": 30.31,
+  "wallThickness": 3,
+  "floorThickness": 4,
+  "mountingPoints": [
+   {
+    "id": "post1",
+    "x": 16,
+    "y": 41.05,
+    "diameter": 4.5,
+    "kind": "standoff"
+   },
+   {
+    "id": "post2",
+    "x": 112.27,
+    "y": 41.05,
+    "diameter": 4.5,
+    "kind": "standoff"
+   },
+   {
+    "id": "post3",
+    "x": 208.53,
+    "y": 41.05,
+    "diameter": 4.5,
+    "kind": "standoff"
+   },
+   {
+    "id": "post4",
+    "x": 304.8,
+    "y": 41.05,
+    "diameter": 4.5,
+    "kind": "standoff"
+   },
+   {
+    "id": "post5",
+    "x": 16,
+    "y": 98.2,
+    "diameter": 4.5,
+    "kind": "standoff"
+   },
+   {
+    "id": "post6",
+    "x": 112.27,
+    "y": 98.2,
+    "diameter": 4.5,
+    "kind": "standoff"
+   },
+   {
+    "id": "post7",
+    "x": 208.53,
+    "y": 98.2,
+    "diameter": 4.5,
+    "kind": "standoff"
+   },
+   {
+    "id": "post8",
+    "x": 304.8,
+    "y": 98.2,
+    "diameter": 4.5,
+    "kind": "standoff"
+   }
+  ],
+  "cutouts": [
+   {
+    "id": "usb",
+    "kind": "usb",
+    "wall": "back",
+    "center": 200.4,
+    "width": 12,
+    "height": 6.5
+   }
+  ],
+  "daughterboardArea": {
+   "x": 145.4,
+   "y": 3,
+   "width": 30,
+   "depth": 15.5
+  },
+  "clearance": {
+   "floorToPcb": 5,
+   "plateTopToRim": 0
+  },
+  "material": "aluminium",
+  "model3d": {
+   "kind": "parametric"
+  },
+  "tags": [
+   "reference",
+   "65%",
+   "offset-usb"
+  ],
+  "sources": [
+   {
+    "sourceName": "KeyboardShapes parametric reference",
+    "sourceType": "parametric-reference",
+    "method": "generated from ANSI layout and nominal published dimensions",
+    "retrievedAt": "2026-10-01T00:00:00.000Z",
+    "confidence": 0.4
+   }
+  ],
+  "confidence": {
+   "level": "estimated",
+   "score": 0.4,
+   "notes": "Illustrative parametric case; not a commercial product."
+  }
+ },
+ {
+  "id": "ref-75-case-a",
+  "slug": "ref-75-case-a",
+  "brand": "KeyboardShapes",
+  "model": "Reference 75% case A",
+  "dimensions": {
+   "width": 320.8,
+   "depth": 146.3,
+   "height": 32.3
+  },
+  "externalShape": {
+   "points": [
+    {
+     "x": 316.8,
+     "y": 0
+    },
+    {
+     "x": 317.835,
+     "y": 0.136
+    },
+    {
+     "x": 318.8,
+     "y": 0.536
+    },
+    {
+     "x": 319.628,
+     "y": 1.172
+    },
+    {
+     "x": 320.264,
+     "y": 2
+    },
+    {
+     "x": 320.664,
+     "y": 2.965
+    },
+    {
+     "x": 320.8,
+     "y": 4
+    },
+    {
+     "x": 320.8,
+     "y": 142.3
+    },
+    {
+     "x": 320.664,
+     "y": 143.335
+    },
+    {
+     "x": 320.264,
+     "y": 144.3
+    },
+    {
+     "x": 319.628,
+     "y": 145.128
+    },
+    {
+     "x": 318.8,
+     "y": 145.764
+    },
+    {
+     "x": 317.835,
+     "y": 146.164
+    },
+    {
+     "x": 316.8,
+     "y": 146.3
+    },
+    {
+     "x": 4,
+     "y": 146.3
+    },
+    {
+     "x": 2.965,
+     "y": 146.164
+    },
+    {
+     "x": 2,
+     "y": 145.764
+    },
+    {
+     "x": 1.172,
+     "y": 145.128
+    },
+    {
+     "x": 0.536,
+     "y": 144.3
+    },
+    {
+     "x": 0.136,
+     "y": 143.335
+    },
+    {
+     "x": 0,
+     "y": 142.3
+    },
+    {
+     "x": 0,
+     "y": 4
+    },
+    {
+     "x": 0.136,
+     "y": 2.965
+    },
+    {
+     "x": 0.536,
+     "y": 2
+    },
+    {
+     "x": 1.172,
+     "y": 1.172
+    },
+    {
+     "x": 2,
+     "y": 0.536
+    },
+    {
+     "x": 2.965,
+     "y": 0.136
+    },
+    {
+     "x": 4,
+     "y": 0
+    }
+   ],
+   "width": 320.8,
+   "depth": 146.3,
+   "closed": true
+  },
+  "internalCavity": {
+   "points": [
+    {
+     "x": 316.604,
+     "y": 3
+    },
+    {
+     "x": 317.052,
+     "y": 3.059
+    },
+    {
+     "x": 317.286,
+     "y": 3.156
+    },
+    {
+     "x": 317.489,
+     "y": 3.311
+    },
+    {
+     "x": 317.644,
+     "y": 3.514
+    },
+    {
+     "x": 317.741,
+     "y": 3.748
+    },
+    {
+     "x": 317.8,
+     "y": 4.196
+    },
+    {
+     "x": 317.8,
+     "y": 142.104
+    },
+    {
+     "x": 317.741,
+     "y": 142.552
+    },
+    {
+     "x": 317.644,
+     "y": 142.786
+    },
+    {
+     "x": 317.489,
+     "y": 142.989
+    },
+    {
+     "x": 317.286,
+     "y": 143.144
+    },
+    {
+     "x": 317.052,
+     "y": 143.241
+    },
+    {
+     "x": 316.604,
+     "y": 143.3
+    },
+    {
+     "x": 4.196,
+     "y": 143.3
+    },
+    {
+     "x": 3.748,
+     "y": 143.241
+    },
+    {
+     "x": 3.514,
+     "y": 143.144
+    },
+    {
+     "x": 3.311,
+     "y": 142.989
+    },
+    {
+     "x": 3.156,
+     "y": 142.786
+    },
+    {
+     "x": 3.059,
+     "y": 142.552
+    },
+    {
+     "x": 3,
+     "y": 142.104
+    },
+    {
+     "x": 3,
+     "y": 4.196
+    },
+    {
+     "x": 3.059,
+     "y": 3.748
+    },
+    {
+     "x": 3.156,
+     "y": 3.514
+    },
+    {
+     "x": 3.311,
+     "y": 3.311
+    },
+    {
+     "x": 3.514,
+     "y": 3.156
+    },
+    {
+     "x": 3.748,
+     "y": 3.059
+    },
+    {
+     "x": 4.196,
+     "y": 3
+    }
+   ],
+   "width": 314.8,
+   "depth": 140.3,
+   "closed": true
+  },
+  "angle": 6,
+  "frontHeight": 17.01,
+  "rearHeight": 32.3,
+  "wallThickness": 3,
+  "floorThickness": 4,
+  "mountingPoints": [
+   {
+    "id": "post1",
+    "x": 16,
+    "y": 44.86,
+    "diameter": 4.5,
+    "kind": "standoff"
+   },
+   {
+    "id": "post2",
+    "x": 112.27,
+    "y": 44.86,
+    "diameter": 4.5,
+    "kind": "standoff"
+   },
+   {
+    "id": "post3",
+    "x": 208.53,
+    "y": 44.86,
+    "diameter": 4.5,
+    "kind": "standoff"
+   },
+   {
+    "id": "post4",
+    "x": 304.8,
+    "y": 44.86,
+    "diameter": 4.5,
+    "kind": "standoff"
+   },
+   {
+    "id": "post5",
+    "x": 16,
+    "y": 113.44,
+    "diameter": 4.5,
+    "kind": "standoff"
+   },
+   {
+    "id": "post6",
+    "x": 112.27,
+    "y": 113.44,
+    "diameter": 4.5,
+    "kind": "standoff"
+   },
+   {
+    "id": "post7",
+    "x": 208.53,
+    "y": 113.44,
+    "diameter": 4.5,
+    "kind": "standoff"
+   },
+   {
+    "id": "post8",
+    "x": 304.8,
+    "y": 113.44,
+    "diameter": 4.5,
+    "kind": "standoff"
+   }
+  ],
+  "cutouts": [
+   {
+    "id": "usb",
+    "kind": "usb",
+    "wall": "back",
+    "center": 160.4,
+    "width": 12,
+    "height": 6.5
+   }
+  ],
+  "daughterboardArea": {
+   "x": 145.4,
+   "y": 3,
+   "width": 30,
+   "depth": 15.5
+  },
+  "clearance": {
+   "floorToPcb": 5,
+   "plateTopToRim": 0
+  },
+  "material": "aluminium",
+  "model3d": {
+   "kind": "parametric"
+  },
+  "tags": [
+   "reference",
+   "75%"
+  ],
+  "sources": [
+   {
+    "sourceName": "KeyboardShapes parametric reference",
+    "sourceType": "parametric-reference",
+    "method": "generated from ANSI layout and nominal published dimensions",
+    "retrievedAt": "2026-10-01T00:00:00.000Z",
+    "confidence": 0.4
+   }
+  ],
+  "confidence": {
+   "level": "estimated",
+   "score": 0.4,
+   "notes": "Illustrative parametric case; not a commercial product."
+  }
+ },
+ {
+  "id": "ref-tkl-case-a",
+  "slug": "ref-tkl-case-a",
+  "brand": "KeyboardShapes",
+  "model": "Reference TKL case A",
+  "dimensions": {
+   "width": 363.663,
+   "depth": 141.825,
+   "height": 31.83
+  },
+  "externalShape": {
+   "points": [
+    {
+     "x": 359.663,
+     "y": 0
+    },
+    {
+     "x": 360.698,
+     "y": 0.136
+    },
+    {
+     "x": 361.663,
+     "y": 0.536
+    },
+    {
+     "x": 362.491,
+     "y": 1.172
+    },
+    {
+     "x": 363.127,
+     "y": 2
+    },
+    {
+     "x": 363.527,
+     "y": 2.965
+    },
+    {
+     "x": 363.663,
+     "y": 4
+    },
+    {
+     "x": 363.663,
+     "y": 137.825
+    },
+    {
+     "x": 363.527,
+     "y": 138.86
+    },
+    {
+     "x": 363.127,
+     "y": 139.825
+    },
+    {
+     "x": 362.491,
+     "y": 140.653
+    },
+    {
+     "x": 361.663,
+     "y": 141.289
+    },
+    {
+     "x": 360.698,
+     "y": 141.689
+    },
+    {
+     "x": 359.663,
+     "y": 141.825
+    },
+    {
+     "x": 4,
+     "y": 141.825
+    },
+    {
+     "x": 2.965,
+     "y": 141.689
+    },
+    {
+     "x": 2,
+     "y": 141.289
+    },
+    {
+     "x": 1.172,
+     "y": 140.653
+    },
+    {
+     "x": 0.536,
+     "y": 139.825
+    },
+    {
+     "x": 0.136,
+     "y": 138.86
+    },
+    {
+     "x": 0,
+     "y": 137.825
+    },
+    {
+     "x": 0,
+     "y": 4
+    },
+    {
+     "x": 0.136,
+     "y": 2.965
+    },
+    {
+     "x": 0.536,
+     "y": 2
+    },
+    {
+     "x": 1.172,
+     "y": 1.172
+    },
+    {
+     "x": 2,
+     "y": 0.536
+    },
+    {
+     "x": 2.965,
+     "y": 0.136
+    },
+    {
+     "x": 4,
+     "y": 0
+    }
+   ],
+   "width": 363.663,
+   "depth": 141.825,
+   "closed": true
+  },
+  "internalCavity": {
+   "points": [
+    {
+     "x": 359.467,
+     "y": 3
+    },
+    {
+     "x": 359.915,
+     "y": 3.059
+    },
+    {
+     "x": 360.149,
+     "y": 3.156
+    },
+    {
+     "x": 360.352,
+     "y": 3.311
+    },
+    {
+     "x": 360.507,
+     "y": 3.514
+    },
+    {
+     "x": 360.604,
+     "y": 3.748
+    },
+    {
+     "x": 360.663,
+     "y": 4.196
+    },
+    {
+     "x": 360.663,
+     "y": 137.629
+    },
+    {
+     "x": 360.604,
+     "y": 138.077
+    },
+    {
+     "x": 360.507,
+     "y": 138.311
+    },
+    {
+     "x": 360.352,
+     "y": 138.514
+    },
+    {
+     "x": 360.149,
+     "y": 138.669
+    },
+    {
+     "x": 359.915,
+     "y": 138.766
+    },
+    {
+     "x": 359.467,
+     "y": 138.825
+    },
+    {
+     "x": 4.196,
+     "y": 138.825
+    },
+    {
+     "x": 3.748,
+     "y": 138.766
+    },
+    {
+     "x": 3.514,
+     "y": 138.669
+    },
+    {
+     "x": 3.311,
+     "y": 138.514
+    },
+    {
+     "x": 3.156,
+     "y": 138.311
+    },
+    {
+     "x": 3.059,
+     "y": 138.077
+    },
+    {
+     "x": 3,
+     "y": 137.629
+    },
+    {
+     "x": 3,
+     "y": 4.196
+    },
+    {
+     "x": 3.059,
+     "y": 3.748
+    },
+    {
+     "x": 3.156,
+     "y": 3.514
+    },
+    {
+     "x": 3.311,
+     "y": 3.311
+    },
+    {
+     "x": 3.514,
+     "y": 3.156
+    },
+    {
+     "x": 3.748,
+     "y": 3.059
+    },
+    {
+     "x": 4.196,
+     "y": 3
+    }
+   ],
+   "width": 357.663,
+   "depth": 135.825,
+   "closed": true
+  },
+  "angle": 6,
+  "frontHeight": 17.01,
+  "rearHeight": 31.83,
+  "wallThickness": 3,
+  "floorThickness": 4,
+  "mountingPoints": [
+   {
+    "id": "post1",
+    "x": 16,
+    "y": 32.77,
+    "diameter": 4.5,
+    "kind": "standoff"
+   },
+   {
+    "id": "post2",
+    "x": 98.92,
+    "y": 32.77,
+    "diameter": 4.5,
+    "kind": "standoff"
+   },
+   {
+    "id": "post3",
+    "x": 181.83,
+    "y": 32.77,
+    "diameter": 4.5,
+    "kind": "standoff"
+   },
+   {
+    "id": "post4",
+    "x": 264.75,
+    "y": 32.77,
+    "diameter": 4.5,
+    "kind": "standoff"
+   },
+   {
+    "id": "post5",
+    "x": 347.66,
+    "y": 32.77,
+    "diameter": 4.5,
+    "kind": "standoff"
+   },
+   {
+    "id": "post6",
+    "x": 16,
+    "y": 107.06,
+    "diameter": 4.5,
+    "kind": "standoff"
+   },
+   {
+    "id": "post7",
+    "x": 98.92,
+    "y": 107.06,
+    "diameter": 4.5,
+    "kind": "standoff"
+   },
+   {
+    "id": "post8",
+    "x": 181.83,
+    "y": 107.06,
+    "diameter": 4.5,
+    "kind": "standoff"
+   },
+   {
+    "id": "post9",
+    "x": 264.75,
+    "y": 107.06,
+    "diameter": 4.5,
+    "kind": "standoff"
+   },
+   {
+    "id": "post10",
+    "x": 347.66,
+    "y": 107.06,
+    "diameter": 4.5,
+    "kind": "standoff"
+   }
+  ],
+  "cutouts": [
+   {
+    "id": "usb",
+    "kind": "usb",
+    "wall": "back",
+    "center": 181.832,
+    "width": 12,
+    "height": 6.5
+   }
+  ],
+  "clearance": {
+   "floorToPcb": 5,
+   "plateTopToRim": 0
+  },
+  "material": "aluminium",
+  "model3d": {
+   "kind": "parametric"
+  },
+  "tags": [
+   "reference",
+   "TKL"
+  ],
+  "sources": [
+   {
+    "sourceName": "KeyboardShapes parametric reference",
+    "sourceType": "parametric-reference",
+    "method": "generated from ANSI layout and nominal published dimensions",
+    "retrievedAt": "2026-10-01T00:00:00.000Z",
+    "confidence": 0.4
+   }
+  ],
+  "confidence": {
+   "level": "estimated",
+   "score": 0.4,
+   "notes": "Illustrative parametric case; not a commercial product."
+  }
+ },
+ {
+  "id": "ref-full-case-a",
+  "slug": "ref-full-case-a",
+  "brand": "KeyboardShapes",
+  "model": "Reference Full Size case A",
+  "dimensions": {
+   "width": 444.625,
+   "depth": 141.825,
+   "height": 31.83
+  },
+  "externalShape": {
+   "points": [
+    {
+     "x": 440.625,
+     "y": 0
+    },
+    {
+     "x": 441.66,
+     "y": 0.136
+    },
+    {
+     "x": 442.625,
+     "y": 0.536
+    },
+    {
+     "x": 443.453,
+     "y": 1.172
+    },
+    {
+     "x": 444.089,
+     "y": 2
+    },
+    {
+     "x": 444.489,
+     "y": 2.965
+    },
+    {
+     "x": 444.625,
+     "y": 4
+    },
+    {
+     "x": 444.625,
+     "y": 137.825
+    },
+    {
+     "x": 444.489,
+     "y": 138.86
+    },
+    {
+     "x": 444.089,
+     "y": 139.825
+    },
+    {
+     "x": 443.453,
+     "y": 140.653
+    },
+    {
+     "x": 442.625,
+     "y": 141.289
+    },
+    {
+     "x": 441.66,
+     "y": 141.689
+    },
+    {
+     "x": 440.625,
+     "y": 141.825
+    },
+    {
+     "x": 4,
+     "y": 141.825
+    },
+    {
+     "x": 2.965,
+     "y": 141.689
+    },
+    {
+     "x": 2,
+     "y": 141.289
+    },
+    {
+     "x": 1.172,
+     "y": 140.653
+    },
+    {
+     "x": 0.536,
+     "y": 139.825
+    },
+    {
+     "x": 0.136,
+     "y": 138.86
+    },
+    {
+     "x": 0,
+     "y": 137.825
+    },
+    {
+     "x": 0,
+     "y": 4
+    },
+    {
+     "x": 0.136,
+     "y": 2.965
+    },
+    {
+     "x": 0.536,
+     "y": 2
+    },
+    {
+     "x": 1.172,
+     "y": 1.172
+    },
+    {
+     "x": 2,
+     "y": 0.536
+    },
+    {
+     "x": 2.965,
+     "y": 0.136
+    },
+    {
+     "x": 4,
+     "y": 0
+    }
+   ],
+   "width": 444.625,
+   "depth": 141.825,
+   "closed": true
+  },
+  "internalCavity": {
+   "points": [
+    {
+     "x": 440.429,
+     "y": 3
+    },
+    {
+     "x": 440.877,
+     "y": 3.059
+    },
+    {
+     "x": 441.111,
+     "y": 3.156
+    },
+    {
+     "x": 441.314,
+     "y": 3.311
+    },
+    {
+     "x": 441.469,
+     "y": 3.514
+    },
+    {
+     "x": 441.566,
+     "y": 3.748
+    },
+    {
+     "x": 441.625,
+     "y": 4.196
+    },
+    {
+     "x": 441.625,
+     "y": 137.629
+    },
+    {
+     "x": 441.566,
+     "y": 138.077
+    },
+    {
+     "x": 441.469,
+     "y": 138.311
+    },
+    {
+     "x": 441.314,
+     "y": 138.514
+    },
+    {
+     "x": 441.111,
+     "y": 138.669
+    },
+    {
+     "x": 440.877,
+     "y": 138.766
+    },
+    {
+     "x": 440.429,
+     "y": 138.825
+    },
+    {
+     "x": 4.196,
+     "y": 138.825
+    },
+    {
+     "x": 3.748,
+     "y": 138.766
+    },
+    {
+     "x": 3.514,
+     "y": 138.669
+    },
+    {
+     "x": 3.311,
+     "y": 138.514
+    },
+    {
+     "x": 3.156,
+     "y": 138.311
+    },
+    {
+     "x": 3.059,
+     "y": 138.077
+    },
+    {
+     "x": 3,
+     "y": 137.629
+    },
+    {
+     "x": 3,
+     "y": 4.196
+    },
+    {
+     "x": 3.059,
+     "y": 3.748
+    },
+    {
+     "x": 3.156,
+     "y": 3.514
+    },
+    {
+     "x": 3.311,
+     "y": 3.311
+    },
+    {
+     "x": 3.514,
+     "y": 3.156
+    },
+    {
+     "x": 3.748,
+     "y": 3.059
+    },
+    {
+     "x": 4.196,
+     "y": 3
+    }
+   ],
+   "width": 438.625,
+   "depth": 135.825,
+   "closed": true
+  },
+  "angle": 6,
+  "frontHeight": 17.01,
+  "rearHeight": 31.83,
+  "wallThickness": 3,
+  "floorThickness": 4,
+  "mountingPoints": [
+   {
+    "id": "post1",
+    "x": 16,
+    "y": 32.77,
+    "diameter": 4.5,
+    "kind": "standoff"
+   },
+   {
+    "id": "post2",
+    "x": 98.53,
+    "y": 32.77,
+    "diameter": 4.5,
+    "kind": "standoff"
+   },
+   {
+    "id": "post3",
+    "x": 181.05,
+    "y": 32.77,
+    "diameter": 4.5,
+    "kind": "standoff"
+   },
+   {
+    "id": "post4",
+    "x": 263.58,
+    "y": 32.77,
+    "diameter": 4.5,
+    "kind": "standoff"
+   },
+   {
+    "id": "post5",
+    "x": 346.1,
+    "y": 32.77,
+    "diameter": 4.5,
+    "kind": "standoff"
+   },
+   {
+    "id": "post6",
+    "x": 428.63,
+    "y": 32.77,
+    "diameter": 4.5,
+    "kind": "standoff"
+   },
+   {
+    "id": "post7",
+    "x": 16,
+    "y": 107.06,
+    "diameter": 4.5,
+    "kind": "standoff"
+   },
+   {
+    "id": "post8",
+    "x": 98.53,
+    "y": 107.06,
+    "diameter": 4.5,
+    "kind": "standoff"
+   },
+   {
+    "id": "post9",
+    "x": 181.05,
+    "y": 107.06,
+    "diameter": 4.5,
+    "kind": "standoff"
+   },
+   {
+    "id": "post10",
+    "x": 263.58,
+    "y": 107.06,
+    "diameter": 4.5,
+    "kind": "standoff"
+   },
+   {
+    "id": "post11",
+    "x": 346.1,
+    "y": 107.06,
+    "diameter": 4.5,
+    "kind": "standoff"
+   },
+   {
+    "id": "post12",
+    "x": 428.63,
+    "y": 107.06,
+    "diameter": 4.5,
+    "kind": "standoff"
+   }
+  ],
+  "cutouts": [
+   {
+    "id": "usb",
+    "kind": "usb",
+    "wall": "back",
+    "center": 222.313,
+    "width": 12,
+    "height": 6.5
+   }
+  ],
+  "clearance": {
+   "floorToPcb": 5,
+   "plateTopToRim": 0
+  },
+  "material": "aluminium",
+  "model3d": {
+   "kind": "parametric"
+  },
+  "tags": [
+   "reference",
+   "Full Size"
+  ],
+  "sources": [
+   {
+    "sourceName": "KeyboardShapes parametric reference",
+    "sourceType": "parametric-reference",
+    "method": "generated from ANSI layout and nominal published dimensions",
+    "retrievedAt": "2026-10-01T00:00:00.000Z",
+    "confidence": 0.4
+   }
+  ],
+  "confidence": {
+   "level": "estimated",
+   "score": 0.4,
+   "notes": "Illustrative parametric case; not a commercial product."
+  }
+ },
+ {
+  "id": "imp-madlions-mad60-he-e-sports-magnetic-switch-mechanical-keyboa-case",
+  "slug": "imp-madlions-mad60-he-e-sports-magnetic-switch-mechanical-keyboa-case",
+  "brand": "Madlions",
+  "model": "Mad60 HE E-sports Magnetic Switch Mechanical Keyboard – White case",
+  "dimensions": {
+   "width": 292.1,
+   "depth": 109.2,
+   "height": 27.9
+  },
+  "externalShape": {
+   "points": [
+    {
+     "x": 288.1,
+     "y": 0
+    },
+    {
+     "x": 289.135,
+     "y": 0.136
+    },
+    {
+     "x": 290.1,
+     "y": 0.536
+    },
+    {
+     "x": 290.928,
+     "y": 1.172
+    },
+    {
+     "x": 291.564,
+     "y": 2
+    },
+    {
+     "x": 291.964,
+     "y": 2.965
+    },
+    {
+     "x": 292.1,
+     "y": 4
+    },
+    {
+     "x": 292.1,
+     "y": 105.2
+    },
+    {
+     "x": 291.964,
+     "y": 106.235
+    },
+    {
+     "x": 291.564,
+     "y": 107.2
+    },
+    {
+     "x": 290.928,
+     "y": 108.028
+    },
+    {
+     "x": 290.1,
+     "y": 108.664
+    },
+    {
+     "x": 289.135,
+     "y": 109.064
+    },
+    {
+     "x": 288.1,
+     "y": 109.2
+    },
+    {
+     "x": 4,
+     "y": 109.2
+    },
+    {
+     "x": 2.965,
+     "y": 109.064
+    },
+    {
+     "x": 2,
+     "y": 108.664
+    },
+    {
+     "x": 1.172,
+     "y": 108.028
+    },
+    {
+     "x": 0.536,
+     "y": 107.2
+    },
+    {
+     "x": 0.136,
+     "y": 106.235
+    },
+    {
+     "x": 0,
+     "y": 105.2
+    },
+    {
+     "x": 0,
+     "y": 4
+    },
+    {
+     "x": 0.136,
+     "y": 2.965
+    },
+    {
+     "x": 0.536,
+     "y": 2
+    },
+    {
+     "x": 1.172,
+     "y": 1.172
+    },
+    {
+     "x": 2,
+     "y": 0.536
+    },
+    {
+     "x": 2.965,
+     "y": 0.136
+    },
+    {
+     "x": 4,
+     "y": 0
+    }
+   ],
+   "width": 292.1,
+   "depth": 109.2,
+   "closed": true
+  },
+  "mountingPoints": [],
+  "cutouts": [],
+  "model3d": {
+   "kind": "parametric"
+  },
+  "tags": [
+   "imported",
+   "60%"
+  ],
+  "sources": [
+   {
+    "sourceUrl": "https://mkb.gg/products/madlions-mad60-mad68-he",
+    "sourceName": "MKB",
+    "sourceType": "vendor",
+    "retrievedAt": "2026-10-01T18:06:58.974Z",
+    "method": "json-ld",
+    "confidence": 0.75
+   },
+   {
+    "sourceUrl": "https://madlionskeyboard.com/product/mad60he-custom-keyboard/",
+    "sourceName": "MadlionsKeyboard",
+    "sourceType": "vendor",
+    "retrievedAt": "2026-10-01T18:07:00.706Z",
+    "method": "woocommerce-store-api",
+    "confidence": 0.6
+   },
+   {
+    "sourceUrl": "https://madlionskeyboard.com/product/custom-mad-60-he-magnetic-keyboard/",
+    "sourceName": "MadlionsKeyboard",
+    "sourceType": "vendor",
+    "retrievedAt": "2026-10-01T18:07:00.707Z",
+    "method": "woocommerce-store-api",
+    "confidence": 0.6
+   },
+   {
+    "sourceUrl": "https://computia.me/product/madlions-mad60-he-e-sports-magnetic-switch-mechanical-keyboard-white/",
+    "sourceName": "Computia",
+    "sourceType": "vendor",
+    "retrievedAt": "2026-10-01T18:07:02.655Z",
+    "method": "woocommerce-store-api",
+    "confidence": 0.6
+   },
+   {
+    "sourceUrl": "https://computia.me/product/madlions-mad60-he-e-sports-magnetic-switch-mechanical-keyboard/",
+    "sourceName": "Computia",
+    "sourceType": "vendor",
+    "retrievedAt": "2026-10-01T18:07:02.658Z",
+    "method": "woocommerce-store-api",
+    "confidence": 0.6
+   }
+  ],
+  "confidence": {
+   "level": "estimated",
+   "score": 0.3,
+   "notes": "Outline assumed to be a rounded rectangle from the overall width × depth. The real shape may differ. Overall dimensions cross-checked across 3 source(s) (width 31% confidence, estimated). Key positions are the generic ANSI 60% reference map, not this product's actual key map (ISO/JIS and special keys differ)."
+  }
+ },
+ {
+  "id": "imp-keychron-q1-qmk-custom-mechanical-keyboard-version-1-case",
+  "slug": "imp-keychron-q1-qmk-custom-mechanical-keyboard-version-1-case",
+  "brand": "Keychron",
+  "model": "Q1 QMK Custom Mechanical Keyboard - Version 1 case",
+  "dimensions": {
+   "width": 327.5,
+   "depth": 145,
+   "height": 34.8
+  },
+  "externalShape": {
+   "points": [
+    {
+     "x": 323.5,
+     "y": 0
+    },
+    {
+     "x": 324.535,
+     "y": 0.136
+    },
+    {
+     "x": 325.5,
+     "y": 0.536
+    },
+    {
+     "x": 326.328,
+     "y": 1.172
+    },
+    {
+     "x": 326.964,
+     "y": 2
+    },
+    {
+     "x": 327.364,
+     "y": 2.965
+    },
+    {
+     "x": 327.5,
+     "y": 4
+    },
+    {
+     "x": 327.5,
+     "y": 141
+    },
+    {
+     "x": 327.364,
+     "y": 142.035
+    },
+    {
+     "x": 326.964,
+     "y": 143
+    },
+    {
+     "x": 326.328,
+     "y": 143.828
+    },
+    {
+     "x": 325.5,
+     "y": 144.464
+    },
+    {
+     "x": 324.535,
+     "y": 144.864
+    },
+    {
+     "x": 323.5,
+     "y": 145
+    },
+    {
+     "x": 4,
+     "y": 145
+    },
+    {
+     "x": 2.965,
+     "y": 144.864
+    },
+    {
+     "x": 2,
+     "y": 144.464
+    },
+    {
+     "x": 1.172,
+     "y": 143.828
+    },
+    {
+     "x": 0.536,
+     "y": 143
+    },
+    {
+     "x": 0.136,
+     "y": 142.035
+    },
+    {
+     "x": 0,
+     "y": 141
+    },
+    {
+     "x": 0,
+     "y": 4
+    },
+    {
+     "x": 0.136,
+     "y": 2.965
+    },
+    {
+     "x": 0.536,
+     "y": 2
+    },
+    {
+     "x": 1.172,
+     "y": 1.172
+    },
+    {
+     "x": 2,
+     "y": 0.536
+    },
+    {
+     "x": 2.965,
+     "y": 0.136
+    },
+    {
+     "x": 4,
+     "y": 0
+    }
+   ],
+   "width": 327.5,
+   "depth": 145,
+   "closed": true
+  },
+  "angle": 5.2,
+  "frontHeight": 21.6,
+  "rearHeight": 34.8,
+  "mountingPoints": [],
+  "cutouts": [],
+  "model3d": {
+   "kind": "parametric"
+  },
+  "tags": [
+   "imported",
+   "75%"
+  ],
+  "sources": [
+   {
+    "sourceUrl": "https://keychron.com/products/keychron-q1-qmk-custom-mechanical-keyboard",
+    "sourceName": "Keychron",
+    "sourceType": "manufacturer",
+    "retrievedAt": "2026-10-01T18:07:11.337Z",
+    "method": "spec-table",
+    "confidence": 0.95
+   },
+   {
+    "sourceUrl": "https://keychron.com/products/keychron-q1",
+    "sourceName": "Keychron",
+    "sourceType": "manufacturer",
+    "retrievedAt": "2026-10-01T18:07:14.113Z",
+    "method": "spec-table",
+    "confidence": 0.95
+   },
+   {
+    "sourceUrl": "https://keychron.com/products/keychron-q1-qmk-custom-mechanical-keyboard-iso-layout-collection-version-1",
+    "sourceName": "Keychron",
+    "sourceType": "manufacturer",
+    "retrievedAt": "2026-10-01T18:07:17.463Z",
+    "method": "spec-table",
+    "confidence": 0.95
+   },
+   {
+    "sourceUrl": "https://divinikey.com/products/keychron-q1-qmk-75-keyboard",
+    "sourceName": "Divinikey",
+    "sourceType": "vendor",
+    "retrievedAt": "2026-10-01T18:07:07.016Z",
+    "method": "page-text",
+    "confidence": 0.75
+   }
+  ],
+  "confidence": {
+   "level": "estimated",
+   "score": 0.3,
+   "notes": "Outline assumed to be a rounded rectangle from the overall width × depth. The real shape may differ. Overall dimensions cross-checked across 2 source(s) (width 92% confidence, official). Key positions are the generic ANSI 75% reference map, not this product's actual key map (ISO/JIS and special keys differ)."
+  }
+ }
+]

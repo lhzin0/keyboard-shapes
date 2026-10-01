@@ -1,0 +1,135 @@
+[
+ {
+  "id": "wooting",
+  "name": "Wooting",
+  "host": "wooting.io",
+  "platform": "none",
+  "role": "manufacturer",
+  "notes": "Brand's own site. No public search endpoint (products.json / suggest answer 404), so it is only used through product page URLs (--urls).",
+  "checkedAt": "2026-10-01"
+ },
+ {
+  "id": "keychron",
+  "name": "Keychron",
+  "host": "keychron.com",
+  "platform": "shopify",
+  "role": "manufacturer",
+  "notes": "Brand's own store. robots.txt disallows /search, so only /products.json is used.",
+  "checkedAt": "2026-10-01"
+ },
+ {
+  "id": "qwertykeys",
+  "name": "Qwertykeys",
+  "host": "qwertykeys.com",
+  "platform": "shopify",
+  "role": "manufacturer",
+  "notes": "Brand's own store. robots.txt disallows /search, so only /products.json is used.",
+  "checkedAt": "2026-10-01"
+ },
+ {
+  "id": "mkb",
+  "name": "MKB",
+  "host": "mkb.gg",
+  "platform": "shopify",
+  "role": "vendor",
+  "checkedAt": "2026-10-01"
+ },
+ {
+  "id": "cannonkeys",
+  "name": "CannonKeys",
+  "host": "cannonkeys.com",
+  "platform": "shopify",
+  "role": "vendor",
+  "checkedAt": "2026-10-01"
+ },
+ {
+  "id": "kbdfans",
+  "name": "KBDfans",
+  "host": "kbdfans.com",
+  "platform": "shopify",
+  "role": "vendor",
+  "checkedAt": "2026-10-01"
+ },
+ {
+  "id": "novelkeys",
+  "name": "NovelKeys",
+  "host": "novelkeys.com",
+  "platform": "shopify",
+  "role": "vendor",
+  "checkedAt": "2026-10-01"
+ },
+ {
+  "id": "divinikey",
+  "name": "Divinikey",
+  "host": "divinikey.com",
+  "platform": "shopify",
+  "role": "vendor",
+  "checkedAt": "2026-10-01"
+ },
+ {
+  "id": "epomaker",
+  "name": "Epomaker",
+  "host": "epomaker.com",
+  "platform": "shopify",
+  "role": "vendor",
+  "checkedAt": "2026-10-01"
+ },
+ {
+  "id": "mekibo",
+  "name": "Mekibo",
+  "host": "mekibo.com",
+  "platform": "shopify",
+  "role": "vendor",
+  "checkedAt": "2026-10-01"
+ },
+ {
+  "id": "meletrix",
+  "name": "Meletrix",
+  "host": "meletrix.com",
+  "platform": "shopify",
+  "role": "vendor",
+  "checkedAt": "2026-10-01"
+ },
+ {
+  "id": "lofree",
+  "name": "Lofree",
+  "host": "lofree.co",
+  "platform": "shopify",
+  "role": "vendor",
+  "checkedAt": "2026-10-01"
+ },
+ {
+  "id": "mechanicalkeyboards",
+  "name": "MechanicalKeyboards.com",
+  "host": "mechanicalkeyboards.com",
+  "platform": "shopify",
+  "role": "vendor",
+  "checkedAt": "2026-10-01"
+ },
+ {
+  "id": "glorious",
+  "name": "Glorious",
+  "host": "gloriousgaming.com",
+  "platform": "shopify",
+  "role": "vendor",
+  "checkedAt": "2026-10-01"
+ },
+ {
+  "id": "madlionskeyboard",
+  "name": "MadlionsKeyboard",
+  "host": "madlionskeyboard.com",
+  "platform": "woocommerce",
+  "role": "vendor",
+  "notes": "Product pages answer 403 to automated clients (not bypassed); the public WooCommerce Store API (robots.txt allows /wp-json) is used instead. Not verified to be the manufacturer's own store.",
+  "checkedAt": "2026-10-01"
+ },
+ {
+  "id": "computia",
+  "name": "Computia",
+  "host": "computia.me",
+  "platform": "woocommerce",
+  "role": "vendor",
+  "notes": "Product pages answer 403 to automated clients (not bypassed); the public WooCommerce Store API is used instead.",
+  "checkedAt": "2026-10-01"
+ }
+]

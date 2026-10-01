@@ -1,0 +1,76 @@
+{
+ "id": "ref-tkl-plate-a",
+ "unit": "mm",
+ "points": [
+  {
+   "id": "p1",
+   "x": 11.5,
+   "y": 28.27,
+   "diameter": 2.5,
+   "kind": "screw"
+  },
+  {
+   "id": "p2",
+   "x": 94.42,
+   "y": 28.27,
+   "diameter": 2.5,
+   "kind": "screw"
+  },
+  {
+   "id": "p3",
+   "x": 177.33,
+   "y": 28.27,
+   "diameter": 2.5,
+   "kind": "screw"
+  },
+  {
+   "id": "p4",
+   "x": 260.25,
+   "y": 28.27,
+   "diameter": 2.5,
+   "kind": "screw"
+  },
+  {
+   "id": "p5",
+   "x": 343.16,
+   "y": 28.27,
+   "diameter": 2.5,
+   "kind": "screw"
+  },
+  {
+   "id": "p6",
+   "x": 11.5,
+   "y": 102.56,
+   "diameter": 2.5,
+   "kind": "screw"
+  },
+  {
+   "id": "p7",
+   "x": 94.42,
+   "y": 102.56,
+   "diameter": 2.5,
+   "kind": "screw"
+  },
+  {
+   "id": "p8",
+   "x": 177.33,
+   "y": 102.56,
+   "diameter": 2.5,
+   "kind": "screw"
+  },
+  {
+   "id": "p9",
+   "x": 260.25,
+   "y": 102.56,
+   "diameter": 2.5,
+   "kind": "screw"
+  },
+  {
+   "id": "p10",
+   "x": 343.16,
+   "y": 102.56,
+   "diameter": 2.5,
+   "kind": "screw"
+  }
+ ]
+}

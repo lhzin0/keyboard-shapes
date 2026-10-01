@@ -1,0 +1,51 @@
+name: Lookup (multi-site cross-check)
+
+# Searches many shops for a keyboard through their public, robots.txt-permitted endpoints, imports each
+# matching product page and cross-checks the numbers. Download the artifact and load it in the web app:
+# Import → "Cross-check sites". Nothing here bypasses CAPTCHAs, logins or rate limits.
+
+on:
+  workflow_dispatch:
+    inputs:
+      query:
+        description: 'What to look for, e.g. "keychron q1"'
+        required: true
+        type: string
+      sites:
+        description: 'Optional comma-separated registry ids (default: all in data/sources.json)'
+        required: false
+        type: string
+      urls:
+        description: 'Optional extra product page URLs, comma-separated (Amazon, brand pages …)'
+        required: false
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  lookup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+
+      - name: Lookup
+        env:
+          QUERY: ${{ inputs.query }}
+          SITES: ${{ inputs.sites }}
+          URLS: ${{ inputs.urls }}
+        run: |
+          args=(--q="$QUERY" --json=lookup.json)
+          [ -n "$SITES" ] && args+=(--sites="$SITES")
+          [ -n "$URLS" ] && args+=(--urls="$URLS")
+          npm run lookup -- "${args[@]}"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: lookup
+          path: lookup.json

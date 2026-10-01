@@ -1,0 +1,34 @@
+[
+ {
+  "id": "ref-mx-linear",
+  "slug": "ref-mx-linear",
+  "brand": "KeyboardShapes",
+  "model": "Reference MX-style switch",
+  "style": "MX",
+  "plateToPcb": 5,
+  "topHeight": 6.6,
+  "cutout": {
+   "width": 14,
+   "depth": 14
+  },
+  "type": "linear",
+  "tags": [
+   "reference",
+   "MX"
+  ],
+  "sources": [
+   {
+    "sourceName": "KeyboardShapes parametric reference",
+    "sourceType": "parametric-reference",
+    "method": "nominal MX dimensions commonly published (14 mm cutout, 5 mm plate-to-PCB)",
+    "retrievedAt": "2026-10-01T00:00:00.000Z",
+    "confidence": 0.4
+   }
+  ],
+  "confidence": {
+   "level": "estimated",
+   "score": 0.6,
+   "notes": "Nominal MX values; individual switches vary."
+  }
+ }
+]

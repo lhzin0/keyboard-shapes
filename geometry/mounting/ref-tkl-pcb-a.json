@@ -1,0 +1,76 @@
+{
+ "id": "ref-tkl-pcb-a",
+ "unit": "mm",
+ "points": [
+  {
+   "id": "h1",
+   "x": 10.5,
+   "y": 27.27,
+   "diameter": 2.5,
+   "kind": "screw"
+  },
+  {
+   "id": "h2",
+   "x": 93.42,
+   "y": 27.27,
+   "diameter": 2.5,
+   "kind": "screw"
+  },
+  {
+   "id": "h3",
+   "x": 176.33,
+   "y": 27.27,
+   "diameter": 2.5,
+   "kind": "screw"
+  },
+  {
+   "id": "h4",
+   "x": 259.25,
+   "y": 27.27,
+   "diameter": 2.5,
+   "kind": "screw"
+  },
+  {
+   "id": "h5",
+   "x": 342.16,
+   "y": 27.27,
+   "diameter": 2.5,
+   "kind": "screw"
+  },
+  {
+   "id": "h6",
+   "x": 10.5,
+   "y": 101.56,
+   "diameter": 2.5,
+   "kind": "screw"
+  },
+  {
+   "id": "h7",
+   "x": 93.42,
+   "y": 101.56,
+   "diameter": 2.5,
+   "kind": "screw"
+  },
+  {
+   "id": "h8",
+   "x": 176.33,
+   "y": 101.56,
+   "diameter": 2.5,
+   "kind": "screw"
+  },
+  {
+   "id": "h9",
+   "x": 259.25,
+   "y": 101.56,
+   "diameter": 2.5,
+   "kind": "screw"
+  },
+  {
+   "id": "h10",
+   "x": 342.16,
+   "y": 101.56,
+   "diameter": 2.5,
+   "kind": "screw"
+  }
+ ]
+}

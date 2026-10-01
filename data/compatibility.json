@@ -1,0 +1,38 @@
+[
+ {
+  "from": {
+   "type": "pcb",
+   "id": "ref-65-pcb-b"
+  },
+  "to": {
+   "type": "case",
+   "id": "ref-65-case-a"
+  },
+  "kind": "declared-incompatible",
+  "source": {
+   "sourceName": "KeyboardShapes parametric reference",
+   "sourceType": "parametric-reference",
+   "method": "reference dataset: alternate hole pattern by construction",
+   "retrievedAt": "2026-10-01T00:00:00.000Z",
+   "confidence": 1
+  }
+ },
+ {
+  "from": {
+   "type": "plate",
+   "id": "ref-65-plate-b"
+  },
+  "to": {
+   "type": "pcb",
+   "id": "ref-65-pcb-a"
+  },
+  "kind": "declared-incompatible",
+  "source": {
+   "sourceName": "KeyboardShapes parametric reference",
+   "sourceType": "parametric-reference",
+   "method": "reference dataset: alternate hole pattern by construction",
+   "retrievedAt": "2026-10-01T00:00:00.000Z",
+   "confidence": 1
+  }
+ }
+]

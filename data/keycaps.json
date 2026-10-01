@@ -1,0 +1,72 @@
+[
+ {
+  "id": "ref-keycap-cherry",
+  "slug": "ref-keycap-cherry",
+  "brand": "KeyboardShapes",
+  "model": "Reference low sculpted set",
+  "profileName": "Sculpted (generic)",
+  "rowHeights": [
+   8.6,
+   8.4,
+   8.8,
+   9.4,
+   9.6,
+   9.6
+  ],
+  "seatAbovePlate": 4.5,
+  "taper": 3,
+  "material": "PBT",
+  "tags": [
+   "reference"
+  ],
+  "sources": [
+   {
+    "sourceName": "KeyboardShapes parametric reference",
+    "sourceType": "parametric-reference",
+    "method": "generated from ANSI layout and nominal published dimensions",
+    "retrievedAt": "2026-10-01T00:00:00.000Z",
+    "confidence": 0.2
+   }
+  ],
+  "confidence": {
+   "level": "estimated",
+   "score": 0.2,
+   "notes": "Placeholder heights for visualisation; not a real profile."
+  }
+ },
+ {
+  "id": "ref-keycap-flat",
+  "slug": "ref-keycap-flat",
+  "brand": "KeyboardShapes",
+  "model": "Reference uniform set",
+  "profileName": "Uniform (generic)",
+  "rowHeights": [
+   9,
+   9,
+   9,
+   9,
+   9,
+   9
+  ],
+  "seatAbovePlate": 4.5,
+  "taper": 2.5,
+  "material": "ABS",
+  "tags": [
+   "reference"
+  ],
+  "sources": [
+   {
+    "sourceName": "KeyboardShapes parametric reference",
+    "sourceType": "parametric-reference",
+    "method": "generated from ANSI layout and nominal published dimensions",
+    "retrievedAt": "2026-10-01T00:00:00.000Z",
+    "confidence": 0.2
+   }
+  ],
+  "confidence": {
+   "level": "estimated",
+   "score": 0.2,
+   "notes": "Placeholder heights for visualisation; not a real profile."
+  }
+ }
+]

@@ -1,0 +1,47 @@
+name: Generate 3D models
+
+on:
+  workflow_dispatch:
+    inputs:
+      commit:
+        description: 'Commit the generated files to the current branch'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+
+      - name: Generate 2D outlines, SVG previews and parametric GLB models
+        run: |
+          npm run generate
+          npm run generate:models
+
+      - name: Optimise (dedupe, prune, quantise, Draco)
+        run: npm run optimize
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: models
+          path: |
+            public/models/*.glb
+            geometry/generated/*
+
+      - name: Commit
+        if: ${{ inputs.commit }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/models geometry
+          git diff --staged --quiet || git commit -m "chore: regenerate models"
+          git push
